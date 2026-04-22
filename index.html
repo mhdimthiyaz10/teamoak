@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Team OAK is a collective of forward-thinking companies delivering innovation, quality, and trust.">
+    <title>Team OAK | Building Excellence Across Industries</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+
+<body>
+
+    <body>
+
+
+        <!-- Hero Section -->
+        <header id="home" class="hero">
+
+            <!-- Navbar inside Hero -->
+            <nav class="hero-navbar">
+                <div class="hero-nav-container">
+
+                    <!-- Logo -->
+                    <a href="#home" class="hero-nav-logo">
+                        <img src="assets/logo.png.png" alt="Team OAK Logo">
+                    </a>
+
+                    <!-- Links -->
+                    <ul class="hero-nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">What we do</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+
+                    <!-- CTA -->
+                    <a href="#contact" class="hero-nav-cta">Contact Us</a>
+
+                </div>
+            </nav>
+
+            <div class="hero-content hero-new-content">
+                <h1 class="hero-main-text fade-up">Get up and make it.</h1>
+                <p class="hero-sub-text fade-up delay-1">Get it with Team OAK..!</p>
+                <div class="hero-btn-wrap fade-up delay-2">
+                    <a href="#contact" class="btn btn-connect">Connect with Us</a>
+                </div>
+            </div>
+            <div class="hero-bg"></div>
+        </header>
+
+        <!-- About Section - Lengthy with Scroll Line -->
+        <section id="about" class="about-new-exact">
+
+            <div class="scroll-line-container" id="scroll-line-wrap">
+                <svg id="scroll-line-svg" viewBox="0 0 400 2500" preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="reflect-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#ffffff" />
+                            <stop offset="30%" stop-color="#e0e0e0" />
+                            <stop offset="60%" stop-color="#ffffff" />
+                            <stop offset="100%" stop-color="#e0e0e0" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Irregular path starting from right and flowing down -->
+                    <path id="scroll-line-path" d="M 400,0 
+                       C 380,100 350,150 250,200 
+                       C 150,250 300,400 120,600 
+                       S 350,800 200,1000 
+                       C 50,1200 400,1400 150,1700
+                       S 380,2000 80,2300
+                       L 150,2500" fill="none" stroke="url(#reflect-grad)" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <circle id="scroll-line-point" r="5" fill="#fff8e1" />
+                </svg>
+            </div>
+
+            <!-- Block 1 & 2: About Us + What We Do (unified) -->
+            <div class="about-wwd-unified container fade-up">
+                <!-- About Us -->
+                <div class="about-block-inner">
+                    <h2 class="text-center"><span class="shiny-text">About Us</span></h2>
+                    <div class="scroll-reveal-container">
+                        <p class="scroll-reveal-text">Founded in 2000, our group of companies is a dynamic and
+                            diversified
+                            conglomerate with a strong presence in trading, hospitality, and construction sectors. With
+                            operations spanning across GCC countries and India, we have earned a reputation for
+                            excellence,
+                            innovation, and integrity in the industries we serve.</p>
+                    </div>
+                </div>
+
+                <!-- What We Do -->
+                <div class="what-we-do-inner">
+                    <!-- MagicRings WebGL Background -->
+                    <div id="magic-rings-bg"></div>
+                    <h2 class="text-center what-we-do-title"><span class="shiny-text">What We Do</span></h2>
+                    <div class="wwd-grid">
+                        <div class="wwd-card">
+                            <div class="wwd-img-container">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop"
+                                    alt="Trading" class="grayscale-img">
+                            </div>
+                            <div class="card-content-side">
+                                <h3>Trading</h3>
+                                <p class="wwd-desc">Connecting markets and enabling global commerce with precision
+                                    and
+                                    speed.</p>
+                            </div>
+                        </div>
+                        <div class="wwd-card">
+                            <div class="wwd-img-container">
+                                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop"
+                                    alt="Services" class="grayscale-img">
+                            </div>
+                            <div class="card-content-side">
+                                <h3>Services</h3>
+                                <p class="wwd-desc">Delivering premium client-centric hospitality and service
+                                    experiences globally.</p>
+                            </div>
+                        </div>
+                        <div class="wwd-card">
+                            <div class="wwd-img-container">
+                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+                                    alt="Industrial" class="grayscale-img">
+                            </div>
+                            <div class="card-content-side">
+                                <h3>Industrial</h3>
+                                <p class="wwd-desc">Building the backbone of tomorrow through modern industrial
+                                    frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+        <!-- ============================================================
+             O PORTAL — Cinematic scroll-driven depth tunnel
+             ============================================================ -->
+        <section id="o-portal-section" class="o-portal-section">
+
+            <!-- Dark depth tunnel wrapper — pinned during scroll -->
+            <div id="o-portal-stage" class="o-portal-stage">
+
+                <!-- Depth text lines that fly toward the viewer -->
+                <div class="portal-depth-texts" id="portal-depth-texts">
+                    <div class="depth-line" data-depth="0">Building Excellence</div>
+                    <div class="depth-line" data-depth="1">Across Every Industry</div>
+                    <div class="depth-line" data-depth="2">Since 2000</div>
+                </div>
+
+                <!-- The expanding O mask and orbital text -->
+                <div class="o-mask-wrapper" id="o-mask-wrapper">
+                    <div class="o-mask-group" id="o-mask-group">
+                        <div class="o-mask-ring" id="o-mask-ring"></div>
+                        <div class="orbit-text" id="orbit-text"></div>
+                    </div>
+                </div>
+
+                <!-- The new world revealed after passing through the O -->
+                <div class="portal-revealed" id="portal-revealed">
+                    <div class="ventures-container">
+                        <!-- Ventures Header (Top-Right) -->
+                        <div class="ventures-header">
+                            <h2 class="ventures-main-title">OUR VENTURES</h2>
+                            <h3 class="ventures-sub-title">BEYOND LIMITS</h3>
+                        </div>
+
+                        <!-- Stacked Cards Container -->
+                        <div class="ventures-stack" id="ventures-stack">
+                            <!-- Card 01 -->
+                            <div class="venture-card" data-index="0">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file4.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 02 -->
+                            <div class="venture-card" data-index="1">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file5.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 03 -->
+                            <div class="venture-card" data-index="2">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file6.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 04 -->
+                            <div class="venture-card" data-index="3">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file7.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 05 -->
+                            <div class="venture-card" data-index="4">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file7.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 06 -->
+                            <div class="venture-card" data-index="5">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file8.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 07 -->
+                            <div class="venture-card" data-index="6">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file9.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 08 -->
+                            <div class="venture-card" data-index="7">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file10.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 09 -->
+                            <div class="venture-card" data-index="8">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file11.png.png" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 10 -->
+                            <div class="venture-card" data-index="9">
+                                <div class="card-image-wrap"
+                                    style="background-color: #ffffff; display: flex; align-items: center; justify-content: center;">
+                                    <img src="assets/file1.png.png" alt="Venture"
+                                        style="width: 65%; height: 65%; object-fit: contain; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 11 -->
+                            <div class="venture-card" data-index="10">
+                                <div class="card-image-wrap"
+                                    style="background-color: #ffffff; display: flex; align-items: center; justify-content: center;">
+                                    <img src="assets/file2.png.png" alt="Venture"
+                                        style="width: 65%; height: 65%; object-fit: contain; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 12 -->
+                            <div class="venture-card" data-index="11">
+                                <div class="card-image-wrap">
+                                    <img src="assets/file3.png.jpg" alt="Venture"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 13 -->
+                            <div class="venture-card" data-index="12">
+                                <div class="card-image-wrap"
+                                    style="background-color: #ffffff; display: flex; align-items: center; justify-content: center;">
+                                    <img src="assets/file12.png.png" alt="Venture"
+                                        style="width: 65%; height: 65%; object-fit: contain; border-radius: 4px;">
+                                </div>
+                            </div>
+                            <!-- Card 14 -->
+                            <div class="venture-card" data-index="13">
+                                <div class="card-image-wrap"
+                                    style="background-color: #ffffff; display: flex; align-items: center; justify-content: center;">
+                                    <img src="assets/file13.png.png" alt="Venture"
+                                        style="width: 65%; height: 65%; object-fit: contain; border-radius: 4px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Our Clients Section -->
+        <section id="our-clients" class="clients-section">
+            <div class="container fade-up">
+                <div class="clients-header text-center">
+                    <h2 class="clients-title">Our Clients</h2>
+                    <p class="clients-subtitle">Trusted by industry leaders worldwide.</p>
+                </div>
+            </div>
+
+            <div class="clients-masonry-grid fade-up">
+                <!-- Row 1 -->
+                <div class="brand-box bg-grey"><img src="assets/file51.png.png" alt="HYUNDAI"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-mint"><img src="assets/file52.png.png" alt="IKEA"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+
+
+
+                <div class="brand-box bg-pink"><img src="assets/file53.png.png" alt="USHA"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-green"><img src="assets/file54.png.png" alt="FedEx"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-bluegrey"><img src="assets/file55.png.png" alt="PHILIPS"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-yellow"><img src="assets/file56.png.png" alt="amazon"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-cyan"><img src="assets/file57.png.png" alt="SUZUKI"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+
+                <!-- Row 2 -->
+                <div class="brand-box bg-pink"><img src="assets/file58.png.png" alt="lyft"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-cyan"><img src="assets/file59.png.png" alt="bigbasket"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-whiteish"><img src="assets/file60.png.png" alt="essilor"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-yellow"><img src="assets/file61.png.png" alt="Mercedes-Benz"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-pink"><img src="assets/file62.png.png" alt="SIEMENS"
+                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png.png" alt="Team OAK" style="height: 60px; margin-bottom: 2rem; display: block;">
+                    <p style="font-family: var(--font-body); letter-spacing: 3px; font-size: 0.7rem; color: #777; text-transform: uppercase;">Building Excellence Across Industries</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#companies">Companies</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>123 Corporate Blvd, Suite 800</p>
+                    <p>contact@teamoak.com</p>
+                    <p>+1 (800) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 Team OAK. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="magic-rings.js"></script>
+        <script src="script.js"></script>
+        <script src="portal.js"></script>
+    </body>
+
+</html>
