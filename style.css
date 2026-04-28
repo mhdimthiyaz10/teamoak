@@ -359,9 +359,10 @@ a {
 
 .hero-main-text {
     font-family: var(--font-body); /* Set to sans-serif to match image */
-    font-size: 5.5rem;
+    font-size: 4.2rem;
     font-weight: 800; /* Thick bold text */
-    color: #000000;
+    color: #ffffff;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
     margin-bottom: 0;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -370,9 +371,10 @@ a {
 
 .hero-sub-text {
     font-family: var(--font-body);
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     font-weight: 400; /* Lighter text */
-    color: #4a4a4a; /* Grey color matching image */
+    color: #e0e0e0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
     margin-top: 0.5rem !important;
     margin-bottom: 2.5rem !important;
     text-align: right; /* Aligned right relative to the main heading */
@@ -384,21 +386,28 @@ a {
 }
 
 .btn-connect {
-    background-color: #1a1a1a;
+    background: rgba(255, 255, 255, 0.12);
     color: #ffffff;
     border-radius: 50px; /* Pill shape */
     padding: 1.2rem 2.5rem;
     font-family: var(--font-body);
     font-weight: 600;
     font-size: 1.1rem;
-    text-transform: none; /* Keep natural case */
-    letter-spacing: 0;
-    border: none;
+    text-transform: none;
+    letter-spacing: 0.3px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .btn-connect:hover {
-    background-color: var(--accent-gold);
-    color: #000;
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 .hero-bg {
@@ -408,7 +417,7 @@ a {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: url('hero-bg.png.png') center/cover no-repeat; /* Removed dark overlay so black text is visible */
+    background: url('assets/luxury_corporate_bg.png?v=3') center/100% 100% no-repeat; /* Stretched to fill exactly without zooming/cropping */
 }
 
 /* About Section */
@@ -745,7 +754,7 @@ a {
 
 /* --- About + What We Do Unified Section --- */
 .about-wwd-unified {
-    padding: 1rem 0 12rem;
+    padding: 1rem 0 4rem;
 }
 
 .what-we-do-inner {
@@ -824,7 +833,7 @@ a {
 
 /* --- What We Do --- */
 .what-we-do {
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 /* MagicRings WebGL Background */
@@ -864,7 +873,7 @@ a {
 
 @media screen and (min-width: 1025px) {
     .what-we-do {
-        padding-bottom: 8rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -1523,13 +1532,16 @@ a {
     z-index: 10;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     border-top: 1px solid rgba(0,0,0,0.05);
 }
 
 .clients-header {
-    margin-bottom: 6rem;
-    transform: translateX(-60px);
+    margin-bottom: 4rem;
+    text-align: center;
+    width: 100%;
 }
 
 .clients-title {
@@ -1552,9 +1564,10 @@ a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-flow: row;
-    width: calc(100% + 120px);
-    margin-left: -120px;
-    margin-top: 4rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .brand-box {
@@ -1691,3 +1704,146 @@ a {
     .tb-quote { font-size: 4vw; }
     .clients-section { padding: 6rem 0; }
 }
+
+/* ============================================
+   Portal Revealed - New Blank Page
+   ============================================ */
+.portal-revealed-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.blank-page-content {
+    background: #ffffff;
+    padding: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* ============================================
+   Our Global Presence Section
+   ============================================ */
+.global-presence-section {
+    position: relative;
+    padding: 5rem 0 2rem;
+    background: linear-gradient(135deg, #fdfdfd 0%, #f4f4f4 100%);
+    overflow: hidden;
+    z-index: 5;
+}
+
+.global-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.global-title {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+}
+
+.global-subtitle {
+    color: #555;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.interactive-map-wrapper {
+    position: relative;
+    width: 180vw;
+    max-width: none;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    aspect-ratio: 16 / 6;
+    z-index: 2;
+}
+
+.base-world-map {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.15;
+    filter: grayscale(100%);
+    user-select: none;
+    pointer-events: none;
+    clip-path: inset(0 0 14% 0);
+}
+
+.map-pin {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.flag-box {
+    position: relative;
+    width: 72px;
+    height: 48px;
+    border-radius: 6px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    border: 3px solid rgba(255,255,255,0.9);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.flag-img-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.9;
+}
+
+.map-pin:hover .flag-box {
+    transform: scale(1.3) translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+.pin-label {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(255, 255, 255, 0.95);
+    color: #111;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    border: 1px solid rgba(0,0,0,0.05);
+    z-index: 3;
+}
+
+.map-pin:hover .pin-label {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Flag Gradients */
+.flag-canada { background: linear-gradient(135deg, #FF0000 30%, #FFFFFF 30%, #FFFFFF 70%, #FF0000 70%); }
+.flag-uk { background: linear-gradient(135deg, #012169 33%, #C8102E 33%, #C8102E 66%, #FFFFFF 66%); }
+.flag-saudi { background: linear-gradient(135deg, #006C35 60%, #FFFFFF 60%); }
+.flag-uae { background: linear-gradient(135deg, #FF0000 25%, #00732F 25%, #00732F 50%, #FFFFFF 50%, #FFFFFF 75%, #000000 75%); }
+.flag-oman { background: linear-gradient(135deg, #C8102E 33%, #FFFFFF 33%, #FFFFFF 66%, #009A44 66%); }
+.flag-india { background: linear-gradient(135deg, #FF9933 33%, #FFFFFF 33%, #FFFFFF 66%, #138808 66%); }
+
