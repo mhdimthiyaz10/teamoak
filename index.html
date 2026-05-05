@@ -357,60 +357,41 @@
 
         <script>
             // Stick open on hover, close on outside click
-            document.querySelectorAll('.has-arrow').forEach(function(li) {
-                li.addEventListener('mouseenter', function() {
-                    document.querySelectorAll('.has-arrow.open').forEach(function(el) {
-                        if (el !== li) el.classList.remove('open');
-                    });
-                    li.classList.add('open');
+        // Sticky Navigation Toggle
+        document.querySelectorAll('.has-arrow, .has-flyout').forEach(function(li) {
+            var trigger = li.querySelector(':scope > a');
+            if (trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var isOpen = li.classList.contains('open');
+                    
+                    // Close other menus at the same level
+                    var siblings = li.parentElement.querySelectorAll(':scope > .open');
+                    siblings.forEach(function(s) { if (s !== li) s.classList.remove('open'); });
+                    
+                    li.classList.toggle('open', !isOpen);
                 });
-                // clicking the link also toggles
-                var trigger = li.querySelector(':scope > a');
-                if (trigger) {
-                    trigger.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        var isOpen = li.classList.contains('open');
-                        document.querySelectorAll('.has-arrow.open').forEach(function(el) {
-                            el.classList.remove('open');
-                        });
-                        if (!isOpen) li.classList.add('open');
-                    });
+            }
+            
+            // Still allow hover for a premium feel, but click "locks" it
+            li.addEventListener('mouseenter', function() {
+                if (!li.classList.contains('open')) {
+                    var siblings = li.parentElement.querySelectorAll(':scope > .open');
+                    siblings.forEach(function(s) { s.classList.remove('open'); });
+                    li.classList.add('open');
                 }
             });
-            // Close when clicking outside
-            document.addEventListener('click', function(e) {
-                if (!e.target.closest('.has-arrow')) {
-                    document.querySelectorAll('.has-arrow.open').forEach(function(el) {
-                        el.classList.remove('open');
-                    });
-                }
-                if (!e.target.closest('.has-flyout')) {
-                    document.querySelectorAll('.has-flyout.open').forEach(function(el) {
-                        el.classList.remove('open');
-                    });
-                }
-            });
+        });
 
-            // Stick flyout open on hover
-            document.querySelectorAll('.has-flyout').forEach(function(li) {
-                li.addEventListener('mouseenter', function() {
-                    document.querySelectorAll('.has-flyout.open').forEach(function(el) {
-                        if (el !== li) el.classList.remove('open');
-                    });
-                    li.classList.add('open');
+        // Close all when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.has-arrow') && !e.target.closest('.has-flyout')) {
+                document.querySelectorAll('.has-arrow.open, .has-flyout.open').forEach(function(el) {
+                    el.classList.remove('open');
                 });
-                var trigger = li.querySelector(':scope > a');
-                if (trigger) {
-                    trigger.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        var isOpen = li.classList.contains('open');
-                        document.querySelectorAll('.has-flyout.open').forEach(function(el) {
-                            el.classList.remove('open');
-                        });
-                        if (!isOpen) li.classList.add('open');
-                    });
-                }
-            });
+            }
+        });
         </script>
     </body>
 

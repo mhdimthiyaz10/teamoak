@@ -49,6 +49,8 @@
             font-family: var(--font-outfit); font-size: 1.3rem; font-weight: 800;
             letter-spacing: 3px; text-transform: uppercase; color: var(--black);
             text-decoration: none;
+            display: flex;
+            align-items: center;
         }
         .nav-logo span { color: var(--gold); }
         .nav-links { list-style: none; display: flex; gap: 2.8rem; }
@@ -71,44 +73,55 @@
         }
         .nav-links li.has-arrow.open > a::after, .nav-links li.has-arrow:hover > a::after { transform: rotate(225deg) translateY(2px); }
 
+        /* Dropdown panel */
         .nav-links li.has-arrow .dropdown {
-            position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
-            background: rgba(255,255,255,0.98); backdrop-filter: blur(16px); border-radius: 12px;
-            box-shadow: 0 16px 50px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08);
-            padding: 0.5rem 0; min-width: 210px; list-style: none; opacity: 0; pointer-events: none;
-            transition: opacity 0.22s ease, transform 0.22s ease; z-index: 200;
+            position: absolute;
+            top: calc(100% + 14px);
+            left: 50%;
+            transform: translateX(-50%) translateY(-6px);
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 4px 20px rgba(0,0,0,0.05);
+            padding: 1rem 0.6rem;
+            min-width: 240px;
+            max-height: 400px;
+            overflow-y: auto;
+            list-style: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 200;
+            border: 1px solid rgba(0,0,0,0.04);
         }
         .nav-links li.has-arrow.open .dropdown, .nav-links li.has-arrow:hover .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
 
         .nav-links li.has-arrow .dropdown li a {
             display: flex; align-items: center; justify-content: space-between;
-            padding: 0.75rem 1.4rem; font-size: 0.75rem; font-weight: 600;
-            letter-spacing: 1.5px; text-transform: uppercase; color: #333;
-            text-decoration: none; transition: color 0.18s, background 0.18s; border-radius: 6px; margin: 0 0.4rem;
+            padding: 0.9rem 1.4rem; font-family: var(--font-outfit); font-size: 0.88rem; font-weight: 600;
+            letter-spacing: 0.8px; text-transform: uppercase; color: #1a1a1a;
+            text-decoration: none; transition: all 0.25s var(--ease); border-radius: 10px; margin: 0.2rem 0.4rem;
         }
-        .nav-links li.has-arrow .dropdown li a:hover { color: #000; background: rgba(0,0,0,0.05); }
+        .nav-links li.has-arrow .dropdown li a:hover { color: var(--gold); background: rgba(0,0,0,0.03); padding-left: 1.6rem; }
 
         /* Flyout sub-menu */
-        .nav-links li.has-arrow .dropdown li.has-flyout { position: relative; }
-        .nav-links li.has-arrow .dropdown li.has-flyout > a::after {
-            content: ''; display: inline-block; width: 5px; height: 5px;
-            border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
-            transform: rotate(-45deg); transition: transform 0.18s;
-        }
-        .nav-links li.has-arrow .dropdown li.has-flyout.open .flyout, .nav-links li.has-arrow .dropdown li.has-flyout:hover .flyout {
-            opacity: 1; pointer-events: all; transform: translateX(0);
-        }
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
-            position: absolute; top: -0.6rem; left: calc(100% + 6px);
-            background: rgba(255,255,255,0.98); backdrop-filter: blur(16px); border-radius: 12px;
-            box-shadow: 0 16px 50px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08);
-            padding: 0.6rem 0; min-width: 260px; list-style: none; opacity: 0; pointer-events: none;
-            transform: translateX(-6px); transition: opacity 0.22s ease, transform 0.22s ease; z-index: 300;
+            position: absolute; top: -0.6rem; left: calc(100% + 14px);
+            background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 4px 20px rgba(0,0,0,0.05);
+            padding: 1rem 0.6rem; min-width: 280px; max-height: 450px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
+            transform: translateX(-10px); transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 300;
+            border: 1px solid rgba(0,0,0,0.04);
         }
+        .nav-links li.has-arrow .dropdown li.has-flyout:hover .flyout { opacity: 1; pointer-events: all; transform: translateX(0); }
+        
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
-            display: block; padding: 0.85rem 1.4rem; font-size: 0.78rem; font-weight: 500;
-            letter-spacing: 0.3px; text-transform: none; color: #333; line-height: 1.45;
+            display: block; padding: 0.9rem 1.4rem; font-size: 0.82rem; font-weight: 500;
+            letter-spacing: 0.2px; text-transform: none; color: #444; line-height: 1.45;
+            border-radius: 8px; margin: 0.1rem 0.4rem;
         }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover { color: var(--gold); background: rgba(0,0,0,0.03); padding-left: 1.6rem; }
 
         .nav-btn {
             font-family: var(--font-b); font-size: 0.7rem; font-weight: 700;
@@ -252,7 +265,9 @@
 
     <!-- NAV -->
     <nav class="nav">
-        <a href="index.html" class="nav-logo">Team <span>OAK</span></a>
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png.png" alt="Team OAK Logo" style="height: 80px; width: auto;">
+        </a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -349,25 +364,37 @@
         }, { threshold: 0.08 });
         document.querySelectorAll('.fu').forEach(el => io.observe(el));
 
-        // Dropdown/Flyout sticky behavior
+        // Sticky Navigation Toggle
         document.querySelectorAll('.has-arrow, .has-flyout').forEach(function(li) {
+            var trigger = li.querySelector(':scope > a');
+            if (trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var isOpen = li.classList.contains('open');
+                    
+                    // Close other menus at the same level
+                    var siblings = li.parentElement.querySelectorAll(':scope > .open');
+                    siblings.forEach(function(s) { if (s !== li) s.classList.remove('open'); });
+                    
+                    li.classList.toggle('open', !isOpen);
+                });
+            }
+            
+            // Still allow hover for a premium feel, but click "locks" it
             li.addEventListener('mouseenter', function() {
-                li.classList.add('open');
-            });
-            li.addEventListener('mouseleave', function() {
-                li.classList.remove('open');
+                if (!li.classList.contains('open')) {
+                    var siblings = li.parentElement.querySelectorAll(':scope > .open');
+                    siblings.forEach(function(s) { s.classList.remove('open'); });
+                    li.classList.add('open');
+                }
             });
         });
 
-        // Close when clicking outside
+        // Close all when clicking outside
         document.addEventListener('click', function(e) {
-            if (!e.target.closest('.has-arrow')) {
-                document.querySelectorAll('.has-arrow.open').forEach(function(el) {
-                    el.classList.remove('open');
-                });
-            }
-            if (!e.target.closest('.has-flyout')) {
-                document.querySelectorAll('.has-flyout.open').forEach(function(el) {
+            if (!e.target.closest('.has-arrow') && !e.target.closest('.has-flyout')) {
+                document.querySelectorAll('.has-arrow.open, .has-flyout.open').forEach(function(el) {
                     el.classList.remove('open');
                 });
             }
