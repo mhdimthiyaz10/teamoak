@@ -39,7 +39,37 @@
                     <ul class="hero-nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">What we do</a></li>
+                        <li class="has-arrow"><a href="#">What we do</a>
+                            <ul class="dropdown">
+                                <li class="has-flyout"><a href="#">Trading</a>
+                                    <ul class="flyout">
+                                        <li><a href="tobacco-trading.html">Team Oak Tobacco Wholesale Trading</a></li>
+                                        <li><a href="food-stuff-trading.html">Team Oak Food Stuff Trading Company</a></li>
+                                        <li><a href="kizhisseri-jewellers.html">Kizhissery Jewellers</a></li>
+                                        <li><a href="general-trading.html">Team Oak General Trading Company</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-flyout"><a href="#">Services</a>
+                                    <ul class="flyout">
+                                        <li><a href="best-vibes-contracting.html">Best Vibes General Contracting LLC</a></li>
+                                        <li><a href="#">Team Oak Hotels &amp; Apartments</a></li>
+                                        <li><a href="#">Team Oak Resort Camps &amp; Trails</a></li>
+                                        <li><a href="#">Mamichi Apartments</a></li>
+                                        <li><a href="#">Oak Architects &amp; Interiors</a></li>
+                                        <li><a href="#">Bubbl</a></li>
+                                        <li><a href="#">Team Oak Transport &amp; Heavy Equipment Rental LLC</a></li>
+                                        <li><a href="#">Team Oak Safety &amp; Fire Fighting Equipment LLC</a></li>
+                                        <li><a href="#">Cafein</a></li>
+                                        <li><a href="#">Pharma Fleet</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-flyout"><a href="#">Industrial</a>
+                                    <ul class="flyout">
+                                        <li><a href="#">Sugar packing Unit</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#">Media</a></li>
                         <li><a href="#">Career</a></li>
                     </ul>
@@ -324,6 +354,64 @@
         <script src="magic-rings.js"></script>
         <script src="script.js"></script>
         <script src="portal.js"></script>
+
+        <script>
+            // Stick open on hover, close on outside click
+            document.querySelectorAll('.has-arrow').forEach(function(li) {
+                li.addEventListener('mouseenter', function() {
+                    document.querySelectorAll('.has-arrow.open').forEach(function(el) {
+                        if (el !== li) el.classList.remove('open');
+                    });
+                    li.classList.add('open');
+                });
+                // clicking the link also toggles
+                var trigger = li.querySelector(':scope > a');
+                if (trigger) {
+                    trigger.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var isOpen = li.classList.contains('open');
+                        document.querySelectorAll('.has-arrow.open').forEach(function(el) {
+                            el.classList.remove('open');
+                        });
+                        if (!isOpen) li.classList.add('open');
+                    });
+                }
+            });
+            // Close when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.has-arrow')) {
+                    document.querySelectorAll('.has-arrow.open').forEach(function(el) {
+                        el.classList.remove('open');
+                    });
+                }
+                if (!e.target.closest('.has-flyout')) {
+                    document.querySelectorAll('.has-flyout.open').forEach(function(el) {
+                        el.classList.remove('open');
+                    });
+                }
+            });
+
+            // Stick flyout open on hover
+            document.querySelectorAll('.has-flyout').forEach(function(li) {
+                li.addEventListener('mouseenter', function() {
+                    document.querySelectorAll('.has-flyout.open').forEach(function(el) {
+                        if (el !== li) el.classList.remove('open');
+                    });
+                    li.classList.add('open');
+                });
+                var trigger = li.querySelector(':scope > a');
+                if (trigger) {
+                    trigger.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var isOpen = li.classList.contains('open');
+                        document.querySelectorAll('.has-flyout.open').forEach(function(el) {
+                            el.classList.remove('open');
+                        });
+                        if (!isOpen) li.classList.add('open');
+                    });
+                }
+            });
+        </script>
     </body>
 
 </html>

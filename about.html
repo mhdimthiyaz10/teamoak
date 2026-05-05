@@ -3,167 +3,1087 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Team OAK. A detailed overview of our history, mission, and what we do globally.">
+    <meta name="description" content="About Team OAK — A dynamic global conglomerate excelling in trading, hospitality, and construction since 2000.">
     <title>About Us | Team OAK</title>
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Specific Styles for the dark About Page to ensure black backgrounds */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --gold: #c9a84c;
+            --black: #0d0d0d;
+            --white: #ffffff;
+            --off-white: #f8f7f4;
+            --light: #eeece8;
+            --mid: #999;
+            --dark: #2a2a2a;
+            --font-h: 'Outfit', sans-serif;
+            --font-b: 'Plus Jakarta Sans', sans-serif;
+            --ease: cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
         body {
-            background-color: var(--bg-dark);
-            color: var(--text-light);
+            font-family: var(--font-b);
+            background: var(--white);
+            color: var(--black);
             overflow-x: hidden;
         }
 
-        .about-page-hero {
+        /* ═══════════════════════════
+           NAV
+        ═══════════════════════════ */
+        .nav {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+            padding: 1.3rem 5%;
+            background: rgba(255,255,255,0.94);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0,0,0,0.07);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .nav-logo {
+            font-family: var(--font-h); font-size: 1.3rem; font-weight: 800;
+            letter-spacing: 3px; text-transform: uppercase; color: var(--black);
+            text-decoration: none;
+        }
+        .nav-logo span { color: var(--gold); }
+        .nav-links { list-style: none; display: flex; gap: 2.8rem; }
+        .nav-links a {
+            font-size: 0.72rem; font-weight: 600; letter-spacing: 2px;
+            text-transform: uppercase; color: #666; text-decoration: none;
+            transition: color 0.25s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--black); }
+        .nav-links a.active { border-bottom: 2px solid var(--black); padding-bottom: 4px; }
+
+        /* About nav: has-arrow + dropdown */
+        .nav-links li.has-arrow { position: relative; }
+        .nav-links li.has-arrow > a {
+            display: inline-flex; align-items: center; gap: 5px;
+        }
+        .nav-links li.has-arrow > a::after {
+            content: '';
+            display: inline-block;
+            width: 6px; height: 6px;
+            border-right: 1.5px solid currentColor;
+            border-bottom: 1.5px solid currentColor;
+            transform: rotate(45deg) translateY(-2px);
+            transition: transform 0.25s;
+            flex-shrink: 0;
+        }
+        .nav-links li.has-arrow:hover > a::after,
+        .nav-links li.has-arrow.open > a::after {
+            transform: rotate(225deg) translateY(2px);
+        }
+
+        /* Dropdown panel */
+        .nav-links li.has-arrow .dropdown {
+            position: absolute;
+            top: calc(100% + 14px);
+            left: 50%;
+            transform: translateX(-50%) translateY(-6px);
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 12px;
+            box-shadow: 0 16px 50px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08);
+            padding: 0.5rem 0;
+            min-width: 210px;
+            list-style: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.22s ease, transform 0.22s ease;
+            z-index: 200;
+        }
+        .nav-links li.has-arrow:hover .dropdown,
+        .nav-links li.has-arrow.open .dropdown {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateX(-50%) translateY(0);
+        }
+        .nav-links li.has-arrow .dropdown::before {
+            content: '';
+            position: absolute;
+            top: -6px; left: 50%;
+            transform: translateX(-50%);
+            width: 12px; height: 12px;
+            background: rgba(255,255,255,0.98);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+        .nav-links li.has-arrow .dropdown li a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.75rem 1.4rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #333;
+            text-decoration: none;
+            border-bottom: none;
+            transition: color 0.18s, background 0.18s;
+            border-radius: 6px;
+            margin: 0 0.4rem;
+        }
+        .nav-links li.has-arrow .dropdown li a::after {
+            content: '';
+            display: inline-block;
+            width: 5px; height: 5px;
+            border-right: 1.5px solid currentColor;
+            border-bottom: 1.5px solid currentColor;
+            transform: rotate(-45deg);
+            position: static;
+            background: none;
+            box-shadow: none;
+            flex-shrink: 0;
+            transition: transform 0.18s;
+        }
+        .nav-links li.has-arrow .dropdown li a:hover {
+            color: #000;
+            background: rgba(0,0,0,0.05);
+        }
+        .nav-links li.has-arrow .dropdown li a:hover::after {
+            transform: rotate(-45deg) translate(2px,-2px);
+        }
+
+        /* ── Flyout sub-menu for Trading ── */
+        .nav-links li.has-arrow .dropdown li.has-flyout {
             position: relative;
-            padding: 15rem 0 10rem 0;
-            background: linear-gradient(180deg, #050505 0%, var(--bg-charcoal) 100%);
-            text-align: center;
         }
-
-        .about-page-hero h1 {
-            font-size: 4rem;
-            color: var(--accent-gold);
-            margin-bottom: 1.5rem;
+        .nav-links li.has-arrow .dropdown li.has-flyout > a::after {
+            transform: rotate(-45deg);
         }
+        .nav-links li.has-arrow .dropdown li.has-flyout > a:hover::after {
+            transform: rotate(-45deg) translate(2px, -2px);
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
+            position: absolute;
+            top: -0.6rem;
+            left: calc(100% + 6px);
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 12px;
+            box-shadow: 0 16px 50px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08);
+            padding: 0.6rem 0;
+            min-width: 260px;
+            list-style: none;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateX(-6px);
+            transition: opacity 0.22s ease, transform 0.22s ease;
+            z-index: 300;
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout:hover .flyout,
+        .nav-links li.has-arrow .dropdown li.has-flyout.open .flyout {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateX(0);
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
+            display: block;
+            padding: 0.85rem 1.4rem;
+            font-size: 0.78rem;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            text-transform: none;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 0 0.4rem;
+            transition: color 0.18s, background 0.18s;
+            white-space: normal;
+            line-height: 1.45;
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover {
+            color: #000;
+            background: rgba(0,0,0,0.05);
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a::after {
+            display: none;
+        }
+        .nav-btn {
+            font-family: var(--font-b); font-size: 0.7rem; font-weight: 700;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--black); border: 1.5px solid var(--black);
+            padding: 0.55rem 1.5rem; border-radius: 2px; text-decoration: none;
+            transition: all 0.25s;
+        }
+        .nav-btn:hover { background: var(--black); color: var(--white); }
 
-        .about-page-hero p {
+        /* ═══════════════════════════
+           HERO — faded image bg
+        ═══════════════════════════ */
+        .hero {
+            position: relative;
+            min-height: 92vh;
+            display: flex; align-items: flex-end;
+            padding: 0 5% 8rem;
+            overflow: hidden;
+        }
+        .hero-bg {
+            position: absolute; inset: 0;
+            background: url('assets/about-bg.png') center/cover no-repeat;
+            z-index: 0;
+        }
+        /* Layered fade: white at bottom-left, very light overlay overall */
+        .hero-bg::after {
+            content: '';
+            position: absolute; inset: 0;
+            background:
+                linear-gradient(120deg, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0.28) 60%, rgba(255,255,255,0.10) 100%),
+                linear-gradient(to top, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 45%);
+        }
+        .hero-content {
+            position: relative; z-index: 1;
             max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.35rem;
-            line-height: 1.8;
-            color: #d1d1d1;
+        }
+        .hero-eyebrow {
+            display: inline-block;
+            font-size: 0.68rem; font-weight: 700; letter-spacing: 4px;
+            text-transform: uppercase; color: var(--gold);
+            margin-bottom: 1.4rem;
+        }
+        .hero h1 {
+            font-family: var(--font-h);
+            font-size: clamp(2.8rem, 5.5vw, 5rem);
+            font-weight: 800; line-height: 1.05;
+            color: var(--black); letter-spacing: -0.5px;
+        }
+        .hero h1 em { font-style: normal; color: var(--gold); }
+        .hero-rule {
+            width: 50px; height: 2px; background: var(--gold);
+            margin: 2.2rem 0;
+        }
+        .hero-tagline {
+            font-size: 1rem; color: #555; line-height: 1.75;
+            max-width: 520px; font-weight: 400;
         }
 
-        .content-section {
-            padding: 8rem 0;
-            background-color: var(--bg-dark);
+        /* ═══════════════════════════
+           METRICS BAR
+        ═══════════════════════════ */
+        .metrics {
+            background: var(--black);
+            display: grid; grid-template-columns: repeat(4,1fr);
+        }
+        .metric-item {
+            padding: 3.5rem 2rem; text-align: center;
+            border-right: 1px solid rgba(255,255,255,0.06);
+        }
+        .metric-item:last-child { border-right: none; }
+        .metric-num {
+            font-family: var(--font-h); font-size: 2.8rem; font-weight: 800;
+            color: var(--gold); line-height: 1;
+        }
+        .metric-lbl {
+            font-size: 0.65rem; font-weight: 600; letter-spacing: 2.5px;
+            text-transform: uppercase; color: rgba(255,255,255,0.35);
+            margin-top: 0.6rem;
         }
 
-        .content-section.alt {
-            background-color: var(--bg-charcoal);
+        /* ═══════════════════════════
+           SECTION UTILITIES
+        ═══════════════════════════ */
+        .sec { padding: 8rem 5%; }
+        .sec.off { background: var(--off-white); }
+        .wrap { max-width: 1160px; margin: 0 auto; }
+        .eyebrow {
+            display: block; font-size: 0.68rem; font-weight: 700;
+            letter-spacing: 4px; text-transform: uppercase; color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        .sec-title {
+            font-family: var(--font-h); font-size: clamp(1.9rem,3.5vw,2.8rem);
+            font-weight: 700; color: var(--black); line-height: 1.15;
+            margin-bottom: 1.2rem;
+        }
+        .sec-body {
+            font-size: 1rem; color: #666; line-height: 1.9;
+            max-width: 640px;
         }
 
-        .content-block {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .content-block h2 {
-            font-size: 2.8rem;
-            margin-bottom: 2rem;
-            color: var(--text-light);
-            text-align: center;
-        }
-
-        .content-block p {
-            font-size: 1.15rem;
-            line-height: 1.9;
-            margin-bottom: 2rem;
-            color: #b0b0b0;
-            text-align: left;
-        }
-
-        /* Dark What We Do grid */
-        .dark-wwd-grid {
+        /* ═══════════════════════════
+           WHO WE ARE  (main content)
+        ═══════════════════════════ */
+        .wwa-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 7rem;
+            align-items: start;
+        }
+        .wwa-left {}
+        .wwa-body {
+            font-size: 1.05rem; color: #555; line-height: 1.95;
+            margin-top: 2rem;
+        }
+        .wwa-body p { margin-bottom: 1.6rem; }
+        .wwa-body p:last-child { margin-bottom: 0; }
+
+        .wwa-right { display: flex; flex-direction: column; gap: 1.5rem; }
+
+        .pillar {
+            background: var(--white);
+            border: 1px solid var(--light);
+            border-radius: 3px;
+            padding: 2rem 2.2rem;
+            display: flex; gap: 1.4rem; align-items: flex-start;
+            transition: box-shadow 0.35s var(--ease), transform 0.35s var(--ease);
+            position: relative; overflow: hidden;
+        }
+        .pillar::before {
+            content: ''; position: absolute;
+            left: 0; top: 0; width: 3px; height: 100%;
+            background: var(--gold);
+            transform: scaleY(0); transform-origin: bottom;
+            transition: transform 0.35s var(--ease);
+        }
+        .pillar:hover { transform: translateX(4px); box-shadow: 0 8px 30px rgba(0,0,0,0.07); }
+        .pillar:hover::before { transform: scaleY(1); }
+        .pillar-icon {
+            width: 42px; height: 42px; flex-shrink: 0;
+            background: var(--off-white); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem;
+        }
+        .pillar-text h3 {
+            font-family: var(--font-h); font-size: 1rem; font-weight: 700;
+            color: var(--black); margin-bottom: 0.4rem;
+        }
+        .pillar-text p {
+            font-size: 0.88rem; color: var(--mid); line-height: 1.65;
         }
 
-        .dark-wwd-card {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 15px;
-            padding: 3rem;
+        /* ═══════════════════════════
+           VALUES
+        ═══════════════════════════ */
+        .values-sec {
+            padding: 8rem 5%;
+            background: var(--white);
+        }
+        .values-wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .values-title-center {
             text-align: center;
-            transition: var(--transition-smooth);
+            font-family: var(--font-h);
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: var(--black);
+            margin-bottom: 4rem;
+            letter-spacing: -0.5px;
+        }
+        .val-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .val-row {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        .val-row h3 {
+            font-family: var(--font-b);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--black);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .val-desc {
+            background: #f8f8f8;
+            padding: 2.2rem 3rem;
+            border-radius: 24px;
+            font-size: 1.05rem;
+            color: #444;
+            line-height: 1.6;
+            transition: background 0.3s;
+        }
+        .val-desc:hover {
+            background: #f0f0f0;
         }
 
-        .dark-wwd-card:hover {
-            border-color: var(--accent-gold);
-            transform: translateY(-5px);
+        /* ═══════════════════════════
+           GLOBAL PRESENCE
+        ═══════════════════════════ */
+        .global-sec {
+            background: var(--black); padding: 7rem 5%;
+        }
+        .global-wrap { max-width: 1160px; margin: 0 auto; }
+        .global-head {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 3rem; align-items: end; margin-bottom: 4rem;
+        }
+        .global-head .sec-title { color: var(--white); }
+        .global-head .sec-body { color: rgba(255,255,255,0.4); }
+        .countries {
+            display: grid; grid-template-columns: repeat(5,1fr); gap: 1rem;
+        }
+        .country {
+            border: 1px solid rgba(255,255,255,0.07);
+            padding: 2.2rem 1rem; text-align: center;
+            border-radius: 3px;
+            transition: border-color 0.3s, background 0.3s, transform 0.3s;
+            cursor: default;
+        }
+        .country:hover {
+            border-color: rgba(201,168,76,0.5);
+            background: rgba(201,168,76,0.06);
+            transform: translateY(-4px);
+        }
+        .country-flag { font-size: 2.4rem; display: block; margin-bottom: 0.8rem; }
+        .country-name {
+            font-size: 0.75rem; font-weight: 600; letter-spacing: 1.5px;
+            text-transform: uppercase; color: rgba(255,255,255,0.5);
         }
 
-        .dark-wwd-card h3 {
-            font-size: 1.8rem;
-            color: var(--text-light);
+        /* ═══════════════════════════
+           CTA
+        ═══════════════════════════ */
+        .cta-sec {
+            padding: 7rem 5%; text-align: center;
+            background: var(--white);
+        }
+        .cta-sec h2 {
+            font-family: var(--font-h);
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            font-weight: 700; color: var(--black); margin-bottom: 1rem;
+        }
+        .cta-sec p {
+            font-size: 0.95rem; color: var(--mid);
+            max-width: 460px; margin: 0 auto 2.4rem; line-height: 1.8;
+        }
+        .btn-dark {
+            display: inline-block;
+            background: var(--black); color: var(--white);
+            padding: 0.9rem 2.6rem; border-radius: 2px;
+            font-size: 0.72rem; font-weight: 700; letter-spacing: 2px;
+            text-transform: uppercase; text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        .btn-dark:hover { background: var(--gold); color: var(--black); }
+
+        /* ═══════════════════════════
+           FOOTER
+        ═══════════════════════════ */
+        .footer {
+            background: #080808; padding: 5rem 5% 2.5rem;
+            border-top: 1px solid rgba(255,255,255,0.04);
+        }
+        .footer-inner { max-width: 1160px; margin: 0 auto; }
+        .footer-top {
+            display: grid; grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem; padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .f-logo {
+            font-family: var(--font-h); font-size: 1.2rem;
+            font-weight: 800; letter-spacing: 3px; color: var(--white);
+        }
+        .f-logo span { color: var(--gold); }
+        .f-tagline {
+            margin-top: 1rem; font-size: 0.85rem;
+            color: rgba(255,255,255,0.3); line-height: 1.7;
+        }
+        .f-col h4 {
+            font-size: 0.65rem; font-weight: 700; letter-spacing: 3px;
+            text-transform: uppercase; color: rgba(255,255,255,0.3);
             margin-bottom: 1.5rem;
         }
+        .f-col ul { list-style: none; }
+        .f-col li { margin-bottom: 0.7rem; }
+        .f-col a {
+            font-size: 0.83rem; color: rgba(255,255,255,0.35);
+            text-decoration: none; transition: color 0.25s;
+        }
+        .f-col a:hover { color: var(--white); }
+        .f-col p { font-size: 0.83rem; color: rgba(255,255,255,0.35); margin-bottom: 0.7rem; }
+        .footer-bottom {
+            text-align: center; padding-top: 2rem;
+            font-size: 0.75rem; color: rgba(255,255,255,0.15);
+        }
 
-        .dark-wwd-card p {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            text-align: center;
-            margin: 0;
+        /* ═══════════════════════════
+           ANIMATIONS
+        ═══════════════════════════ */
+        .fu { opacity: 0; transform: translateY(28px); transition: opacity 0.85s var(--ease), transform 0.85s var(--ease); }
+        .fu.in { opacity: 1; transform: none; }
+        .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
+        .d3 { transition-delay: 0.3s; } .d4 { transition-delay: 0.4s; }
+        .d5 { transition-delay: 0.5s; }
+
+        /* ═══════════════════════════
+           JOURNEY TIMELINE
+        ═══════════════════════════ */
+        .journey-sec {
+            padding: 8rem 5%;
+            background: var(--white);
+        }
+        .journey-header {
+            max-width: 1160px; margin: 0 auto 5rem;
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 3rem; align-items: end;
+        }
+        /* vertical spine */
+        .timeline {
+            max-width: 1160px; margin: 0 auto;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%; top: 0; bottom: 0;
+            width: 1px;
+            background: var(--light);
+            transform: translateX(-50%);
+        }
+        .tl-item {
+            display: grid;
+            grid-template-columns: 1fr 60px 1fr;
+            gap: 0;
+            margin-bottom: 5rem;
+            align-items: start;
+        }
+        .tl-item:last-child { margin-bottom: 0; }
+        /* even items: text right, dot center, empty left */
+        .tl-item.right .tl-left  { order: 1; }
+        .tl-item.right .tl-dot   { order: 2; }
+        .tl-item.right .tl-right { order: 3; }
+        /* odd items: empty right, dot center, text left */
+        .tl-item.left  .tl-left  { order: 3; }
+        .tl-item.left  .tl-dot   { order: 2; }
+        .tl-item.left  .tl-right { order: 1; }
+
+        .tl-left, .tl-right { padding: 0 2.5rem; }
+        .tl-left  { text-align: right; }
+        .tl-right { text-align: left; }
+        /* on left-aligned card, swap text align */
+        .tl-item.left .tl-left  { text-align: left; }
+        .tl-item.left .tl-right { text-align: right; }
+
+        .tl-dot {
+            display: flex; flex-direction: column;
+            align-items: center; position: relative; z-index: 1;
+        }
+        .tl-circle {
+            width: 52px; height: 52px; border-radius: 50%;
+            background: var(--black);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .tl-circle svg { width: 20px; height: 20px; fill: none; stroke: var(--gold); stroke-width: 1.8; }
+
+        .tl-year {
+            font-family: var(--font-h); font-size: 1.8rem; font-weight: 800;
+            color: var(--black); margin-top: 0.6rem; line-height: 1;
+        }
+        .tl-tag {
+            display: inline-block;
+            font-size: 0.6rem; font-weight: 700; letter-spacing: 2.5px;
+            text-transform: uppercase; color: var(--gold);
+            margin-bottom: 0.7rem;
+        }
+        .tl-heading {
+            font-family: var(--font-h); font-size: 1.05rem; font-weight: 700;
+            color: var(--black); margin-bottom: 0.8rem; line-height: 1.3;
+        }
+        .tl-ventures { list-style: none; }
+        .tl-ventures li {
+            font-size: 0.88rem; color: #666; line-height: 1.7;
+            padding: 0.55rem 0;
+            border-bottom: 1px solid var(--light);
+        }
+        .tl-ventures li:last-child { border-bottom: none; }
+        .tl-ventures li strong { color: var(--black); font-weight: 600; }
+        .tl-ventures li .loc {
+            font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px;
+            text-transform: uppercase; color: var(--gold);
+            display: inline-block; margin-left: 0.3rem;
+        }
+
+        /* ═══════════════════════════
+           VISION & MISSION
+        ═══════════════════════════ */
+        .vm-sec {
+            padding: 4rem 5% 10rem;
+            background: var(--white);
+        }
+        .vm-grid {
+            max-width: 1160px; margin: 0 auto;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 6rem;
+        }
+        .vm-block {
+            position: relative;
+        }
+        .vm-label {
+            font-family: var(--font-h); font-size: clamp(2rem, 3.5vw, 2.8rem);
+            font-weight: 700; color: var(--black); line-height: 1.1;
+            margin-bottom: 2rem; display: block;
+            letter-spacing: -0.5px; text-transform: none;
+        }
+        .vm-text {
+            font-size: 1.1rem; color: #555; line-height: 1.9;
+        }
+
+        /* ═══════════════════════════
+           RESPONSIVE
+        ═══════════════════════════ */
+        @media (max-width: 1024px) {
+            .wwa-grid { grid-template-columns: 1fr; gap: 4rem; }
+            .global-head, .journey-header { grid-template-columns: 1fr; gap: 2rem; }
+            .vm-grid { grid-template-columns: repeat(2,1fr); }
+            .countries { grid-template-columns: repeat(3,1fr); }
+            .metrics { grid-template-columns: repeat(2,1fr); }
+            /* Timeline: collapse to single column */
+            .timeline::before { left: 26px; transform: none; }
+            .tl-item { grid-template-columns: 52px 1fr; gap: 0 1.5rem; }
+            .tl-item.right .tl-left, .tl-item.left .tl-right { display: none; }
+            .tl-item.right .tl-dot, .tl-item.left .tl-dot { order: 1 !important; }
+            .tl-item.right .tl-right, .tl-item.left .tl-left { order: 2 !important; text-align: left !important; padding: 0; }
+            .tl-left, .tl-right { padding: 0; }
+            .tl-dot { align-items: flex-start; }
+        }
+        @media (max-width: 768px) {
+            .val-row { grid-template-columns: 1fr; gap: 1rem; }
+            .val-desc { padding: 1.8rem; }
+            .nav-links, .nav-btn { display: none; }
+            .vm-grid { grid-template-columns: 1fr; }
+            .countries { grid-template-columns: repeat(2,1fr); }
+            .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
+            .hero h1 { font-size: 2.6rem; }
+            .hero { padding-bottom: 5rem; }
+            .tl-year { font-size: 1.4rem; }
+            .tl-circle { width: 42px; height: 42px; }
+            .timeline::before { left: 21px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar scrolled">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">Team <span>OAK</span></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html#companies">Companies</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <a href="index.html#contact" class="btn btn-nav">Get in Touch</a>
-        </div>
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">Team <span>OAK</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li class="has-arrow"><a href="index.html#about">What We Do</a>
+                <ul class="dropdown">
+                    <li class="has-flyout"><a href="#">Trading</a>
+                        <ul class="flyout">
+                            <li><a href="tobacco-trading.html">Team Oak Tobacco Wholesale Trading</a></li>
+                            <li><a href="food-stuff-trading.html">Team Oak Food Stuff Trading Company</a></li>
+                            <li><a href="kizhisseri-jewellers.html">Kizhissery Jewellers</a></li>
+                            <li><a href="general-trading.html">Team Oak General Trading Company</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-flyout"><a href="#">Services</a>
+                        <ul class="flyout">
+                            <li><a href="best-vibes-contracting.html">Best Vibes General Contracting LLC</a></li>
+                            <li><a href="#">Team Oak Hotels &amp; Apartments</a></li>
+                            <li><a href="#">Team Oak Resort Camps &amp; Trails</a></li>
+                            <li><a href="#">Mamichi Apartments</a></li>
+                            <li><a href="#">Oak Architects &amp; Interiors</a></li>
+                            <li><a href="#">Bubbl</a></li>
+                            <li><a href="#">Team Oak Transport &amp; Heavy Equipment Rental LLC</a></li>
+                            <li><a href="#">Team Oak Safety &amp; Fire Fighting Equipment LLC</a></li>
+                            <li><a href="#">Cafein</a></li>
+                            <li><a href="#">Pharma Fleet</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-flyout"><a href="#">Industrial</a>
+                        <ul class="flyout">
+                            <li><a href="#">Sugar packing Unit</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Career</a></li>
+        </ul>
+        <a href="index.html#contact" class="nav-btn">Contact Us</a>
     </nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-logo">
-                <h2>Team <span>OAK</span></h2>
-                <p>Building Excellence Across Industries</p>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-eyebrow fu">Who We Are</span>
+            <h1 class="fu d1">Building Excellence<br>Across <em>Every Horizon</em></h1>
+            <div class="hero-rule fu d2"></div>
+            <p class="hero-tagline fu d3">A dynamic and diversified conglomerate excelling in trading, hospitality, and construction — operating across GCC countries and India since 2000.</p>
+        </div>
+    </section>
+
+    <!-- METRICS -->
+    <div class="metrics">
+        <div class="metric-item fu">
+            <div class="metric-num">2000</div>
+            <div class="metric-lbl">Founded</div>
+        </div>
+        <div class="metric-item fu d1">
+            <div class="metric-num">6+</div>
+            <div class="metric-lbl">Countries</div>
+        </div>
+        <div class="metric-item fu d2">
+            <div class="metric-num">3</div>
+            <div class="metric-lbl">Core Sectors</div>
+        </div>
+        <div class="metric-item fu d3">
+            <div class="metric-num">500+</div>
+            <div class="metric-lbl">Professionals</div>
+        </div>
+    </div>
+
+    <!-- WHO WE ARE -->
+    <section class="sec">
+        <div class="wrap wwa-grid">
+
+            <!-- Left: body copy -->
+            <div class="wwa-left">
+                <span class="eyebrow fu">Our Story</span>
+                <h2 class="sec-title fu d1">A Legacy of<br>Integrity &amp; Innovation</h2>
+                <div class="wwa-body fu d2">
+                    <p>Since 2000, our group of companies has thrived as a dynamic and diversified conglomerate, excelling in trading, hospitality, and construction sectors. Operating across GCC countries and India, we've established a robust presence marked by excellence, innovation, and unwavering integrity.</p>
+                    <p>In trading, we offer a diverse range of products including electronics, consumer goods, and industrial equipment, ensuring quality and reliability. Our hospitality sector boasts luxurious hotels and memorable dining experiences, reflecting our commitment to exceptional service.</p>
+                    <p>Within construction, we pioneer sustainable and cutting-edge projects, reshaping skylines and communities. Embracing sustainability and architectural brilliance, we've become industry leaders, fostering global partnerships and a reputation for excellence.</p>
+                    <p>Each venture embodies our dedication to innovation, integrity, and a vision for a brighter future.</p>
+                </div>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="index.html#companies">Companies</a></li>
-                </ul>
+
+            <!-- Right: sector pillars -->
+            <div class="wwa-right">
+                <div class="pillar fu d1">
+                    <div class="pillar-icon">🏪</div>
+                    <div class="pillar-text">
+                        <h3>Trading</h3>
+                        <p>Electronics, consumer goods, and industrial equipment — delivered with uncompromising quality and reliability across GCC and Indian markets.</p>
+                    </div>
+                </div>
+                <div class="pillar fu d2">
+                    <div class="pillar-icon">🏨</div>
+                    <div class="pillar-text">
+                        <h3>Hospitality</h3>
+                        <p>Luxurious hotels and memorable dining experiences that set the benchmark for service excellence and guest satisfaction.</p>
+                    </div>
+                </div>
+                <div class="pillar fu d3">
+                    <div class="pillar-icon">🏗️</div>
+                    <div class="pillar-text">
+                        <h3>Construction</h3>
+                        <p>Sustainable, cutting-edge projects that reshape skylines and communities — built on architectural brilliance and long-term vision.</p>
+                    </div>
+                </div>
+                <div class="pillar fu d4">
+                    <div class="pillar-icon">🌐</div>
+                    <div class="pillar-text">
+                        <h3>Global Partnerships</h3>
+                        <p>Fostering strategic alliances across borders, strengthening our global reach and reinforcing a reputation built on excellence.</p>
+                    </div>
+                </div>
             </div>
-            <div class="footer-contact">
-                <h4>Contact Info</h4>
-                <p>123 Corporate Blvd, Suite 800</p>
-                <p>contact@teamoak.com</p>
-                <p>+1 (800) 123-4567</p>
+
+        </div>
+    </section>
+
+    <!-- OUR SUCCESS JOURNEY -->
+    <section class="journey-sec">
+        <div class="journey-header">
+            <div>
+                <span class="eyebrow fu">Milestones</span>
+                <h2 class="sec-title fu d1">Our Success<br>Journey</h2>
+            </div>
+            <p class="sec-body fu d2">From a single venture in 2000 to a diversified global conglomerate — every milestone reflects our commitment to growth, integrity, and bold ambition.</p>
+        </div>
+
+        <div class="timeline">
+
+            <!-- 2000 -->
+            <div class="tl-item right fu">
+                <div class="tl-left"></div>
+                <div class="tl-dot">
+                    <div class="tl-circle"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+                    <div class="tl-year">2000</div>
+                </div>
+                <div class="tl-right">
+                    <span class="tl-tag">Foundation &amp; Initial Ventures</span>
+                    <h3 class="tl-heading">Where It All Began</h3>
+                    <ul class="tl-ventures">
+                        <li><strong>Kizhisseri Jewellers</strong><span class="loc">India</span> — Established marking our entry into the jewelry industry with a focus on quality and craftsmanship.</li>
+                        <li><strong>Tobacco Wholesales</strong><span class="loc">Saudi Arabia</span> — Launched, expanding into the wholesale distribution of tobacco products.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2015 -->
+            <div class="tl-item left fu d1">
+                <div class="tl-left">
+                    <span class="tl-tag">Expanding Horizons</span>
+                    <h3 class="tl-heading">Diversifying Across Sectors</h3>
+                    <ul class="tl-ventures">
+                        <li><strong>Oak Architects &amp; Interiors</strong><span class="loc">India</span> — Founded, bringing innovative design and architectural solutions to the market.</li>
+                        <li><strong>Mamichi Apartments</strong><span class="loc">India</span> — Introduced, offering high-quality residential apartment solutions.</li>
+                        <li><strong>Oak Camps &amp; Trails</strong><span class="loc">India</span> — Created to offer unique adventure tourism experiences, blending nature and comfort.</li>
+                    </ul>
+                </div>
+                <div class="tl-dot">
+                    <div class="tl-circle"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+                    <div class="tl-year">2015</div>
+                </div>
+                <div class="tl-right"></div>
+            </div>
+
+            <!-- 2020 -->
+            <div class="tl-item right fu d1">
+                <div class="tl-left"></div>
+                <div class="tl-dot">
+                    <div class="tl-circle"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+                    <div class="tl-year">2020</div>
+                </div>
+                <div class="tl-right">
+                    <span class="tl-tag">Growth &amp; Diversification</span>
+                    <h3 class="tl-heading">Strengthening the Portfolio</h3>
+                    <ul class="tl-ventures">
+                        <li><strong>Food Stuff Trading</strong><span class="loc">Saudi Arabia</span> — Started, diversifying our portfolio to include the trading of food products, catering to a growing market.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2021 A -->
+            <div class="tl-item left fu d2">
+                <div class="tl-left">
+                    <span class="tl-tag">Formation of Team OAK</span>
+                    <h3 class="tl-heading">Unifying Under One Banner</h3>
+                    <ul class="tl-ventures">
+                        <li><strong>Team OAK</strong> — We consolidated our diverse ventures under the Team OAK banner, unifying our various business units.</li>
+                        <li><strong>Bestvibes General Contracting LLC</strong><span class="loc">UAE</span> — Entered the UAE market with a focus on general contracting, offering construction and contracting services.</li>
+                    </ul>
+                </div>
+                <div class="tl-dot">
+                    <div class="tl-circle"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+                    <div class="tl-year">2021</div>
+                </div>
+                <div class="tl-right"></div>
+            </div>
+
+            <!-- 2021 B -->
+            <div class="tl-item right fu d2">
+                <div class="tl-left"></div>
+                <div class="tl-dot">
+                    <div class="tl-circle"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+                    <div class="tl-year">2021</div>
+                </div>
+                <div class="tl-right">
+                    <span class="tl-tag">Hospitality Expansion</span>
+                    <h3 class="tl-heading">Entering the Hotel Space</h3>
+                    <ul class="tl-ventures">
+                        <li><strong>Team OAK Hotels</strong> — Launched to provide exceptional hospitality experiences and expand our footprint in the hospitality industry.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2024 -->
+            <div class="tl-item left fu d3">
+                <div class="tl-left">
+                    <span class="tl-tag">New Horizons &amp; Innovation</span>
+                    <h3 class="tl-heading">Pushing Into New Markets</h3>
+                    <ul class="tl-ventures">
+                        <li><strong>Bubble Bubble Tea Drinks</strong><span class="loc">UK</span> — Entered the UK market, introducing a refreshing new brand of bubble tea drinks.</li>
+                        <li><strong>Team OAK General Trading</strong><span class="loc">Saudi Arabia</span> — Initiated as a building material trading company, expanding our trading operations and product offerings.</li>
+                    </ul>
+                </div>
+                <div class="tl-dot">
+                    <div class="tl-circle"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+                    <div class="tl-year">2024</div>
+                </div>
+                <div class="tl-right"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section class="vm-sec">
+        <div class="vm-grid">
+            <div class="vm-block fu d1">
+                <h2 class="vm-label">Our Vision</h2>
+                <p class="vm-text">To be the globally recognized benchmark for excellence and sustainable growth, seamlessly integrating diverse industries to build a legacy of innovation, trust, and enduring impact across every horizon.</p>
+            </div>
+            <div class="vm-block fu d2">
+                <h2 class="vm-label">Our Mission</h2>
+                <p class="vm-text">To relentlessly pursue perfection across trading, hospitality, and construction by delivering uncompromising quality, fostering enduring global partnerships, and empowering our people to create extraordinary value.</p>
             </div>
         </div>
-        <div class="footer-bottom text-center">
-            <p>&copy; 2026 Team OAK. All Rights Reserved.</p>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values-sec" id="core-values">
+        <div class="values-wrap">
+            <h2 class="values-title-center fu">Core Values</h2>
+            
+            <div class="val-list">
+                <div class="val-row fu d1">
+                    <h3>INTEGRITY</h3>
+                    <div class="val-desc">
+                        We conduct our business with the highest standards of honesty, professionalism, and ethical behavior. We value transparency, accountability, and maintaining the trust of our stakeholders.
+                    </div>
+                </div>
+                
+                <div class="val-row fu d2">
+                    <h3>SUSTAINABILITY</h3>
+                    <div class="val-desc">
+                        We are dedicated to promoting sustainability in all aspects of our operations. We place importance on environmentally responsible practices, resource efficiency, and reducing our carbon footprint. Additionally, we support the communities we operate in by investing in social initiatives, promoting diversity and inclusion, and being responsible corporate citizens. We believe in leaving a positive impact for future generations.
+                    </div>
+                </div>
+                
+                <div class="val-row fu d3">
+                    <h3>EXCELLENCE</h3>
+                    <div class="val-desc">
+                        We are committed to delivering excellence in every aspect of our business. We aim for superior quality, precision, and attention to detail in our trading, construction, and hospitality services. Through continuous improvement, innovation, and a customer-centric approach, we strive to exceed expectations and set new industry standards.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL PRESENCE -->
+    <section class="global-sec">
+        <div class="global-wrap">
+            <div class="global-head">
+                <div>
+                    <span class="eyebrow fu">Our Footprint</span>
+                    <h2 class="sec-title fu d1">Global Presence,<br>Local Commitment</h2>
+                </div>
+                <p class="sec-body fu d2">From the Gulf to South Asia and beyond — Team OAK operates with the precision of a local business and the reach of a global enterprise.</p>
+            </div>
+            <div class="countries">
+                <div class="country fu d1">
+                    <span class="country-flag">🇮🇳</span>
+                    <div class="country-name">India</div>
+                </div>
+                <div class="country fu d2">
+                    <span class="country-flag">🇦🇪</span>
+                    <div class="country-name">UAE</div>
+                </div>
+                <div class="country fu d3">
+                    <span class="country-flag">🇴🇲</span>
+                    <div class="country-name">Oman</div>
+                </div>
+                <div class="country fu d4">
+                    <span class="country-flag">🇸🇦</span>
+                    <div class="country-name">Saudi Arabia</div>
+                </div>
+                <div class="country fu d5">
+                    <span class="country-flag">🇬🇧</span>
+                    <div class="country-name">United Kingdom</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-sec">
+        <h2 class="fu">Ready to Build Together?</h2>
+        <p class="fu d1">Whether you're a partner, investor, or client — connect with Team OAK and discover what we can create together.</p>
+        <a href="index.html#contact" class="btn-dark fu d2">Get in Touch</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <div class="f-logo">Team <span>OAK</span></div>
+                    <p class="f-tagline">Building excellence across industries and borders since 2000. A global conglomerate driven by integrity, innovation, and vision.</p>
+                </div>
+                <div class="f-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#companies">Companies</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h4>Contact</h4>
+                    <p>contact@teamoak.com</p>
+                    <p>+1 (800) 123-4567</p>
+                    <p>123 Corporate Blvd,<br>Suite 800</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Team OAK. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Simple script to handle animation visibility
-        document.addEventListener("DOMContentLoaded", () => {
-            const elements = document.querySelectorAll('.fade-up, .fade-in');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fu').forEach(el => io.observe(el));
+
+        // Stick open on hover, close on outside click
+        document.querySelectorAll('.has-arrow').forEach(function(li) {
+            li.addEventListener('mouseenter', function() {
+                document.querySelectorAll('.has-arrow.open').forEach(function(el) {
+                    if (el !== li) el.classList.remove('open');
                 });
-            }, { threshold: 0.1 });
-            elements.forEach(el => observer.observe(el));
+                li.classList.add('open');
+            });
+            // clicking the link also toggles
+            var trigger = li.querySelector(':scope > a');
+            if (trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var isOpen = li.classList.contains('open');
+                    document.querySelectorAll('.has-arrow.open').forEach(function(el) {
+                        el.classList.remove('open');
+                    });
+                    if (!isOpen) li.classList.add('open');
+                });
+            }
+        });
+        // Close when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.has-arrow')) {
+                document.querySelectorAll('.has-arrow.open').forEach(function(el) {
+                    el.classList.remove('open');
+                });
+            }
+            if (!e.target.closest('.has-flyout')) {
+                document.querySelectorAll('.has-flyout.open').forEach(function(el) {
+                    el.classList.remove('open');
+                });
+            }
+        });
+
+        // Stick flyout open on hover
+        document.querySelectorAll('.has-flyout').forEach(function(li) {
+            li.addEventListener('mouseenter', function() {
+                document.querySelectorAll('.has-flyout.open').forEach(function(el) {
+                    if (el !== li) el.classList.remove('open');
+                });
+                li.classList.add('open');
+            });
+            var trigger = li.querySelector(':scope > a');
+            if (trigger) {
+                trigger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var isOpen = li.classList.contains('open');
+                    document.querySelectorAll('.has-flyout.open').forEach(function(el) {
+                        el.classList.remove('open');
+                    });
+                    if (!isOpen) li.classList.add('open');
+                });
+            }
         });
     </script>
 </body>

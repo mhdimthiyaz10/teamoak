@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Team Oak Food Stuff Trading LLC — A leading food stuff and commodities trading company based in Saudi Arabia.">
+    <title>Food Stuff Trading | Team OAK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --gold: #c9a84c;
+            --black: #0d0d0d;
+            --white: #ffffff;
+            --off-white: #f8f7f4;
+            --light: #eeece8;
+            --mid: #999;
+            --dark: #2a2a2a;
+            --font-h: 'Playfair Display', serif;
+            --font-outfit: 'Outfit', sans-serif;
+            --font-b: 'Plus Jakarta Sans', sans-serif;
+            --ease: cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: var(--font-b);
+            background: var(--white);
+            color: var(--black);
+            overflow-x: hidden;
+        }
+
+        /* ═══════════════════════════
+           NAV
+        ═══════════════════════════ */
+        .nav {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+            padding: 1.3rem 5%;
+            background: rgba(255,255,255,0.94);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0,0,0,0.07);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .nav-logo {
+            font-family: var(--font-outfit); font-size: 1.3rem; font-weight: 800;
+            letter-spacing: 3px; text-transform: uppercase; color: var(--black);
+            text-decoration: none;
+        }
+        .nav-logo span { color: var(--gold); }
+        .nav-links { list-style: none; display: flex; gap: 2.8rem; }
+        .nav-links a {
+            font-size: 0.72rem; font-weight: 600; letter-spacing: 2px;
+            text-transform: uppercase; color: #666; text-decoration: none;
+            transition: color 0.25s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--black); }
+        .nav-links a.active { border-bottom: 2px solid var(--black); padding-bottom: 4px; }
+
+        /* Dropdown/Flyout Styling */
+        .nav-links li.has-arrow { position: relative; }
+        .nav-links li.has-arrow > a { display: inline-flex; align-items: center; gap: 5px; }
+        .nav-links li.has-arrow > a::after {
+            content: ''; display: inline-block; width: 6px; height: 6px;
+            border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+            transform: rotate(45deg) translateY(-2px); transition: transform 0.25s;
+            flex-shrink: 0;
+        }
+        .nav-links li.has-arrow.open > a::after, .nav-links li.has-arrow:hover > a::after { transform: rotate(225deg) translateY(2px); }
+
+        .nav-links li.has-arrow .dropdown {
+            position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
+            background: rgba(255,255,255,0.98); backdrop-filter: blur(16px); border-radius: 12px;
+            box-shadow: 0 16px 50px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08);
+            padding: 0.5rem 0; min-width: 210px; list-style: none; opacity: 0; pointer-events: none;
+            transition: opacity 0.22s ease, transform 0.22s ease; z-index: 200;
+        }
+        .nav-links li.has-arrow.open .dropdown, .nav-links li.has-arrow:hover .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+
+        .nav-links li.has-arrow .dropdown li a {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.75rem 1.4rem; font-size: 0.75rem; font-weight: 600;
+            letter-spacing: 1.5px; text-transform: uppercase; color: #333;
+            text-decoration: none; transition: color 0.18s, background 0.18s; border-radius: 6px; margin: 0 0.4rem;
+        }
+        .nav-links li.has-arrow .dropdown li a:hover { color: #000; background: rgba(0,0,0,0.05); }
+
+        /* Flyout sub-menu */
+        .nav-links li.has-arrow .dropdown li.has-flyout { position: relative; }
+        .nav-links li.has-arrow .dropdown li.has-flyout > a::after {
+            content: ''; display: inline-block; width: 5px; height: 5px;
+            border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+            transform: rotate(-45deg); transition: transform 0.18s;
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout.open .flyout, .nav-links li.has-arrow .dropdown li.has-flyout:hover .flyout {
+            opacity: 1; pointer-events: all; transform: translateX(0);
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
+            position: absolute; top: -0.6rem; left: calc(100% + 6px);
+            background: rgba(255,255,255,0.98); backdrop-filter: blur(16px); border-radius: 12px;
+            box-shadow: 0 16px 50px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.08);
+            padding: 0.6rem 0; min-width: 260px; list-style: none; opacity: 0; pointer-events: none;
+            transform: translateX(-6px); transition: opacity 0.22s ease, transform 0.22s ease; z-index: 300;
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
+            display: block; padding: 0.85rem 1.4rem; font-size: 0.78rem; font-weight: 500;
+            letter-spacing: 0.3px; text-transform: none; color: #333; line-height: 1.45;
+        }
+
+        .nav-btn {
+            font-family: var(--font-b); font-size: 0.7rem; font-weight: 700;
+            letter-spacing: 2px; text-transform: uppercase;
+            color: var(--black); border: 1.5px solid var(--black);
+            padding: 0.55rem 1.5rem; border-radius: 2px; text-decoration: none;
+            transition: all 0.25s;
+        }
+        .nav-btn:hover { background: var(--black); color: var(--white); }
+
+        /* ═══════════════════════════
+           HERO
+        ═══════════════════════════ */
+        .hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex; align-items: center; justify-content: center;
+            padding: 0 5%;
+            padding-top: 100px;
+            background: #000;
+            overflow: hidden;
+            text-align: center;
+        }
+        .hero-bg {
+            position: absolute; inset: 0;
+            background: url('assets/food-stuff-bg.png') center/cover no-repeat;
+            z-index: 0;
+            opacity: 0.6;
+            filter: contrast(1.1) brightness(0.8);
+        }
+        .hero-bg::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%);
+        }
+        .hero-content { max-width: 1000px; position: relative; z-index: 1; }
+        .hero-eyebrow {
+            display: inline-block;
+            font-family: var(--font-outfit);
+            font-size: 0.8rem; font-weight: 600; letter-spacing: 5px;
+            text-transform: uppercase; color: var(--gold);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .hero-eyebrow::before, .hero-eyebrow::after {
+            content: '';
+            position: absolute; top: 50%; width: 40px; height: 1px; background: var(--gold);
+        }
+        .hero-eyebrow::before { right: 100%; margin-right: 15px; }
+        .hero-eyebrow::after { left: 100%; margin-left: 15px; }
+
+        .hero h1 {
+            font-family: var(--font-h);
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-weight: 600; line-height: 1.1;
+            color: var(--white); margin-bottom: 1rem;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .hero-rule {
+            width: 80px; height: 2px; background: var(--gold);
+            margin: 2rem auto;
+        }
+
+        /* ═══════════════════════════
+           CONTENT
+        ═══════════════════════════ */
+        .content-sec {
+            padding: 8rem 5%;
+            background: var(--off-white);
+        }
+        .content-wrap { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            background: var(--white);
+            padding: 6rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.03);
+            border-radius: 4px;
+            margin-top: -6rem; /* Overlap hero */
+            position: relative;
+            z-index: 5;
+        }
+        .content-text {
+            font-size: 1.15rem;
+            line-height: 1.85;
+            color: #3a3a3a;
+            text-align: justify;
+            font-weight: 400;
+        }
+        .content-text p { margin-bottom: 2rem; }
+        .content-text p:first-child::first-letter {
+            font-family: var(--font-h);
+            font-size: 4.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            float: left;
+            line-height: 0.85;
+            margin-right: 16px;
+            margin-top: 6px;
+        }
+        .content-text strong {
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        /* Animations */
+        .fu { opacity: 0; transform: translateY(30px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+        .fu.in { opacity: 1; transform: translateY(0); }
+        .d1 { transition-delay: 0.15s; }
+        .d2 { transition-delay: 0.3s; }
+        .d3 { transition-delay: 0.45s; }
+
+        /* ═══════════════════════════
+           FOOTER
+        ═══════════════════════════ */
+        .footer {
+            padding: 6rem 5% 3rem;
+            background: var(--black);
+            color: var(--white);
+        }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 4rem; }
+        .f-logo { font-family: var(--font-outfit); font-size: 1.5rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1.5rem; }
+        .f-logo span { color: var(--gold); }
+        .f-tagline { font-size: 0.9rem; color: #888; line-height: 1.6; max-width: 350px; }
+        .f-col h4 { font-family: var(--font-outfit); text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 2rem; color: var(--gold); }
+        .f-col ul { list-style: none; }
+        .f-col ul li { margin-bottom: 1rem; }
+        .f-col ul li a { color: #888; text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+        .f-col ul li a:hover { color: var(--white); }
+        .f-col p { color: #888; font-size: 0.9rem; margin-bottom: 0.8rem; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center; color: #555; font-size: 0.8rem; }
+
+        @media (max-width: 768px) {
+            .footer-top { grid-template-columns: 1fr; gap: 3rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">Team <span>OAK</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="has-arrow"><a href="index.html#about">What We Do</a>
+                <ul class="dropdown">
+                    <li class="has-flyout"><a href="#">Trading</a>
+                        <ul class="flyout">
+                            <li><a href="tobacco-trading.html">Team Oak Tobacco Wholesale Trading</a></li>
+                            <li><a href="food-stuff-trading.html">Team Oak Food Stuff Trading Company</a></li>
+                            <li><a href="kizhisseri-jewellers.html">Kizhissery Jewellers</a></li>
+                            <li><a href="general-trading.html">Team Oak General Trading Company</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-flyout"><a href="#">Services</a>
+                        <ul class="flyout">
+                            <li><a href="best-vibes-contracting.html">Best Vibes General Contracting LLC</a></li>
+                            <li><a href="#">Team Oak Hotels &amp; Apartments</a></li>
+                            <li><a href="#">Team Oak Resort Camps &amp; Trails</a></li>
+                            <li><a href="#">Mamichi Apartments</a></li>
+                            <li><a href="#">Oak Architects &amp; Interiors</a></li>
+                            <li><a href="#">Bubbl</a></li>
+                            <li><a href="#">Team Oak Transport &amp; Heavy Equipment Rental LLC</a></li>
+                            <li><a href="#">Team Oak Safety &amp; Fire Fighting Equipment LLC</a></li>
+                            <li><a href="#">Cafein</a></li>
+                            <li><a href="#">Pharma Fleet</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-flyout"><a href="#">Industrial</a>
+                        <ul class="flyout">
+                            <li><a href="#">Sugar packing Unit</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Career</a></li>
+        </ul>
+        <a href="index.html#contact" class="nav-btn">Contact Us</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg fu"></div>
+        <div class="hero-content">
+            <span class="hero-eyebrow fu">Established 2000</span>
+            <h1 class="fu d1">Team Oak Food Stuff<br>Trading LLC</h1>
+            <div class="hero-rule fu d2"></div>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-sec">
+        <div class="content-wrap">
+            <div class="content-text fu d2">
+                <p>Established in 2020, <strong>Team Oak Food Stuff Trading Company LLC</strong> is a prominent foodstuff trading company based in Makkah, Saudi Arabia. Despite our recent inception, we have rapidly emerged as a leading player in the industry. Our commitment to excellence, combined with a diverse range of premium food products sourced from reputable suppliers worldwide, has earned us the trust of our valued customers.</p>
+                <p>With a focus on quality, reliability, and timely delivery, we aim to be the preferred choice for foodstuff trading in the region. As we grow, our dedication to customer satisfaction and ethical business practices remains unwavering.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <div class="f-logo">Team <span>OAK</span></div>
+                    <p class="f-tagline">Building excellence across industries and borders since 2000. A global conglomerate driven by integrity, innovation, and vision.</p>
+                </div>
+                <div class="f-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#companies">Companies</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h4>Contact</h4>
+                    <p>contact@teamoak.com</p>
+                    <p>+1 (800) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Team OAK. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fu').forEach(el => io.observe(el));
+
+        // Dropdown/Flyout sticky behavior
+        document.querySelectorAll('.has-arrow, .has-flyout').forEach(function(li) {
+            li.addEventListener('mouseenter', function() {
+                li.classList.add('open');
+            });
+            li.addEventListener('mouseleave', function() {
+                li.classList.remove('open');
+            });
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.has-arrow')) {
+                document.querySelectorAll('.has-arrow.open').forEach(function(el) {
+                    el.classList.remove('open');
+                });
+            }
+            if (!e.target.closest('.has-flyout')) {
+                document.querySelectorAll('.has-flyout.open').forEach(function(el) {
+                    el.classList.remove('open');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
