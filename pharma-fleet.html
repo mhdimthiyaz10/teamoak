@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pharma Fleet by Team OAK">
+    <title>Pharma Fleet | Team OAK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11">
+    <style>
+        /* White Theme Custom Overrides */
+        body {
+            --bg-dark: #ffffff;
+            --bg-charcoal: #f9f9fb;
+            --bg-card: #f3f4f6;
+            --text-light: #111111;
+            --text-muted: #555555;
+            --accent-gold: #c59b27;
+            --border-color: rgba(0, 0, 0, 0.08);
+            
+            background-color: var(--bg-dark) !important;
+            color: var(--text-light) !important;
+        }
+
+        .page-hero {
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            align-items: flex-end;
+            padding: 8rem 5% 6rem;
+            overflow: hidden;
+            background-color: var(--bg-dark);
+        }
+        .page-hero-bg {
+            position: absolute; inset: 0;
+            background: url('assets/pharma-fleet-bg.png') center/cover no-repeat;
+            z-index: 0;
+        }
+        .page-hero-bg::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(to top, var(--bg-dark) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.1) 100%);
+        }
+        .page-hero-content {
+            position: relative; z-index: 1;
+            max-width: 900px;
+        }
+        .page-eyebrow {
+            display: inline-block;
+            font-size: 0.75rem; font-weight: 700; letter-spacing: 4px;
+            text-transform: uppercase; color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+        }
+        .page-hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800; line-height: 1.1;
+            color: var(--text-light); letter-spacing: -1px;
+            margin-bottom: 1.5rem;
+        }
+        .page-hero h1 em { font-style: normal; color: var(--accent-gold); }
+        .page-rule {
+            width: 60px; height: 3px; background: var(--accent-gold);
+            margin: 2.5rem 0;
+        }
+        
+        /* Content Section */
+        .content-sec {
+            padding: 8rem 5%;
+            background: var(--bg-dark);
+            color: var(--text-light);
+        }
+        .content-wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .story-block {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+        
+        .story-text p {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            line-height: 2.1;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .story-text h2 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            margin-top: 3rem;
+            letter-spacing: -0.5px;
+        }
+
+        .highlight-quote {
+            border-left: 3px solid var(--accent-gold);
+            padding-left: 2rem;
+            margin: 4rem 0;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--text-light);
+            line-height: 1.5;
+            font-style: italic;
+        }
+        
+        /* NAV & FOOTER overrides to match index.css global styles where possible */
+        .nav {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+            padding: 1.3rem 5%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .nav-logo img { height: 70px; width: auto; }
+        .nav-links { list-style: none; display: flex; gap: 2.8rem; margin: 0;}
+        .nav-links a {
+            font-size: 0.72rem; font-weight: 600; letter-spacing: 2px;
+            text-transform: uppercase; color: #555555; text-decoration: none;
+            transition: color 0.25s;
+            font-family: var(--font-body);
+        }
+        .nav-links a:hover, .nav-links a.active { color: #111111; }
+        .nav-links a.active { border-bottom: 2px solid var(--accent-gold); padding-bottom: 4px; color: #111111; }
+        
+        /* Nav dropdown styles from about */
+        .nav-links li.has-arrow { position: relative; }
+        .nav-links li.has-arrow > a { display: inline-flex; align-items: center; gap: 5px; }
+        .nav-links li.has-arrow > a::after {
+            content: ''; display: inline-block; width: 6px; height: 6px;
+            border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+            transform: rotate(45deg) translateY(-2px); transition: transform 0.25s; flex-shrink: 0;
+        }
+        .nav-links li.has-arrow:hover > a::after, .nav-links li.has-arrow.open > a::after { transform: rotate(225deg) translateY(2px); }
+        
+        .nav-links li.has-arrow .dropdown {
+            position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
+            background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); padding: 1rem 0.6rem;
+            min-width: 240px; max-height: 400px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
+        }
+        .nav-links li.has-arrow:hover .dropdown, .nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .nav-links li.has-arrow .dropdown li a {
+            display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.4rem;
+            font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.8px;
+            color: #333333; text-decoration: none; transition: all 0.25s ease; border-radius: 8px; margin: 0.2rem 0.4rem; text-transform: uppercase;
+        }
+        .nav-links li.has-arrow .dropdown li a:hover { color: var(--accent-gold); background: rgba(0,0,0,0.03); padding-left: 1.6rem; }
+        
+        .nav-btn {
+            font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px;
+            text-transform: uppercase; color: #111111; border: 1.5px solid rgba(0, 0, 0, 0.15);
+            padding: 0.65rem 1.8rem; border-radius: 2px; text-decoration: none; transition: all 0.25s;
+        }
+        .nav-btn:hover { background: #111111; color: #ffffff; }
+        
+        /* Animations */
+        .fu { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+        .fu.in { opacity: 1; transform: none; }
+        .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
+        
+        /* Footer matching index/about */
+        .footer {
+            background: #f9f9fb; padding: 5rem 5% 2.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top {
+            display: grid; grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem; padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .f-logo {
+            font-family: var(--font-heading); font-size: 1.2rem;
+            font-weight: 800; letter-spacing: 3px; color: #111111;
+        }
+        .f-logo span { color: var(--accent-gold); }
+        .f-tagline {
+            margin-top: 1rem; font-size: 0.85rem;
+            color: #555555; line-height: 1.8;
+            max-width: 300px;
+        }
+        .f-col h4 {
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 3px;
+            text-transform: uppercase; color: #888888;
+            margin-bottom: 1.5rem;
+        }
+        .f-col ul { list-style: none; }
+        .f-col li { margin-bottom: 0.7rem; }
+        .f-col a {
+            font-size: 0.85rem; color: #555555;
+            text-decoration: none; transition: color 0.25s;
+        }
+        .f-col a:hover { color: #111111; }
+        .f-col p { font-size: 0.85rem; color: #555555; margin-bottom: 0.7rem; }
+        .footer-bottom {
+            text-align: center; padding-top: 2rem;
+            font-size: 0.75rem; color: #888888;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links, .nav-btn { display: none; }
+            .page-hero { min-height: 50vh; padding-bottom: 4rem; }
+            .page-hero h1 { font-size: 2.8rem; }
+            .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
+            .story-text h2 { font-size: 2rem; }
+            .highlight-quote { font-size: 1.4rem; padding-left: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png.png" alt="Team OAK Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="has-arrow"><a href="index.html#about" class="active">What We Do</a>
+                <ul class="dropdown">
+                    <li class="has-flyout"><a href="#">Trading</a></li>
+                    <li class="has-flyout"><a href="#">Services</a></li>
+                    <li class="has-flyout"><a href="#">Industrial</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Career</a></li>
+        </ul>
+        <a href="index.html#contact" class="nav-btn">Contact Us</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="page-hero-content">
+            <span class="page-eyebrow fu">Healthcare Logistics</span>
+            <h1 class="fu d1">Pharma Fleet<br><em>Delivery Solutions</em></h1>
+            <div class="page-rule fu d2"></div>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content-sec">
+        <div class="content-wrap">
+            <div class="story-block">
+                <div class="story-text">
+                    <h2 class="fu">A Vital Link in Healthcare</h2>
+                    <p class="fu d1">At Pharma Fleet, we are more than a delivery service — we are a vital link in the healthcare chain, proudly serving the Halifax Regional Municipality with secure, efficient, and compassionate prescription deliveries. We partner closely with pharmacies to ensure that medications are delivered promptly and safely to patients, caregivers, and healthcare facilities.</p>
+                    
+                    <p class="fu d2">Our specialized team understands the critical nature of healthcare logistics, treating every delivery with the utmost care, discretion, and professionalism. From the moment we collect a prescription to the time it reaches its destination, our focus remains on reliability, security, and patient well-being. We recognize that behind every package is a person — someone depending on their medication to manage their health and improve their quality of life.</p>
+
+                    <div class="highlight-quote fu">
+                        Driven by a deep commitment to excellence, Pharma Fleet is proud to support the healthcare community by easing the burden on pharmacies, enhancing patient satisfaction, and helping build a stronger, healthier HRM.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <div class="f-logo">Team <span>OAK</span></div>
+                    <p class="f-tagline">Building excellence across industries and borders since 2000. A global conglomerate driven by integrity, innovation, and vision.</p>
+                </div>
+                <div class="f-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#companies">Companies</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h4>Contact</h4>
+                    <p>contact@teamoak.com</p>
+                    <p>+1 (800) 123-4567</p>
+                    <p>123 Corporate Blvd,<br>Suite 800</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Team OAK. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fu').forEach(el => io.observe(el));
+        
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.05)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.85)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
