@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oak Architects and Interiors is acclaimed as a creative enthusiast in the domain of Architecture and Interior Design in Kerala.">
-    <title>Oak Architects & Interiors | Team OAK</title>
+    <meta name="description" content="Careers at Team OAK">
+    <title>Careers | Team OAK</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=11">
     <style>
-        /* White Theme Custom Overrides */
+        /* White Theme Custom Overrides for Career Page */
         body {
             --bg-dark: #ffffff;
             --bg-charcoal: #f9f9fb;
@@ -26,16 +27,16 @@
 
         .page-hero {
             position: relative;
-            min-height: 70vh;
+            min-height: 80vh;
             display: flex;
             align-items: flex-end;
-            padding: 0 5% 6rem;
+            padding: 8rem 5% 6rem;
             overflow: hidden;
             background-color: var(--bg-dark);
         }
         .page-hero-bg {
             position: absolute; inset: 0;
-            background: url('assets/oak-architects-bg.png') center/cover no-repeat;
+            background: url('assets/career-bg.png') center/cover no-repeat;
             z-index: 0;
         }
         .page-hero-bg::after {
@@ -55,7 +56,7 @@
         }
         .page-hero h1 {
             font-family: var(--font-heading);
-            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
             font-weight: 800; line-height: 1.1;
             color: var(--text-light); letter-spacing: -1px;
             margin-bottom: 1.5rem;
@@ -65,56 +66,139 @@
             width: 60px; height: 3px; background: var(--accent-gold);
             margin: 2.5rem 0;
         }
-        
-        /* Content Section */
+
+        /* Content Sections */
         .content-sec {
             padding: 8rem 5%;
             background: var(--bg-dark);
             color: var(--text-light);
         }
+        .content-sec.alt {
+            background: var(--bg-charcoal);
+        }
         .content-wrap {
             max-width: 1000px;
             margin: 0 auto;
         }
-        
-        .story-block {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
         }
-        
-        .story-text p {
-            font-family: var(--font-body);
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            line-height: 2.1;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-        
-        .story-text h2 {
+        .section-header h2 {
             font-family: var(--font-heading);
             font-size: 2.5rem;
             font-weight: 700;
             color: var(--text-light);
             margin-bottom: 1.5rem;
-            margin-top: 3rem;
             letter-spacing: -0.5px;
         }
+        .section-header p {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
 
-        .highlight-quote {
-            border-left: 3px solid var(--accent-gold);
-            padding-left: 2rem;
-            margin: 4rem 0;
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        .value-card {
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            background: #ffffff;
+        }
+        .value-icon {
+            width: 60px; height: 60px;
+            margin: 0 auto 1.5rem;
+            background: rgba(197, 155, 39, 0.1);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--accent-gold);
+        }
+        .value-icon svg { width: 30px; height: 30px; stroke-width: 1.5; }
+        .value-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+        .value-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* Career Card */
+        .career-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 4rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .career-card h3 {
             font-family: var(--font-heading);
             font-size: 1.8rem;
-            font-weight: 400;
-            color: var(--text-light);
-            line-height: 1.5;
-            font-style: italic;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
         }
-        
-        /* NAV & FOOTER overrides to match index.css global styles where possible */
+        .career-card p.company-name {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2.5rem;
+        }
+        .career-card h4 {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 1.5rem;
+        }
+        .career-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .career-card li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            color: #222;
+            line-height: 1.6;
+        }
+        .career-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 8px;
+            height: 8px;
+            background-color: #a4db82; /* match image bullet color */
+            border-radius: 50%;
+        }
+
+        /* Nav & Footer styling overrides */
         .nav {
             position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
             padding: 1.3rem 5%;
@@ -134,7 +218,7 @@
         .nav-links a:hover, .nav-links a.active { color: #111111; }
         .nav-links a.active { border-bottom: 2px solid var(--accent-gold); padding-bottom: 4px; color: #111111; }
         
-        /* Nav dropdown styles from about */
+        /* Dropdown logic for nav */
         .nav-links li.has-arrow { position: relative; }
         .nav-links li.has-arrow > a { display: inline-flex; align-items: center; gap: 5px; }
         .nav-links li.has-arrow > a::after {
@@ -142,36 +226,35 @@
             border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
             transform: rotate(45deg) translateY(-2px); transition: transform 0.25s; flex-shrink: 0;
         }
-        .nav-links li.has-arrow:hover > a::after, .nav-links li.has-arrow.open > a::after { transform: rotate(225deg) translateY(2px); }
-        
+        .nav-links li.has-arrow:hover > a::after { transform: rotate(225deg) translateY(2px); }
         .nav-links li.has-arrow .dropdown {
             position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
             background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); padding: 1rem 0.6rem;
-            min-width: 240px; max-height: 400px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
+            min-width: 240px; list-style: none; opacity: 0; pointer-events: none;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
-        .nav-links li.has-arrow:hover .dropdown, .nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .nav-links li.has-arrow:hover .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
         .nav-links li.has-arrow .dropdown li a {
             display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.4rem;
             font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.8px;
             color: #333333; text-decoration: none; transition: all 0.25s ease; border-radius: 8px; margin: 0.2rem 0.4rem; text-transform: uppercase;
         }
         .nav-links li.has-arrow .dropdown li a:hover { color: var(--accent-gold); background: rgba(0,0,0,0.03); padding-left: 1.6rem; }
-        
+
         .nav-btn {
             font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px;
             text-transform: uppercase; color: #111111; border: 1.5px solid rgba(0, 0, 0, 0.15);
             padding: 0.65rem 1.8rem; border-radius: 2px; text-decoration: none; transition: all 0.25s;
         }
         .nav-btn:hover { background: #111111; color: #ffffff; }
-        
+
         /* Animations */
         .fu { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
         .fu.in { opacity: 1; transform: none; }
         .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
-        
-        /* Footer matching index/about */
+
+        /* Footer */
         .footer {
             background: #f9f9fb; padding: 5rem 5% 2.5rem;
             border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -209,14 +292,13 @@
             text-align: center; padding-top: 2rem;
             font-size: 0.75rem; color: #888888;
         }
-        
+
         @media (max-width: 768px) {
             .nav-links, .nav-btn { display: none; }
             .page-hero { min-height: 50vh; padding-bottom: 4rem; }
             .page-hero h1 { font-size: 2.8rem; }
+            .career-card { padding: 2rem; }
             .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
-            .story-text h2 { font-size: 2rem; }
-            .highlight-quote { font-size: 1.4rem; padding-left: 1.5rem; }
         }
     </style>
 </head>
@@ -261,8 +343,8 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#">Media</a></li>
-            <li><a href="career.html">Career</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="career.html" class="active">Career</a></li>
         </ul>
         <a href="contact.html" class="nav-btn">Contact Us</a>
     </nav>
@@ -271,26 +353,60 @@
     <section class="page-hero">
         <div class="page-hero-bg"></div>
         <div class="page-hero-content">
-            <span class="page-eyebrow fu">Architecture & Interiors</span>
-            <h1 class="fu d1">Oak Architects<br><em>& Interiors</em></h1>
+            <span class="page-eyebrow fu">Join Team OAK</span>
+            <h1 class="fu d1">Shape the Future<br><em>With Us.</em></h1>
             <div class="page-rule fu d2"></div>
         </div>
     </section>
 
-    <!-- CONTENT -->
-    <section class="content-sec">
+    <!-- CAREER WITH US -->
+    <section class="content-sec" style="background-color: #efede7;">
         <div class="content-wrap">
-            <div class="story-block">
-                <div class="story-text">
-                    <h2 class="fu">Sustainable Design & Architecture</h2>
-                    <p class="fu d1">Established in 2015, Oak Architects and Interiors is acclaimed as a creative enthusiast in the domain of Architecture and Interior Designer in Kerala. Our approach is based on the fundamentals of Sustainable Design, a method that values local resources, cultural influences, meticulous attention to detail, and offers honest strategy.</p>
-                    
-                    <p class="fu d2">We use a progressive and iterative innovation methodology and focus our expertise on heritage and contextual factors. We aspire to create standard solutions that deal with society's changing living and working habits.</p>
+            <div class="section-header fu" style="margin-bottom: 3rem;">
+                <h2>Career with Us</h2>
+            </div>
 
-                    <div class="highlight-quote fu">
-                        From customers reviews we can understand that, Oak Architects and Interiors is one of the best architect in kerala and also it is one of the best interior designer in kerala.
-                    </div>
-                </div>
+            <div class="career-card fu d1">
+                <h3>Interior Designer</h3>
+                <p class="company-name">Oak Architects and Interiors</p>
+                
+                <h4>Responsibilities</h4>
+                <ul>
+                    <li>Designed marketing materials such as logos, brochures, flyers, and social media graphics.</li>
+                    <li>Managed the company's website.</li>
+                    <li>Collaborated with the team on marketing campaign development and implementation.</li>
+                </ul>
+            </div>
+
+            <div class="career-card fu d2" style="margin-top: 2rem;">
+                <h3>Marketing Executive</h3>
+                <p class="company-name" style="margin-bottom: 0.5rem;">Team Oak General Trading Company</p>
+                <p class="company-name" style="font-size: 0.95rem; margin-bottom: 2rem;">Saudi Arabia</p>
+                
+                <h4>Key Responsibilities & Achievements</h4>
+                <ul>
+                    <li>Developed and executed marketing strategies to promote general trading products across the Saudi market.</li>
+                    <li>Identified new business opportunities and built strong relationships with suppliers, distributors, and retail clients.</li>
+                    <li>Conducted market research and competitor analysis to identify trends and optimize pricing strategies.</li>
+                    <li>Coordinated promotional campaigns, trade marketing activities, and in-store branding initiatives to increase product visibility.</li>
+                    <li>Managed digital marketing activities, including social media promotions and online advertising.</li>
+                    <li>Monitored sales performance and prepared regular reports to support management decision-making.</li>
+                    <li>Collaborated with the sales team to achieve revenue targets and expand market share.</li>
+                </ul>
+            </div>
+
+            <div class="career-card fu d3" style="margin-top: 2rem;">
+                <h3>CRM Executive</h3>
+                <p class="company-name" style="margin-bottom: 0.5rem;">Team Oak Food Stuff Trading Company</p>
+                <p class="company-name" style="font-size: 0.95rem; margin-bottom: 2rem;">Saudi Arabia</p>
+                
+                <h4>Key Responsibilities & Achievements</h4>
+                <ul>
+                    <li>Managed customer relationship management (CRM) system to maintain accurate records of clients, distributors, and retail accounts.</li>
+                    <li>Monitored customer purchase patterns and coordinated with the sales team to improve retention and repeat business.</li>
+                    <li>Handled customer inquiries, complaints, and feedback, ensuring timely resolution and high customer satisfaction.</li>
+                    <li>Analyzed sales and customer data to identify trends, demand forecasts, and growth opportunities in food products.</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -326,11 +442,13 @@
     </footer>
 
     <script>
+        // Scroll Animations
         const io = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fu').forEach(el => io.observe(el));
         
+        // Nav Scroll Effect
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {

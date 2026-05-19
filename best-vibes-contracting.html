@@ -314,9 +314,9 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li class="has-arrow"><a href="index.html#about">What We Do</a>
+            <li class="has-arrow"><a href="javascript:void(0);">What We Do</a>
                 <ul class="dropdown">
-                    <li class="has-flyout"><a href="#">Trading</a>
+                    <li class="has-flyout"><a href="javascript:void(0);">Trading</a>
                         <ul class="flyout">
                             <li><a href="tobacco-trading.html">Team Oak Tobacco Wholesale Trading</a></li>
                             <li><a href="food-stuff-trading.html">Team Oak Food Stuff Trading Company</a></li>
@@ -324,7 +324,7 @@
                             <li><a href="general-trading.html">Team Oak General Trading Company</a></li>
                         </ul>
                     </li>
-                    <li class="has-flyout"><a href="#">Services</a>
+                    <li class="has-flyout"><a href="javascript:void(0);">Services</a>
                         <ul class="flyout">
                             <li><a href="best-vibes-contracting.html">Best Vibes General Contracting LLC</a></li>
                             <li><a href="team-oak-hotels.html">Team Oak Hotels &amp; Apartments</a></li>
@@ -338,7 +338,7 @@
                             <li><a href="pharma-fleet.html">Pharma Fleet</a></li>
                         </ul>
                     </li>
-                    <li class="has-flyout"><a href="#">Industrial</a>
+                    <li class="has-flyout"><a href="javascript:void(0);">Industrial</a>
                         <ul class="flyout">
                             <li><a href="sugar-packing.html">Sugar packing Unit</a></li>
                         </ul>
@@ -346,9 +346,9 @@
                 </ul>
             </li>
             <li><a href="media.html">Media</a></li>
-            <li><a href="#">Career</a></li>
+            <li><a href="career.html">Career</a></li>
         </ul>
-        <a href="index.html#contact" class="nav-btn">Contact Us</a>
+        <a href="contact.html" class="nav-btn">Contact Us</a>
     </nav>
 
     <!-- HERO -->
@@ -380,31 +380,32 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-top">
-                <div>
-                    <div class="f-logo">Team <span>OAK</span></div>
-                    <p class="f-tagline">Building excellence across industries and borders since 2000. A global conglomerate driven by integrity, innovation, and vision.</p>
-                </div>
-                <div class="f-col">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="index.html#companies">Companies</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                    </ul>
-                </div>
-                <div class="f-col">
-                    <h4>Contact</h4>
-                    <p>contact@teamoak.com</p>
-                    <p>+1 (800) 123-4567</p>
-                </div>
+        <!-- STANDARDIZED FOOTER -->
+    <footer class="global-footer">
+        <div class="gf-inner">
+            <div class="gf-col gf-brand">
+                <img src="assets/logo.png.png" alt="Team OAK" class="gf-logo-img">
+                <p class="gf-tagline">BUILDING EXCELLENCE ACROSS INDUSTRIES</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Team OAK. All Rights Reserved.</p>
+            <div class="gf-col gf-links">
+                <h4>QUICK LINKS</h4>
+                <div class="gf-line"></div>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#companies">Companies</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                </ul>
             </div>
+            <div class="gf-col gf-contact">
+                <h4>CONTACT INFO</h4>
+                <div class="gf-line"></div>
+                <p>123 Corporate Blvd, Suite 800</p>
+                <p><a href="mailto:contact@teamoak.com">contact@teamoak.com</a></p>
+                <p>+1 (800) 123-4567</p>
+            </div>
+        </div>
+        <div class="gf-bottom">
+            <p>&copy; 2026 Team OAK. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -450,5 +451,18 @@
             }
         });
     </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var arrows = document.querySelectorAll('.has-arrow > a, .has-flyout > a');
+    arrows.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('open');
+        });
+    });
+});
+</script>
+
 </body>
 </html>

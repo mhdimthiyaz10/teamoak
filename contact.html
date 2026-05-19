@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oak Architects and Interiors is acclaimed as a creative enthusiast in the domain of Architecture and Interior Design in Kerala.">
-    <title>Oak Architects & Interiors | Team OAK</title>
+    <meta name="description" content="Contact Team OAK">
+    <title>Contact Us | Team OAK</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=11">
     <style>
-        /* White Theme Custom Overrides */
+        /* White Theme Custom Overrides for Contact Page */
         body {
             --bg-dark: #ffffff;
             --bg-charcoal: #f9f9fb;
-            --bg-card: #f3f4f6;
+            --bg-card: #efede7;
             --text-light: #111111;
             --text-muted: #555555;
             --accent-gold: #c59b27;
@@ -29,19 +30,19 @@
             min-height: 70vh;
             display: flex;
             align-items: flex-end;
-            padding: 0 5% 6rem;
+            padding: 8rem 5% 6rem;
             overflow: hidden;
             background-color: var(--bg-dark);
         }
         .page-hero-bg {
             position: absolute; inset: 0;
-            background: url('assets/oak-architects-bg.png') center/cover no-repeat;
+            background: url('assets/contact-bg.png') center/cover no-repeat;
             z-index: 0;
         }
         .page-hero-bg::after {
             content: '';
             position: absolute; inset: 0;
-            background: linear-gradient(to top, var(--bg-dark) 0%, rgba(255, 255, 255, 0.4) 60%, rgba(255, 255, 255, 0.1) 100%);
+            background: linear-gradient(to top, var(--bg-dark) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.2) 100%);
         }
         .page-hero-content {
             position: relative; z-index: 1;
@@ -55,7 +56,7 @@
         }
         .page-hero h1 {
             font-family: var(--font-heading);
-            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
             font-weight: 800; line-height: 1.1;
             color: var(--text-light); letter-spacing: -1px;
             margin-bottom: 1.5rem;
@@ -65,56 +66,138 @@
             width: 60px; height: 3px; background: var(--accent-gold);
             margin: 2.5rem 0;
         }
-        
+
         /* Content Section */
-        .content-sec {
+        .contact-sec {
             padding: 8rem 5%;
             background: var(--bg-dark);
             color: var(--text-light);
         }
-        .content-wrap {
-            max-width: 1000px;
+        .contact-wrap {
+            max-width: 700px;
             margin: 0 auto;
         }
-        
-        .story-block {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-        }
-        
-        .story-text p {
-            font-family: var(--font-body);
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            line-height: 2.1;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-        
-        .story-text h2 {
-            font-family: var(--font-heading);
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            margin-top: 3rem;
-            letter-spacing: -0.5px;
-        }
 
-        .highlight-quote {
-            border-left: 3px solid var(--accent-gold);
-            padding-left: 2rem;
-            margin: 4rem 0;
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem;
+        }
+        .info-block h3 {
             font-family: var(--font-heading);
             font-size: 1.8rem;
-            font-weight: 400;
+            font-weight: 800;
             color: var(--text-light);
-            line-height: 1.5;
-            font-style: italic;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
         }
-        
-        /* NAV & FOOTER overrides to match index.css global styles where possible */
+        .info-block p {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+        .info-block a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .info-block a:hover {
+            color: var(--accent-gold);
+        }
+        .contact-divider {
+            width: 100%;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 4rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+        }
+        .contact-form-container h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+        .contact-form-container p.form-desc {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            padding: 1rem 0;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--text-light);
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-bottom-color: var(--accent-gold);
+        }
+        .form-group label {
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+        .form-group input:focus ~ label,
+        .form-group input:not(:placeholder-shown) ~ label,
+        .form-group textarea:focus ~ label,
+        .form-group textarea:not(:placeholder-shown) ~ label {
+            top: -1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        .submit-btn {
+            display: inline-block;
+            background: var(--text-light);
+            color: #fff;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 1rem;
+        }
+        .submit-btn:hover {
+            background: var(--accent-gold);
+        }
+
+        /* Nav & Footer styling overrides */
         .nav {
             position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
             padding: 1.3rem 5%;
@@ -134,7 +217,7 @@
         .nav-links a:hover, .nav-links a.active { color: #111111; }
         .nav-links a.active { border-bottom: 2px solid var(--accent-gold); padding-bottom: 4px; color: #111111; }
         
-        /* Nav dropdown styles from about */
+        /* Dropdown logic for nav */
         .nav-links li.has-arrow { position: relative; }
         .nav-links li.has-arrow > a { display: inline-flex; align-items: center; gap: 5px; }
         .nav-links li.has-arrow > a::after {
@@ -142,36 +225,35 @@
             border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
             transform: rotate(45deg) translateY(-2px); transition: transform 0.25s; flex-shrink: 0;
         }
-        .nav-links li.has-arrow:hover > a::after, .nav-links li.has-arrow.open > a::after { transform: rotate(225deg) translateY(2px); }
-        
+        .nav-links li.has-arrow:hover > a::after { transform: rotate(225deg) translateY(2px); }
         .nav-links li.has-arrow .dropdown {
             position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
             background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); padding: 1rem 0.6rem;
-            min-width: 240px; max-height: 400px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
+            min-width: 240px; list-style: none; opacity: 0; pointer-events: none;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
-        .nav-links li.has-arrow:hover .dropdown, .nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .nav-links li.has-arrow:hover .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
         .nav-links li.has-arrow .dropdown li a {
             display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.4rem;
             font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.8px;
             color: #333333; text-decoration: none; transition: all 0.25s ease; border-radius: 8px; margin: 0.2rem 0.4rem; text-transform: uppercase;
         }
         .nav-links li.has-arrow .dropdown li a:hover { color: var(--accent-gold); background: rgba(0,0,0,0.03); padding-left: 1.6rem; }
-        
+
         .nav-btn {
             font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px;
             text-transform: uppercase; color: #111111; border: 1.5px solid rgba(0, 0, 0, 0.15);
             padding: 0.65rem 1.8rem; border-radius: 2px; text-decoration: none; transition: all 0.25s;
         }
         .nav-btn:hover { background: #111111; color: #ffffff; }
-        
+
         /* Animations */
         .fu { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
         .fu.in { opacity: 1; transform: none; }
         .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
-        
-        /* Footer matching index/about */
+
+        /* Footer */
         .footer {
             background: #f9f9fb; padding: 5rem 5% 2.5rem;
             border-top: 1px solid rgba(0, 0, 0, 0.06);
@@ -209,14 +291,82 @@
             text-align: center; padding-top: 2rem;
             font-size: 0.75rem; color: #888888;
         }
-        
+
+        /* Office Section */
+        .office-sec {
+            padding: 8rem 5%;
+            background-color: #efede7;
+            color: #111;
+        }
+        .office-wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .office-title {
+            text-align: center;
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #222;
+            margin-bottom: 4rem;
+            letter-spacing: -1px;
+        }
+        .office-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 2rem;
+            align-items: stretch;
+        }
+        .office-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .office-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #111;
+        }
+        .office-card p {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            color: #333;
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+        .office-card a.red-text {
+            color: #d93838;
+            text-decoration: none;
+        }
+        .office-map {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            min-height: 350px;
+        }
+        .office-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 900px) {
+            .contact-wrap { grid-template-columns: 1fr; gap: 4rem; }
+            .office-grid { grid-template-columns: 1fr; }
+        }
+
         @media (max-width: 768px) {
             .nav-links, .nav-btn { display: none; }
             .page-hero { min-height: 50vh; padding-bottom: 4rem; }
             .page-hero h1 { font-size: 2.8rem; }
             .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
-            .story-text h2 { font-size: 2rem; }
-            .highlight-quote { font-size: 1.4rem; padding-left: 1.5rem; }
+            .contact-form-container { padding: 2.5rem; }
         }
     </style>
 </head>
@@ -261,35 +411,114 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#">Media</a></li>
+            <li><a href="media.html">Media</a></li>
             <li><a href="career.html">Career</a></li>
         </ul>
-        <a href="contact.html" class="nav-btn">Contact Us</a>
+        <a href="contact.html" class="nav-btn" style="background: #111; color: #fff;">Contact Us</a>
     </nav>
 
     <!-- HERO -->
     <section class="page-hero">
         <div class="page-hero-bg"></div>
         <div class="page-hero-content">
-            <span class="page-eyebrow fu">Architecture & Interiors</span>
-            <h1 class="fu d1">Oak Architects<br><em>& Interiors</em></h1>
+            <span class="page-eyebrow fu">Get in Touch</span>
+            <h1 class="fu d1">Let's Build the<br><em>Future Together.</em></h1>
             <div class="page-rule fu d2"></div>
         </div>
     </section>
 
-    <!-- CONTENT -->
-    <section class="content-sec">
-        <div class="content-wrap">
-            <div class="story-block">
-                <div class="story-text">
-                    <h2 class="fu">Sustainable Design & Architecture</h2>
-                    <p class="fu d1">Established in 2015, Oak Architects and Interiors is acclaimed as a creative enthusiast in the domain of Architecture and Interior Designer in Kerala. Our approach is based on the fundamentals of Sustainable Design, a method that values local resources, cultural influences, meticulous attention to detail, and offers honest strategy.</p>
-                    
-                    <p class="fu d2">We use a progressive and iterative innovation methodology and focus our expertise on heritage and contextual factors. We aspire to create standard solutions that deal with society's changing living and working habits.</p>
+    <!-- CONTACT SECTION -->
+    <section class="contact-sec">
+        <div class="contact-wrap">
 
-                    <div class="highlight-quote fu">
-                        From customers reviews we can understand that, Oak Architects and Interiors is one of the best architect in kerala and also it is one of the best interior designer in kerala.
+            <!-- Contact Form -->
+            <div class="contact-form-container fu d1">
+                <h3>Send a Message</h3>
+                <p class="form-desc">Whether you have a question about our services, divisions, or anything else, our team is ready to answer all your questions.</p>
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
                     </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- KSA OFFICE SECTION -->
+    <section class="office-sec">
+        <div class="office-wrap">
+            <h2 class="office-title fu">KSA Office</h2>
+            
+            <div class="office-grid fu d1">
+                <div class="office-card">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +966565990100</p>
+                    <p>WhatsApp: +966565990100</p>
+                    <p>Email: <a href="mailto:Info@teamoak.co" class="red-text">Info@teamoak.co</a></p>
+                    <p style="margin-top: 1rem;">Address: Team Oak Trading Company LLC<br>Makkah, Jeddah.</p>
+                    <p style="margin-top: 1rem;">Working hours: 9:00AM - 6:00PM</p>
+                </div>
+                
+                <div class="office-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118944.57796934371!2d39.12423321524316!3d21.542289656828237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b118ab!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sae!4v1714201389814!5m2!1sen!2sae" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="office-wrap" style="margin-top: 8rem;">
+            <h2 class="office-title fu">UAE Office</h2>
+            
+            <div class="office-grid fu d1">
+                <div class="office-card">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +971-554418701</p>
+                    <p>WhatsApp: +971-554418701</p>
+                    <p>Email: <a href="mailto:Info@teamoak.co" class="red-text">Info@teamoak.co</a></p>
+                    <p style="margin-top: 1rem;">Address: Best Vibes General Contracting LLC.Corniche<br>street Abu Dhabi UAE.</p>
+                    <p style="margin-top: 1rem;">Working hours: 9:00AM - 6:00PM</p>
+                </div>
+                
+                <div class="office-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.1001758980233!2d54.347154475139206!3d24.481985678178315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e676331e4e2e1%3A0x6fca92d4cbe20fe7!2sBest%20Vibes%20General%20Contracting%20LLC!5e0!3m2!1sen!2sin!4v1779173821698!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="office-wrap" style="margin-top: 8rem;">
+            <h2 class="office-title fu">India Office</h2>
+            
+            <div class="office-grid fu d1">
+                <div class="office-card">
+                    <h3>Contact Us</h3>
+                    <p>Phone: +91-9746025710</p>
+                    <p>WhatsApp: +91-9746025710</p>
+                    <p>Email: <a href="mailto:Info@teamoak.co" class="red-text">Info@teamoak.co</a></p>
+                    <p style="margin-top: 1rem;">Address: Team Oak Architects & Interiors.<br>Perinthalmanna, Kerala, India.</p>
+                    <p style="margin-top: 1rem;">Working hours: 9:00AM - 6:00PM</p>
+                </div>
+                
+                <div class="office-map">
+                    <iframe src="https://maps.google.com/maps?q=Oak%20Architects%20Leading%20Architects%20in%20Perinthalmanna%20Kerala&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -326,11 +555,13 @@
     </footer>
 
     <script>
+        // Scroll Animations
         const io = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fu').forEach(el => io.observe(el));
         
+        // Nav Scroll Effect
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
