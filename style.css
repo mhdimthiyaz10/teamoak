@@ -2126,90 +2126,124 @@ a {
 .flag-india { background: linear-gradient(135deg, #FF9933 33%, #FFFFFF 33%, #FFFFFF 66%, #138808 66%); }
 
 /* ============================================
-   STANDARDIZED GLOBAL FOOTER
+   MINIMAL STANDARD FOOTER
    ============================================ */
-.global-footer {
-    background-color: #070707 !important;
-    color: #ffffff;
-    font-family: var(--font-body);
-    padding: 6rem 5% 2rem;
-    border-top: 1px solid rgba(255,255,255,0.05);
+.minimal-footer {
+    background-color: var(--bg-dark, #0a0a0a);
+    color: var(--text-light, #ffffff);
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+    padding: 5rem 5% 2rem;
+    border-top: 1px solid var(--border-color, rgba(255,255,255,0.08));
+    position: relative;
+    z-index: 10;
 }
-.gf-inner {
-    max-width: 1200px;
+.mf-container {
+    max-width: 1300px;
     margin: 0 auto;
+}
+.mf-columns {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    gap: 3rem;
     padding-bottom: 4rem;
 }
-.gf-brand {
-    padding-right: 2rem;
-}
-.gf-logo-img {
-    height: 45px;
-    width: auto;
-    margin-bottom: 2rem;
-    filter: brightness(0.25) sepia(1) hue-rotate(180deg) saturate(0.2);
-}
-.gf-tagline {
-    font-size: 0.65rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #586c7d;
-    margin: 0;
-}
-.gf-col h4 {
-    font-size: 0.75rem;
+.mf-col h4 {
+    font-family: var(--font-heading, 'Outfit', sans-serif);
+    font-size: 1.15rem;
     font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 1.5rem;
+    color: var(--text-light, #ffffff);
+    margin-bottom: 2rem;
+    letter-spacing: -0.2px;
 }
-.gf-line {
-    width: 20px;
-    height: 1px;
-    background-color: #333333;
-    margin-bottom: 1.5rem;
-}
-.gf-col ul {
+.mf-col ul {
     list-style: none;
-    padding: 0; margin: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
-.gf-col ul li {
-    margin-bottom: 1.2rem;
-}
-.gf-col a, .gf-col p {
-    font-size: 0.85rem;
-    color: #888888;
+.mf-col ul li a, .mf-text {
+    font-size: 0.95rem;
+    color: var(--text-muted, #888888);
     text-decoration: none;
     transition: color 0.3s;
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
-    display: block;
+    line-height: 1.5;
 }
-.gf-col p { margin-bottom: 1.2rem; display: block; }
-.gf-col p a { margin: 0; display: inline; }
-.gf-col a:hover {
-    color: #ffffff;
+.mf-col ul li a:hover {
+    color: var(--text-light, #ffffff);
 }
-.gf-bottom {
-    max-width: 1200px;
-    margin: 0 auto;
-    border-top: 1px solid rgba(255,255,255,0.05);
+
+/* Contact Column Specifics */
+.mf-contact ul {
+    gap: 1.5rem;
+}
+.mf-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.mf-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--accent-gold, #c59b27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 1px var(--border-color, rgba(255,255,255,0.08));
+    transition: all 0.3s ease;
+}
+.mf-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+.mf-text {
+    padding-top: 5px;
+}
+
+/* Bottom Bar */
+.mf-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 2rem;
-    text-align: center;
+    border-top: 1px solid var(--border-color, rgba(255,255,255,0.08));
+    font-size: 0.9rem;
+    color: var(--text-muted, #888888);
 }
-.gf-bottom p {
-    font-size: 0.75rem;
-    color: #444444;
-    letter-spacing: 1px;
+.mf-legal {
+    display: flex;
+    gap: 2rem;
 }
-@media (max-width: 900px) {
-    .gf-inner {
+.mf-legal a {
+    color: var(--text-muted, #888888);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.mf-legal a:hover {
+    color: var(--text-light, #ffffff);
+}
+
+@media (max-width: 1024px) {
+    .mf-columns {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem 2rem;
+    }
+    .mf-contact {
+        grid-column: 1 / -1;
+    }
+}
+@media (max-width: 640px) {
+    .mf-columns {
         grid-template-columns: 1fr;
-        gap: 3rem;
+    }
+    .mf-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
     }
 }
