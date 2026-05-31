@@ -129,7 +129,7 @@
             border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
             transform: rotate(45deg) translateY(-2px); transition: transform 0.25s; flex-shrink: 0;
         }
-        .nav-links li.has-arrow:hover > a::after, .nav-links li.has-arrow.open > a::after { transform: rotate(225deg) translateY(2px); }
+         .nav-links li.has-arrow.open > a::after { transform: rotate(225deg) translateY(2px); }
         
         .nav-links li.has-arrow .dropdown {
             position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
@@ -138,7 +138,7 @@
             min-width: 240px; max-height: 400px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
-        .nav-links li.has-arrow:hover .dropdown, .nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+         .nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
         .nav-links li.has-arrow .dropdown li a {
             display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.4rem;
             font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.8px;
@@ -272,7 +272,7 @@
             overflow: visible !important;
         }
 
-        .nav-links li.has-arrow:hover .dropdown, 
+         
         .nav-links li.has-arrow.open .dropdown {
             opacity: 1 !important;
             pointer-events: all !important;
@@ -400,6 +400,35 @@
         }
     </style>
 
+
+    <style>
+        /* Hide main nav arrow */
+        .nav-links li.has-arrow > a::after {
+            display: none !important;
+            content: none !important;
+        }
+    </style>
+
+    <style>
+        /* Fix Nav Alignment for Tablet/Mobile */
+        .nav-links a {
+            white-space: nowrap !important;
+        }
+        @media (max-width: 1150px) {
+            .nav-links {
+                gap: 1.2rem !important;
+            }
+            .nav-links a {
+                font-size: 0.65rem !important;
+                letter-spacing: 1px !important;
+            }
+            .nav-btn {
+                padding: 0.5rem 1.2rem !important;
+                font-size: 0.65rem !important;
+                white-space: nowrap !important;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -442,7 +471,7 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#">Media</a></li>
+            <li><a href="media.html">Media</a></li>
             <li><a href="career.html">Career</a></li>
         </ul>
         <a href="contact.html" class="nav-btn">Contact Us</a>
@@ -549,10 +578,10 @@
                 <div class="mf-col">
                     <h4>Follow Us</h4>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/share/1HXbqFMMr1/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/_oak_architects?igsh=a3lnM3pucXB3djk2" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/team-oak/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://youtube.com/@theoakteam8268?si=32MAruPZFb6WyC8a" target="_blank">YouTube</a></li>
                     </ul>
                 </div>
             </div>

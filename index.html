@@ -44,7 +44,7 @@
             overflow: visible !important;
         }
 
-        .nav-links li.has-arrow:hover .dropdown, 
+         
         .nav-links li.has-arrow.open .dropdown {
             opacity: 1 !important;
             pointer-events: all !important;
@@ -172,34 +172,33 @@
         }
     </style>
 
-    <!-- White Footer Override specifically for Home Page as requested -->
+
     <style>
-        .minimal-footer {
-            background-color: #ffffff !important;
-            color: #111111 !important;
-            border-top: 1px solid rgba(0,0,0,0.08) !important;
+        /* Hide main nav arrow */
+        .nav-links li.has-arrow > a::after {
+            display: none !important;
+            content: none !important;
         }
-        .minimal-footer .mf-col h4 {
-            color: #111111 !important;
+    </style>
+
+    <style>
+        /* Fix Nav Alignment for Tablet/Mobile */
+        .nav-links a {
+            white-space: nowrap !important;
         }
-        .minimal-footer .mf-col ul li a, .minimal-footer .mf-text {
-            color: #555555 !important;
-        }
-        .minimal-footer .mf-col ul li a:hover {
-            color: #c59b27 !important;
-        }
-        .minimal-footer .mf-icon {
-            box-shadow: 0 0 0 1px rgba(0,0,0,0.08) !important;
-        }
-        .minimal-footer .mf-bottom {
-            border-top: 1px solid rgba(0,0,0,0.08) !important;
-            color: #888888 !important;
-        }
-        .minimal-footer .mf-legal a {
-            color: #888888 !important;
-        }
-        .minimal-footer .mf-legal a:hover {
-            color: #111111 !important;
+        @media (max-width: 1150px) {
+            .nav-links {
+                gap: 1.2rem !important;
+            }
+            .nav-links a {
+                font-size: 0.65rem !important;
+                letter-spacing: 1px !important;
+            }
+            .nav-btn {
+                padding: 0.5rem 1.2rem !important;
+                font-size: 0.65rem !important;
+                white-space: nowrap !important;
+            }
         }
     </style>
 </head>
@@ -577,10 +576,10 @@
                 <div class="mf-col">
                     <h4>Follow Us</h4>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/share/1HXbqFMMr1/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/_oak_architects?igsh=a3lnM3pucXB3djk2" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/company/team-oak/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://youtube.com/@theoakteam8268?si=32MAruPZFb6WyC8a" target="_blank">YouTube</a></li>
                     </ul>
                 </div>
             </div>
