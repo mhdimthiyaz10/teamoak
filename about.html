@@ -13,12 +13,12 @@
 
         :root {
             --gold: #c9a84c;
-            --black: #0d0d0d;
-            --white: #ffffff;
-            --off-white: #f8f7f4;
-            --light: #eeece8;
+            --black: #ffffff;
+            --white: #0a0a0a;
+            --off-white: #121212;
+            --light: #2a2a2a;
             --mid: #999;
-            --dark: #2a2a2a;
+            --dark: #eeeeee;
             --font-h: 'Outfit', sans-serif;
             --font-b: 'Plus Jakarta Sans', sans-serif;
             --ease: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -39,9 +39,9 @@
         .nav {
             position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
             padding: 1.3rem 5%;
-            background: rgba(255,255,255,0.94);
+            background: rgba(10,10,10,0.85);
             backdrop-filter: blur(14px);
-            border-bottom: 1px solid rgba(0,0,0,0.07);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
             display: flex; justify-content: space-between; align-items: center;
         }
         .nav-logo {
@@ -56,7 +56,7 @@
         .nav-links { list-style: none; display: flex; gap: 2.8rem; }
         .nav-links a {
             font-size: 0.72rem; font-weight: 600; letter-spacing: 2px;
-            text-transform: uppercase; color: #666; text-decoration: none;
+            text-transform: uppercase; color: #999999; text-decoration: none;
             transition: color 0.25s;
         }
         .nav-links a:hover, .nav-links a.active { color: var(--black); }
@@ -88,7 +88,7 @@
             top: calc(100% + 14px);
             left: 50%;
             transform: translateX(-50%) translateY(-6px);
-            background: rgba(255,255,255,0.98);
+            background: rgba(20,20,20,0.98);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-radius: 16px;
@@ -102,7 +102,7 @@
             pointer-events: none;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 200;
-            border: 1px solid rgba(0,0,0,0.04);
+            border: 1px solid rgba(255,255,255,0.05);
         }
         .nav-links li.has-arrow:hover .dropdown,
         .nav-links li.has-arrow.open .dropdown {
@@ -116,7 +116,7 @@
             top: -6px; left: 50%;
             transform: translateX(-50%);
             width: 12px; height: 12px;
-            background: rgba(255,255,255,0.98);
+            background: rgba(20,20,20,0.98);
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         }
         .nav-links li.has-arrow .dropdown li a {
@@ -129,7 +129,7 @@
             font-weight: 600;
             letter-spacing: 0.8px;
             text-transform: uppercase;
-            color: #1a1a1a;
+            color: #eeeeee;
             text-decoration: none;
             transition: all 0.25s var(--ease);
             border-radius: 10px;
@@ -150,7 +150,7 @@
         }
         .nav-links li.has-arrow .dropdown li a:hover {
             color: var(--gold);
-            background: rgba(0,0,0,0.03);
+            background: rgba(255,255,255,0.05);
             padding-left: 1.6rem;
         }
         .nav-links li.has-arrow .dropdown li a:hover::after {
@@ -160,20 +160,20 @@
         /* Flyout sub-menu */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
             position: absolute; top: -0.6rem; left: calc(100% + 14px);
-            background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); border-radius: 16px;
+            background: rgba(20,20,20,0.98); backdrop-filter: blur(20px); border-radius: 16px;
             box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 4px 20px rgba(0,0,0,0.05);
             padding: 1rem 0.6rem; min-width: 280px; max-height: 450px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
             transform: translateX(-10px); transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 300;
-            border: 1px solid rgba(0,0,0,0.04);
+            border: 1px solid rgba(255,255,255,0.05);
         }
         .nav-links li.has-arrow .dropdown li.has-flyout:hover .flyout { opacity: 1; pointer-events: all; transform: translateX(0); }
         
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
             display: block; padding: 0.9rem 1.4rem; font-size: 0.82rem; font-weight: 500;
-            letter-spacing: 0.2px; text-transform: none; color: #444; line-height: 1.45;
+            letter-spacing: 0.2px; text-transform: none; color: #aaaaaa; line-height: 1.45;
             border-radius: 8px; margin: 0.1rem 0.4rem;
         }
-        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover { color: var(--gold); background: rgba(0,0,0,0.03); padding-left: 1.6rem; }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover { color: var(--gold); background: rgba(255,255,255,0.05); padding-left: 1.6rem; }
         .nav-links li.has-arrow .dropdown li.has-flyout:hover .flyout,
         .nav-links li.has-arrow .dropdown li.has-flyout.open .flyout {
             opacity: 1;
@@ -187,7 +187,7 @@
             font-weight: 500;
             letter-spacing: 0.3px;
             text-transform: none;
-            color: #333;
+            color: #bbbbbb;
             text-decoration: none;
             border-radius: 6px;
             margin: 0 0.4rem;
@@ -231,8 +231,8 @@
             content: '';
             position: absolute; inset: 0;
             background:
-                linear-gradient(120deg, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0.28) 60%, rgba(255,255,255,0.10) 100%),
-                linear-gradient(to top, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 45%);
+                linear-gradient(120deg, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.5) 60%, rgba(10,10,10,0.2) 100%),
+                linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(255,255,255,0) 45%);
         }
         .hero-content {
             position: relative; z-index: 1;
@@ -256,7 +256,7 @@
             margin: 2.2rem 0;
         }
         .hero-tagline {
-            font-size: 1rem; color: #555; line-height: 1.75;
+            font-size: 1rem; color: #bbbbbb; line-height: 1.75;
             max-width: 520px; font-weight: 400;
         }
 
@@ -264,7 +264,7 @@
            METRICS BAR
         ═══════════════════════════ */
         .metrics {
-            background: var(--black);
+            background: var(--white);
             display: grid; grid-template-columns: repeat(4,1fr);
         }
         .metric-item {
@@ -299,7 +299,7 @@
             margin-bottom: 1.2rem;
         }
         .sec-body {
-            font-size: 1rem; color: #666; line-height: 1.9;
+            font-size: 1rem; color: #999999; line-height: 1.9;
             max-width: 640px;
         }
 
@@ -314,7 +314,7 @@
         }
         .wwa-left {}
         .wwa-body {
-            font-size: 1.05rem; color: #555; line-height: 1.95;
+            font-size: 1.05rem; color: #bbbbbb; line-height: 1.95;
             margin-top: 2rem;
         }
         .wwa-body p { margin-bottom: 1.6rem; }
@@ -394,30 +394,30 @@
             letter-spacing: 1px;
         }
         .val-desc {
-            background: #f8f8f8;
+            background: #151515;
             padding: 2.2rem 3rem;
             border-radius: 24px;
             font-size: 1.05rem;
-            color: #444;
+            color: #aaaaaa;
             line-height: 1.6;
             transition: background 0.3s;
         }
         .val-desc:hover {
-            background: #f0f0f0;
+            background: #1f1f1f;
         }
 
         /* ═══════════════════════════
            GLOBAL PRESENCE
         ═══════════════════════════ */
         .global-sec {
-            background: var(--black); padding: 7rem 5%;
+            background: var(--white); padding: 7rem 5%;
         }
         .global-wrap { max-width: 1160px; margin: 0 auto; }
         .global-head {
             display: grid; grid-template-columns: 1fr 1fr;
             gap: 3rem; align-items: end; margin-bottom: 4rem;
         }
-        .global-head .sec-title { color: var(--white); }
+        .global-head .sec-title { color: var(--black); }
         .global-head .sec-body { color: rgba(255,255,255,0.4); }
         .countries {
             display: grid; grid-template-columns: repeat(5,1fr); gap: 1rem;
@@ -431,7 +431,7 @@
         }
         .country:hover {
             border-color: rgba(201,168,76,0.5);
-            background: rgba(201,168,76,0.06);
+            background: rgba(201,168,76,0.1);
             transform: translateY(-4px);
         }
         .country-flag { font-size: 2.4rem; display: block; margin-bottom: 0.8rem; }
@@ -570,7 +570,7 @@
         }
         .tl-circle {
             width: 52px; height: 52px; border-radius: 50%;
-            background: var(--black);
+            background: var(--white);
             display: flex; align-items: center; justify-content: center;
             flex-shrink: 0;
         }
@@ -592,7 +592,7 @@
         }
         .tl-ventures { list-style: none; }
         .tl-ventures li {
-            font-size: 0.88rem; color: #666; line-height: 1.7;
+            font-size: 0.88rem; color: #999999; line-height: 1.7;
             padding: 0.55rem 0;
             border-bottom: 1px solid var(--light);
         }
@@ -625,7 +625,7 @@
             letter-spacing: -0.5px; text-transform: none;
         }
         .vm-text {
-            font-size: 1.1rem; color: #555; line-height: 1.9;
+            font-size: 1.1rem; color: #bbbbbb; line-height: 1.9;
         }
 
         /* ═══════════════════════════
@@ -944,7 +944,7 @@
     <!-- NAV -->
     <nav class="nav">
         <a href="index.html" class="nav-logo">
-            <img src="assets/logo.png.png" alt="Team Oak Logo" style="height: 80px; width: auto;">
+            <img src="assets/logo.png.png" alt="Team Oak Logo" style="height: 80px; width: auto; filter: brightness(0) invert(1) !important;">
         </a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>

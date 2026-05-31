@@ -13,13 +13,13 @@
     <style>
         /* White Theme Custom Overrides for Contact Page */
         body {
-            --bg-dark: #ffffff;
-            --bg-charcoal: #f9f9fb;
-            --bg-card: #efede7;
-            --text-light: #111111;
-            --text-muted: #555555;
+            --bg-dark: #0d0d0d;
+            --bg-charcoal: #151515;
+            --bg-card: #111111;
+            --text-light: #ffffff;
+            --text-muted: #999999;
             --accent-gold: #c59b27;
-            --border-color: rgba(0, 0, 0, 0.08);
+            --border-color: rgba(255, 255, 255, 0.08);
             
             background-color: var(--bg-dark) !important;
             color: var(--text-light) !important;
@@ -145,7 +145,7 @@
             width: 100%;
             background: transparent;
             border: none;
-            border-bottom: 1px solid rgba(0,0,0,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
             padding: 1rem 0;
             font-family: var(--font-body);
             font-size: 1.1rem;
@@ -179,7 +179,7 @@
         .submit-btn {
             display: inline-block;
             background: var(--text-light);
-            color: #fff;
+            color: var(--bg-dark);
             font-family: var(--font-body);
             font-size: 1rem;
             font-weight: 600;
@@ -201,21 +201,21 @@
         .nav {
             position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
             padding: 1.3rem 5%;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(10,10,10,0.85);
             backdrop-filter: blur(14px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
             display: flex; justify-content: space-between; align-items: center;
         }
         .nav-logo img { height: 70px; width: auto; }
         .nav-links { list-style: none; display: flex; gap: 2.8rem; margin: 0;}
         .nav-links a {
             font-size: 0.72rem; font-weight: 600; letter-spacing: 2px;
-            text-transform: uppercase; color: #555555; text-decoration: none;
+            text-transform: uppercase; color: var(--text-muted); text-decoration: none;
             transition: color 0.25s;
             font-family: var(--font-body);
         }
-        .nav-links a:hover, .nav-links a.active { color: #111111; }
-        .nav-links a.active { border-bottom: 2px solid var(--accent-gold); padding-bottom: 4px; color: #111111; }
+        .nav-links a:hover, .nav-links a.active { color: var(--text-light); }
+        .nav-links a.active { border-bottom: 2px solid var(--accent-gold); padding-bottom: 4px; color: var(--text-light); }
         
         /* Dropdown logic for nav */
         .nav-links li.has-arrow { position: relative; }
@@ -228,8 +228,8 @@
         .nav-links li.has-arrow:hover > a::after { transform: rotate(225deg) translateY(2px); }
         .nav-links li.has-arrow .dropdown {
             position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
-            background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-            border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.1); padding: 1rem 0.6rem;
+            background: rgba(20,20,20,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); padding: 1rem 0.6rem;
             min-width: 240px; list-style: none; opacity: 0; pointer-events: none;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
@@ -237,16 +237,16 @@
         .nav-links li.has-arrow .dropdown li a {
             display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.4rem;
             font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.8px;
-            color: #333333; text-decoration: none; transition: all 0.25s ease; border-radius: 8px; margin: 0.2rem 0.4rem; text-transform: uppercase;
+            color: #ddd; text-decoration: none; transition: all 0.25s ease; border-radius: 8px; margin: 0.2rem 0.4rem; text-transform: uppercase;
         }
-        .nav-links li.has-arrow .dropdown li a:hover { color: var(--accent-gold); background: rgba(0,0,0,0.03); padding-left: 1.6rem; }
+        .nav-links li.has-arrow .dropdown li a:hover { color: var(--accent-gold); background: rgba(255,255,255,0.05); padding-left: 1.6rem; }
 
         .nav-btn {
             font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px;
-            text-transform: uppercase; color: #111111; border: 1.5px solid rgba(0, 0, 0, 0.15);
+            text-transform: uppercase; color: var(--text-light); border: 1.5px solid var(--border-color);
             padding: 0.65rem 1.8rem; border-radius: 2px; text-decoration: none; transition: all 0.25s;
         }
-        .nav-btn:hover { background: #111111; color: #ffffff; }
+        .nav-btn:hover { background: var(--text-light); color: var(--bg-dark); }
 
         /* Animations */
         .fu { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
@@ -295,8 +295,8 @@
         /* Office Section */
         .office-sec {
             padding: 8rem 5%;
-            background-color: #efede7;
-            color: #111;
+            background-color: var(--bg-charcoal);
+            color: #fff;
         }
         .office-wrap {
             max-width: 1000px;
@@ -307,7 +307,7 @@
             font-family: var(--font-heading);
             font-size: 2.8rem;
             font-weight: 800;
-            color: #222;
+            color: #eee;
             margin-bottom: 4rem;
             letter-spacing: -1px;
         }
@@ -318,7 +318,7 @@
             align-items: stretch;
         }
         .office-card {
-            background: #ffffff;
+            background: #111111;
             border-radius: 20px;
             padding: 3rem;
             box-shadow: 0 10px 30px rgba(0,0,0,0.03);
@@ -331,12 +331,12 @@
             font-size: 1.6rem;
             font-weight: 800;
             margin-bottom: 1.5rem;
-            color: #111;
+            color: #fff;
         }
         .office-card p {
             font-family: var(--font-body);
             font-size: 1.05rem;
-            color: #333;
+            color: #ddd;
             margin-bottom: 0.8rem;
             line-height: 1.6;
         }
@@ -531,7 +531,7 @@
     <!-- NAV -->
     <nav class="nav">
         <a href="index.html" class="nav-logo">
-            <img src="assets/logo.png.png" alt="Team Oak Logo">
+            <img src="assets/logo.png.png" alt="Team Oak Logo" style="filter: brightness(0) invert(1) !important;">
         </a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -782,10 +782,10 @@
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                nav.style.background = 'rgba(255, 255, 255, 0.95)';
-                nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.05)';
+                nav.style.background = 'rgba(10,10,10,0.95)';
+                nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.5)';
             } else {
-                nav.style.background = 'rgba(255, 255, 255, 0.85)';
+                nav.style.background = 'rgba(10,10,10,0.85)';
                 nav.style.boxShadow = 'none';
             }
         });

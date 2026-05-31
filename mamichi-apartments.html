@@ -21,7 +21,7 @@
             display: flex; justify-content: space-between; align-items: center;
             transition: background 0.3s ease, box-shadow 0.3s ease;
         }
-        .nav-logo img { height: 70px; width: auto; }
+        .nav-logo img { height: 70px; width: auto;  filter: brightness(0) invert(1) !important; }
         .nav-links { list-style: none; display: flex; gap: 2.8rem; margin: 0; padding: 0; }
         .nav-links a {
             font-family: var(--font-body);
@@ -314,29 +314,29 @@
            MINIMAL STANDARD FOOTER (WHITE THEME)
         ═══════════════════════════ */
         .minimal-footer {
-            background-color: #ffffff;
-            color: #111111;
+            background-color: #0d0d0d;
+            color: #ffffff;
             font-family: 'Plus Jakarta Sans', sans-serif;
             padding: 5rem 5% 2rem;
-            border-top: 1px solid rgba(0,0,0,0.08);
+            border-top: 1px solid rgba(255,255,255,0.05);
             position: relative;
             z-index: 10;
         }
         .mf-container { max-width: 1300px; margin: 0 auto; }
         .mf-columns { display: grid; grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 1.5fr; gap: 3rem; padding-bottom: 4rem; }
-        .mf-col h4 { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #111111; margin-bottom: 2rem; letter-spacing: -0.2px; }
+        .mf-col h4 { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 2rem; letter-spacing: -0.2px; }
         .mf-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem; }
         .mf-col ul li a, .mf-text { font-size: 0.95rem; color: var(--text-muted); text-decoration: none; transition: color 0.3s; line-height: 1.5; }
-        .mf-col ul li a:hover { color: #111111; }
+        .mf-col ul li a:hover { color: #ffffff; }
         .mf-contact ul { gap: 1.5rem; }
         .mf-contact-item { display: flex; align-items: flex-start; gap: 1rem; }
-        .mf-icon { width: 32px; height: 32px; border-radius: 50%; background-color: transparent; color: #c59b27; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 0 0 1px rgba(0,0,0,0.08); transition: all 0.3s ease; }
+        .mf-icon { width: 32px; height: 32px; border-radius: 50%; background-color: transparent; color: #c59b27; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 0 0 1px rgba(255,255,255,0.08); transition: all 0.3s ease; }
         .mf-icon svg { width: 16px; height: 16px; fill: currentColor; }
         .mf-text { padding-top: 5px; }
-        .mf-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.9rem; color: #888888; }
+        .mf-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; color: #777777; }
         .mf-legal { display: flex; gap: 2rem; }
-        .mf-legal a { color: #888888; text-decoration: none; transition: color 0.3s; }
-        .mf-legal a:hover { color: #111111; }
+        .mf-legal a { color: #777777; text-decoration: none; transition: color 0.3s; }
+        .mf-legal a:hover { color: #ffffff; }
 
         @media (max-width: 1024px) {
             .mf-columns { grid-template-columns: 1fr 1fr 1fr; gap: 3rem 2rem; }
@@ -510,7 +510,7 @@
     <!-- NAV -->
     <nav class="nav" id="main-nav">
         <a href="index.html" class="nav-logo">
-            <img src="assets/logo.png.png" alt="Team Oak Logo">
+            <img src="assets/logo.png.png" alt="Team Oak Logo" style="filter: brightness(0) invert(1) !important;">
         </a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
