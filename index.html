@@ -246,7 +246,14 @@
 }
 </style>
 <!-- END HOME ALIGNMENT FIX -->
-
+<!-- PREVENT MOBILE NAV BLINK -->
+<style>
+@media (max-width: 768px) {
+    .nav-links, .hero-nav-links, .nav-btn, .hero-nav-cta {
+        display: none !important;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -725,16 +732,15 @@ document.addEventListener('DOMContentLoaded', function() {
     .mobile-menu-btn { display: flex; }
     
     .nav-links, .hero-nav-links {
-        display: flex !important;
+        display: none !important;
         flex-direction: column;
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 280px;
+        right: 0;
+        width: 100% !important;
         height: 100vh;
         background: rgba(10, 10, 10, 0.98);
         padding: 6rem 2rem 2rem;
-        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         align-items: flex-start;
         gap: 1.5rem !important;
         border-left: 1px solid rgba(255,255,255,0.05);
@@ -744,7 +750,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     .nav.mobile-active .nav-links,
     .hero-navbar.mobile-active .hero-nav-links {
-        right: 0 !important;
+        display: flex !important;
+        animation: slideIn 0.3s ease forwards;
+    }
+    
+    @keyframes slideIn {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
     }
     
     .mobile-menu-btn.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
