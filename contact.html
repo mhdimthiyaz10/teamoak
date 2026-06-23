@@ -225,7 +225,7 @@
             border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
             transform: rotate(45deg) translateY(-2px); transition: transform 0.25s; flex-shrink: 0;
         }
-        .nav-links li.has-arrow:hover > a::after { transform: rotate(225deg) translateY(2px); }
+        .nav-links li.has-arrow.open > a::after { transform: rotate(225deg) translateY(2px); }
         .nav-links li.has-arrow .dropdown {
             position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
             background: rgba(20,20,20,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
@@ -233,7 +233,7 @@
             min-width: 240px; list-style: none; opacity: 0; pointer-events: none;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
-        .nav-links li.has-arrow:hover .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        /* .nav-links li.has-arrow:hover .dropdown { ... } removed to enforce click only */
         .nav-links li.has-arrow .dropdown li a {
             display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.4rem;
             font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.8px;
@@ -599,6 +599,7 @@
                             <li><a href="wymax-media.html">WYMAX MEDIA</a></li>
                             <li><a href="team-oak-builders.html">Team Oak Builders &amp; Developers</a></li>
                             <li><a href="oak-academy-of-design.html">Oak Academy of Design</a></li>
+                            <li><a href="team-oak-logistics.html">Team Oak Logistics Services</a></li>
                         </ul>
                     </li>
                     <li class="has-flyout"><a href="javascript:void(0);">Industrial</a>

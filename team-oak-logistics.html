@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Team Oak Food Stuff Trading LLC — A prominent foodstuff trading company in Saudi Arabia.">
-    <title>Team Oak Food Stuff Trading LLC</title>
+    <meta name="description" content="Team Oak Logistics Services provides seamless and efficient supply chain solutions.">
+    <title>Team Oak Logistics Services | Team Oak</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=10">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11">
     <style>
-        /* Minimalist specific overrides for this page */
+        
         .page-hero {
             position: relative;
-            min-height: 85vh;
+            min-height: 80vh;
             display: flex;
             align-items: flex-end;
-            padding: 0 5% 2rem;
+            padding: 8rem 5% 2rem;
             overflow: hidden;
             background-color: var(--bg-dark);
         }
         .page-hero-bg {
             position: absolute; inset: 0;
-            background: url('assets/food_stuff_trading_bg.png') center/cover no-repeat;
+            background: url('assets/team-oak-transport-bg.png') center/cover no-repeat;
             z-index: 0;
         }
         .page-hero-bg::after {
@@ -42,7 +42,7 @@
         }
         .page-hero h1 {
             font-family: var(--font-heading);
-            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
             font-weight: 800; line-height: 1.1;
             color: var(--text-light); letter-spacing: -1px;
             margin-bottom: 1.5rem;
@@ -93,7 +93,7 @@
             border-left: 3px solid var(--accent-gold);
             padding-left: 2rem;
             margin: 4rem 0;
-            font-family: var(--font-heading);
+            font-family: 'Cormorant Garamond', serif;
             font-size: 1.8rem;
             font-weight: 400;
             color: var(--text-light);
@@ -136,7 +136,7 @@
             background: rgba(20,20,20,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); padding: 1rem 0.6rem;
             min-width: 240px; max-height: 400px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
          .nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
         .nav-links li.has-arrow .dropdown li a {
@@ -158,10 +158,50 @@
         .fu.in { opacity: 1; transform: none; }
         .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
         
+        /* Footer matching index/about */
+        .footer {
+            background: #f9f9fb; padding: 5rem 5% 2.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top {
+            display: grid; grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem; padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .f-logo {
+            font-family: var(--font-heading); font-size: 1.2rem;
+            font-weight: 800; letter-spacing: 3px; color: #111111;
+        }
+        .f-logo span { color: var(--accent-gold); }
+        .f-tagline {
+            margin-top: 1rem; font-size: 0.85rem;
+            color: #555555; line-height: 1.8;
+            max-width: 300px;
+        }
+        .f-col h4 {
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 3px;
+            text-transform: uppercase; color: #888888;
+            margin-bottom: 1.5rem;
+        }
+        .f-col ul { list-style: none; }
+        .f-col li { margin-bottom: 0.7rem; }
+        .f-col a {
+            font-size: 0.85rem; color: #555555;
+            text-decoration: none; transition: color 0.25s;
+        }
+        .f-col a:hover { color: #111111; }
+        .f-col p { font-size: 0.85rem; color: #555555; margin-bottom: 0.7rem; }
+        .footer-bottom {
+            text-align: center; padding-top: 2rem;
+            font-size: 0.75rem; color: #888888;
+        }
+        
         @media (max-width: 768px) {
             .nav-links, .nav-btn { display: none; }
             .page-hero { min-height: 50vh; padding-bottom: 4rem; }
             .page-hero h1 { font-size: 2.8rem; }
+            .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
             .story-text h2 { font-size: 2rem; }
             .highlight-quote { font-size: 1.4rem; padding-left: 1.5rem; }
         }
@@ -182,7 +222,7 @@
         .mf-columns { display: grid; grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 1.5fr; gap: 3rem; padding-bottom: 4rem; }
         .mf-col h4 { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 2rem; letter-spacing: -0.2px; }
         .mf-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem; }
-        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: #999999; text-decoration: none; transition: color 0.3s; line-height: 1.5; }
+        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: var(--text-muted); text-decoration: none; transition: color 0.3s; line-height: 1.5; }
         .mf-col ul li a:hover { color: #ffffff; }
         .mf-contact ul { gap: 1.5rem; }
         .mf-contact-item { display: flex; align-items: flex-start; gap: 1rem; }
@@ -203,7 +243,18 @@
             .mf-bottom { flex-direction: column; gap: 1.5rem; text-align: center; }
         }
 
-        /* MEGA MENU OVERRIDE */
+    </style>
+
+    
+
+
+    
+
+
+    <style>
+        /* ═══════════════════════════
+           MEGA MENU OVERRIDE V5
+        ═══════════════════════════ */
         .nav-links li.has-arrow .dropdown {
             position: absolute !important;
             top: calc(100% + 10px) !important;
@@ -245,6 +296,7 @@
             border: none !important;
         }
 
+        /* Arrow for the left menu items (Hidden as requested) */
         .nav-links li.has-arrow .dropdown > li > a::after {
             display: none !important;
             content: "" !important;
@@ -257,6 +309,7 @@
             color: #111111 !important;
         }
 
+        /* Right Panel (Flyout) */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
             position: absolute !important;
             top: 0 !important;
@@ -276,6 +329,7 @@
             max-height: 450px !important;
         }
 
+        /* Custom Scrollbar for Flyout */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout::-webkit-scrollbar {
             width: 5px !important;
         }
@@ -291,6 +345,7 @@
             background: #c59b27 !important;
         }
 
+        /* CSS trick to show first tab by default */
         .nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout {
             opacity: 1 !important;
             pointer-events: all !important;
@@ -309,6 +364,7 @@
             z-index: 10;
         }
 
+        /* Flyout Links */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
             padding: 1rem 1.2rem !important;
             font-family: 'Plus Jakarta Sans', sans-serif !important;
@@ -330,17 +386,20 @@
             content: none !important;
         }
 
+        /* Hover state matching the image: Gold text, light grey background */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover {
             color: #c59b27 !important;
             background: #f7f7f7 !important;
         }
         
+        /* Fix for mobile screens */
         @media (max-width: 1024px) {
             .nav-links li.has-arrow .dropdown {
                 display: none !important;
             }
         }
     </style>
+
 
     <style>
         /* Hide main nav arrow */
@@ -436,8 +495,8 @@
     <section class="page-hero">
         <div class="page-hero-bg"></div>
         <div class="page-hero-content">
-            <span class="page-eyebrow fu">Trading & Distribution</span>
-            <h1 class="fu d1">Team Oak<br><em>Food Stuff Trading LLC</em></h1>
+            <span class="page-eyebrow fu">Global Supply Chain & Freight</span>
+            <h1 class="fu d1">Team Oak<br><em>Logistics Services</em></h1>
             <div class="page-rule fu d2"></div>
         </div>
     </section>
@@ -447,24 +506,186 @@
         <div class="content-wrap">
             <div class="story-block">
                 <div class="story-text">
-                    <h2 class="fu">Prominent Foodstuff Trading Company</h2>
-                    <p class="fu d1">Established in 2020, Team Oak Food Stuff Trading Company LLC is a prominent foodstuff trading company based in Makkah, Saudi Arabia. Despite our recent inception, we have rapidly emerged as a leading player in the industry.</p>
+                    <h2 class="fu" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; color: #ffffff; margin-bottom: 2rem;">Connecting Customers with Trusted Logistics</h2>
                     
-                    <p class="fu d2">Our commitment to excellence, combined with a diverse range of premium food products sourced from reputable suppliers worldwide, has earned us the trust of our valued customers.</p>
+                    <p class="fu d1" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; line-height: 2; color: #cccccc; text-align: justify;">
+                        <strong>Team Oak Logistics Services</strong> is the logistics and transportation division of <strong>Team Oak</strong>, specializing in <strong>freight brokerage and transport coordination services</strong> across the Kingdom of Saudi Arabia.
+                    </p>
 
-                    <div class="highlight-quote fu">
-                        "With a focus on quality, reliability, and timely delivery, we aim to be the preferred choice for foodstuff trading in the region."
+                    <p class="fu d2" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; line-height: 2; color: #cccccc; text-align: justify;">
+                        We provide efficient and reliable logistics solutions by connecting customers with a trusted network of transport partners. Our role is to manage the movement of goods through effective coordination, ensuring smooth operations, timely execution, and cost-effective delivery solutions.
+                    </p>
+                    
+                    <p class="fu d1" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; line-height: 2; color: #cccccc; text-align: justify;">
+                        We focus on simplifying logistics for businesses by handling end-to-end freight coordination, including booking, scheduling, communication, and delivery support.
+                    </p>
+
+                    <h2 class="fu" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; color: #ffffff; margin-top: 3.5rem; margin-bottom: 1.5rem;">Our Services</h2>
+
+                    <div class="services-grid fu d2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                        
+                        <!-- Freight Brokerage Services -->
+                        <div style="background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; color: #c59b27; margin-bottom: 1rem;">Freight Brokerage Services</h3>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; line-height: 1.8;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Truck sourcing and booking (FTL &amp; LTL)
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Transport coordination across Saudi Arabia
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Carrier management and negotiation
+                                </li>
+                                <li style="display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Load matching and dispatch services
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Logistics Coordination -->
+                        <div style="background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; color: #c59b27; margin-bottom: 1rem;">Logistics Coordination</h3>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; line-height: 1.8;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> End-to-end shipment management
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Route planning and scheduling support
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Communication with drivers and transport providers
+                                </li>
+                                <li style="display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Delivery coordination and status updates
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Industry Solutions -->
+                        <div style="background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; color: #c59b27; margin-bottom: 1rem;">Industry Solutions</h3>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; line-height: 1.8;">
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> FMCG logistics coordination
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Construction material transport solutions
+                                </li>
+                                <li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Industrial and heavy cargo movement
+                                </li>
+                                <li style="display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Retail and commercial distribution support
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
 
-                    <h2 class="fu">Our Commitment to Excellence</h2>
-                    <p class="fu d1">As we grow, our dedication to customer satisfaction and ethical business practices remains unwavering.</p>
-                    
+                    <!-- Vision & Mission Grid -->
+                    <div class="vm-grid fu d1" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-top: 4rem; margin-bottom: 4rem;">
+                        
+                        <div style="background: rgba(255,255,255,0.02); padding: 2.5rem; border-radius: 12px; border-left: 3px solid #c59b27;">
+                            <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; color: #ffffff; margin-bottom: 1.5rem;">Our Vision</h2>
+                            <p style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; line-height: 2; color: #cccccc; text-align: justify;">
+                                To become a leading freight brokerage company in Saudi Arabia, delivering reliable, efficient, and customer-focused logistics coordination services.
+                            </p>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.02); padding: 2.5rem; border-radius: 12px; border-left: 3px solid #c59b27;">
+                            <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; color: #ffffff; margin-bottom: 1.5rem;">Our Mission</h2>
+                            <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; line-height: 1.8;">
+                                <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Provide dependable freight brokerage and transport coordination services
+                                </li>
+                                <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Ensure timely and cost-effective movement of goods
+                                </li>
+                                <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Build strong relationships with trusted transport partners
+                                </li>
+                                <li style="margin-bottom: 0.8rem; display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Deliver transparent communication and professional service
+                                </li>
+                                <li style="display: flex; align-items: flex-start; gap: 10px;">
+                                    <span style="color: #c59b27; font-size: 1.2rem;">&bull;</span> Support the logistics growth of Saudi Arabia under Vision 2030
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Core Values -->
+                    <h2 class="fu" style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; color: #ffffff; margin-bottom: 1.5rem;">Our Core Values</h2>
+                    <div class="values-grid fu d2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                        
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <strong style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: #c59b27; display: block; margin-bottom: 0.5rem;">Integrity</strong>
+                            <span style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 0.95rem;">Honest and transparent business practices</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <strong style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: #c59b27; display: block; margin-bottom: 0.5rem;">Reliability</strong>
+                            <span style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 0.95rem;">Consistent and dependable service delivery</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <strong style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: #c59b27; display: block; margin-bottom: 0.5rem;">Customer Focus</strong>
+                            <span style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 0.95rem;">Tailored solutions for every client</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <strong style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: #c59b27; display: block; margin-bottom: 0.5rem;">Efficiency</strong>
+                            <span style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 0.95rem;">Smart coordination and optimized transport solutions</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <strong style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: #c59b27; display: block; margin-bottom: 0.5rem;">Accountability</strong>
+                            <span style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 0.95rem;">Responsibility in every shipment</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                            <strong style="font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: #c59b27; display: block; margin-bottom: 0.5rem;">Excellence</strong>
+                            <span style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 0.95rem;">Continuous improvement in service quality</span>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Why Choose Us -->
+                    <div class="why-choose-us fu d1" style="background: linear-gradient(145deg, rgba(20,20,20,0.8), rgba(10,10,10,0.9)); padding: 3rem; border-radius: 12px; border: 1px solid rgba(197, 155, 39, 0.2);">
+                        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; color: #ffffff; margin-bottom: 2rem; text-align: center;">Why Choose Team Oak Logistics Services?</h2>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="color: #c59b27; font-size: 1.5rem; line-height: 1;">&#10003;</div>
+                                <div style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 1.05rem;">Strong and reliable transport partner network across Saudi Arabia</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="color: #c59b27; font-size: 1.5rem; line-height: 1;">&#10003;</div>
+                                <div style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 1.05rem;">Fast and flexible freight solutions</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="color: #c59b27; font-size: 1.5rem; line-height: 1;">&#10003;</div>
+                                <div style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 1.05rem;">Professional coordination and communication</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="color: #c59b27; font-size: 1.5rem; line-height: 1;">&#10003;</div>
+                                <div style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 1.05rem;">Transparent operations and accountability</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="color: #c59b27; font-size: 1.5rem; line-height: 1;">&#10003;</div>
+                                <div style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 1.05rem;">Industry knowledge and operational expertise</div>
+                            </div>
+                            <div style="display: flex; align-items: flex-start; gap: 15px;">
+                                <div style="color: #c59b27; font-size: 1.5rem; line-height: 1;">&#10003;</div>
+                                <div style="font-family: 'Plus Jakarta Sans', sans-serif; color: #cccccc; font-size: 1.05rem;">Dedicated customer support</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
+        <!-- STANDARDIZED FOOTER -->
+        <!-- STANDARDIZED FOOTER -->
+        <!-- MINIMAL STANDARD FOOTER -->
     <svg style="display:none;">
         <symbol id="icon-phone" viewBox="0 0 24 24">
             <path fill="currentColor" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
@@ -484,11 +705,11 @@
                     <ul>
                         <li class="mf-contact-item">
                             <div class="mf-icon"><svg><use href="#icon-phone"></use></svg></div>
-                            <div class="mf-text">+966565990100</div>
+                            <div class="mf-text">+971543310543</div>
                         </li>
                         <li class="mf-contact-item">
                             <div class="mf-icon"><svg><use href="#icon-location"></use></svg></div>
-                            <div class="mf-text">Buhayrath Mecca Saudi Arabia</div>
+                            <div class="mf-text">M 43 Musaffah ,Abu Dhabi</div>
                         </li>
                         <li class="mf-contact-item">
                             <div class="mf-icon"><svg><use href="#icon-email"></use></svg></div>
@@ -554,13 +775,11 @@
     </footer>
 
     <script>
-        // Simple Intersection Observer for fade-ups
         const io = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fu').forEach(el => io.observe(el));
         
-        // Sticky Navigation logic
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
