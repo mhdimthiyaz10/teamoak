@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kizhisseri Jewellers — A trusted name in the world of exquisite jewellery, based in Kerala, India.">
-    <title>Kizhisseri Jewellers</title>
+    <meta name="description" content="Explore the diverse portfolio of ventures under the Team Oak umbrella.">
+    <title>Our Ventures | Team Oak</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=10">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11">
     <style>
-        /* Minimalist specific overrides for this page */
+        
         .page-hero {
             position: relative;
-            min-height: 85vh;
+            min-height: 70vh;
             display: flex;
             align-items: flex-end;
             padding: 0 5% 2rem;
@@ -22,7 +22,7 @@
         }
         .page-hero-bg {
             position: absolute; inset: 0;
-            background: url('assets/kizhisseri_jewellers_bg.png') center/cover no-repeat;
+            background: url('assets/contact-bg.png') center/cover no-repeat;
             z-index: 0;
         }
         .page-hero-bg::after {
@@ -60,15 +60,14 @@
             color: var(--text-light);
         }
         .content-wrap {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
         }
         
         .story-block {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 4rem;
-            align-items: start;
+            gap: 3rem;
         }
         
         .story-text p {
@@ -94,50 +93,12 @@
             border-left: 3px solid var(--accent-gold);
             padding-left: 2rem;
             margin: 4rem 0;
-            font-family: var(--font-heading);
-            font-size: 1.6rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
             font-weight: 400;
             color: var(--text-light);
             line-height: 1.5;
             font-style: italic;
-        }
-
-        .logo-placeholder-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding-top: 4rem; 
-        }
-        
-        .logo-image-wrapper {
-            width: 100%;
-            max-width: 450px;
-            aspect-ratio: 1;
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: border-color 0.3s ease;
-        }
-        
-        .logo-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            transform: scale(1.6); /* Massive zoom to cut out transparent padding */
-            transition: transform 0.3s ease;
-        }
-
-        .logo-image-wrapper:hover {
-            border-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .logo-image-wrapper:hover .logo-image {
-            transform: scale(1.7) translateY(-2px);
         }
         
         /* NAV & FOOTER overrides to match index.css global styles where possible */
@@ -175,7 +136,7 @@
             background: rgba(20,20,20,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); padding: 1rem 0.6rem;
             min-width: 240px; max-height: 400px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
          .nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
         .nav-links li.has-arrow .dropdown li a {
@@ -197,21 +158,52 @@
         .fu.in { opacity: 1; transform: none; }
         .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
         
+        /* Footer matching index/about */
+        .footer {
+            background: #f9f9fb; padding: 5rem 5% 2.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top {
+            display: grid; grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem; padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .f-logo {
+            font-family: var(--font-heading); font-size: 1.2rem;
+            font-weight: 800; letter-spacing: 3px; color: #111111;
+        }
+        .f-logo span { color: var(--accent-gold); }
+        .f-tagline {
+            margin-top: 1rem; font-size: 0.85rem;
+            color: #555555; line-height: 1.8;
+            max-width: 300px;
+        }
+        .f-col h4 {
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 3px;
+            text-transform: uppercase; color: #888888;
+            margin-bottom: 1.5rem;
+        }
+        .f-col ul { list-style: none; }
+        .f-col li { margin-bottom: 0.7rem; }
+        .f-col a {
+            font-size: 0.85rem; color: #555555;
+            text-decoration: none; transition: color 0.25s;
+        }
+        .f-col a:hover { color: #111111; }
+        .f-col p { font-size: 0.85rem; color: #555555; margin-bottom: 0.7rem; }
+        .footer-bottom {
+            text-align: center; padding-top: 2rem;
+            font-size: 0.75rem; color: #888888;
+        }
+        
         @media (max-width: 768px) {
             .nav-links, .nav-btn { display: none; }
             .page-hero { min-height: 50vh; padding-bottom: 4rem; }
             .page-hero h1 { font-size: 2.8rem; }
+            .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
             .story-text h2 { font-size: 2rem; }
             .highlight-quote { font-size: 1.4rem; padding-left: 1.5rem; }
-            
-            .story-block {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            .logo-placeholder-container {
-                padding-top: 1rem;
-                justify-content: flex-start;
-            }
         }
     
         /* ═══════════════════════════
@@ -230,7 +222,7 @@
         .mf-columns { display: grid; grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 1.5fr; gap: 3rem; padding-bottom: 4rem; }
         .mf-col h4 { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 2rem; letter-spacing: -0.2px; }
         .mf-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem; }
-        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: #999999; text-decoration: none; transition: color 0.3s; line-height: 1.5; }
+        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: var(--text-muted); text-decoration: none; transition: color 0.3s; line-height: 1.5; }
         .mf-col ul li a:hover { color: #ffffff; }
         .mf-contact ul { gap: 1.5rem; }
         .mf-contact-item { display: flex; align-items: flex-start; gap: 1rem; }
@@ -251,7 +243,18 @@
             .mf-bottom { flex-direction: column; gap: 1.5rem; text-align: center; }
         }
 
-        /* MEGA MENU OVERRIDE */
+    </style>
+
+    
+
+
+    
+
+
+    <style>
+        /* ═══════════════════════════
+           MEGA MENU OVERRIDE V5
+        ═══════════════════════════ */
         .nav-links li.has-arrow .dropdown {
             position: absolute !important;
             top: calc(100% + 10px) !important;
@@ -293,6 +296,7 @@
             border: none !important;
         }
 
+        /* Arrow for the left menu items (Hidden as requested) */
         .nav-links li.has-arrow .dropdown > li > a::after {
             display: none !important;
             content: "" !important;
@@ -305,6 +309,7 @@
             color: #111111 !important;
         }
 
+        /* Right Panel (Flyout) */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
             position: absolute !important;
             top: 0 !important;
@@ -324,6 +329,7 @@
             max-height: 450px !important;
         }
 
+        /* Custom Scrollbar for Flyout */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout::-webkit-scrollbar {
             width: 5px !important;
         }
@@ -339,6 +345,7 @@
             background: #c59b27 !important;
         }
 
+        /* CSS trick to show first tab by default */
         .nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout {
             opacity: 1 !important;
             pointer-events: all !important;
@@ -357,6 +364,7 @@
             z-index: 10;
         }
 
+        /* Flyout Links */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
             padding: 1rem 1.2rem !important;
             font-family: 'Plus Jakarta Sans', sans-serif !important;
@@ -378,17 +386,20 @@
             content: none !important;
         }
 
+        /* Hover state matching the image: Gold text, light grey background */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover {
             color: #c59b27 !important;
             background: #f7f7f7 !important;
         }
         
+        /* Fix for mobile screens */
         @media (max-width: 1024px) {
             .nav-links li.has-arrow .dropdown {
                 display: none !important;
             }
         }
     </style>
+
 
     <style>
         /* Hide main nav arrow */
@@ -484,8 +495,8 @@
     <section class="page-hero">
         <div class="page-hero-bg"></div>
         <div class="page-hero-content">
-            <span class="page-eyebrow fu">Luxury Jewellery</span>
-            <h1 class="fu d1">Kizhisseri<br><em>Jewellers</em></h1>
+            <span class="page-eyebrow fu">Explore Our Portfolio</span>
+            <h1 class="fu d1">Team Oak<br><em>Ventures</em></h1>
             <div class="page-rule fu d2"></div>
         </div>
     </section>
@@ -493,22 +504,21 @@
     <!-- CONTENT -->
     <section class="content-sec">
         <div class="content-wrap">
-            <div class="story-block">
+            <div class="story-block" style="max-width: 850px; margin: 0 auto; text-align: justify;">
                 <div class="story-text">
-                    <h2 class="fu">Exquisite Craftsmanship & Elegance</h2>
-                    <p class="fu d1">Kizhisseri Jewellers, established in 2000 in Perinthalmanna, Kerala, India, is a trusted name in the world of exquisite jewellery. With a legacy of craftsmanship spanning over two decades, we specialize in creating stunning and timeless pieces that reflect elegance and artistry.</p>
+                    <h2 class="fu" style="font-family: 'Outfit', sans-serif; text-align: left; font-size: 2.2rem; color: #ffffff; margin-bottom: 2rem;">Welcome to Our Ventures</h2>
                     
-                    <p class="fu d2">From intricately designed gold and diamond jewellery to unique custom creations, our skilled artisans and meticulous attention to detail ensure unparalleled quality.</p>
-
-                    <div class="highlight-quote fu">
-                        "At Kizhisseri Jewellers, we take pride in offering our customers an unforgettable jewellery experience, celebrating life's precious moments with brilliance, beauty, and authenticity."
-                    </div>
+                    <p class="fu d1" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; line-height: 2; color: #cccccc; text-align: justify;">
+                        This section is currently under development. Please check back later for updates regarding our Ventures.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
+        <!-- STANDARDIZED FOOTER -->
+        <!-- MINIMAL STANDARD FOOTER -->
     <svg style="display:none;">
         <symbol id="icon-phone" viewBox="0 0 24 24">
             <path fill="currentColor" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
@@ -528,11 +538,11 @@
                     <ul>
                         <li class="mf-contact-item">
                             <div class="mf-icon"><svg><use href="#icon-phone"></use></svg></div>
-                            <div class="mf-text">+91-9746048078</div>
+                            <div class="mf-text">+91 75589 34943</div>
                         </li>
                         <li class="mf-contact-item">
                             <div class="mf-icon"><svg><use href="#icon-location"></use></svg></div>
-                            <div class="mf-text">Perinthalmanna Kerala India</div>
+                            <div class="mf-text">Perinthalmanna</div>
                         </li>
                         <li class="mf-contact-item">
                             <div class="mf-icon"><svg><use href="#icon-email"></use></svg></div>
@@ -582,13 +592,11 @@
     </footer>
 
     <script>
-        // Simple Intersection Observer for fade-ups
         const io = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fu').forEach(el => io.observe(el));
         
-        // Sticky Navigation logic
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
