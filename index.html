@@ -254,6 +254,41 @@
     }
 }
 </style>
+<style>
+/* Automatic Crossfade for Client Logos */
+@keyframes autoCrossfadeFront {
+    0% { opacity: 1; }
+    40% { opacity: 1; }
+    50% { opacity: 0; }
+    90% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes autoCrossfadeBack {
+    0% { opacity: 0; }
+    40% { opacity: 0; }
+    50% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.interact-crossfade {
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.interact-crossfade img {
+    position: absolute;
+}
+.interact-crossfade .img-front {
+    z-index: 2;
+    animation: autoCrossfadeFront 6s ease-in-out infinite;
+}
+.interact-crossfade .img-back {
+    z-index: 1;
+    animation: autoCrossfadeBack 6s ease-in-out infinite;
+}
+</style>
 </head>
 
 <body>
@@ -466,35 +501,79 @@
 
             <div class="clients-masonry-grid fade-up">
                 <!-- Row 1 -->
-                <div class="brand-box bg-grey"><img src="assets/file51.png.png" alt="HYUNDAI"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-mint"><img src="assets/file52.png.png" alt="IKEA"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-grey interact-crossfade">
+                    <img src="assets/file51.png.png" alt="HYUNDAI" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file151.png.jpg" alt="HYUNDAI 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-mint interact-crossfade">
+                    <img src="assets/file52.png.png" alt="IKEA" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file152.png.jpeg" alt="IKEA 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
 
 
 
-                <div class="brand-box bg-pink"><img src="assets/file53.png.png" alt="USHA"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-green"><img src="assets/file54.png.png" alt="FedEx"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-bluegrey"><img src="assets/file55.png.png" alt="PHILIPS"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-yellow"><img src="assets/file56.png.png" alt="amazon"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-cyan"><img src="assets/file57.png.png" alt="SUZUKI"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-pink interact-crossfade">
+                    <img src="assets/file53.png.png" alt="USHA" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file153.png.png" alt="USHA 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-green interact-crossfade">
+                    <img src="assets/file54.png.png" alt="FedEx" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file154.png.jpeg" alt="FedEx 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-bluegrey interact-crossfade">
+                    <img src="assets/file55.png.png" alt="PHILIPS" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file155.png.png" alt="PHILIPS 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-yellow interact-crossfade">
+                    <img src="assets/file56.png.png" alt="amazon" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file156.png.png" alt="amazon 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-cyan interact-crossfade">
+                    <img src="assets/file57.png.png" alt="SUZUKI" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file157.png.png" alt="SUZUKI 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
 
                 <!-- Row 2 -->
-                <div class="brand-box bg-pink"><img src="assets/file58.png.png" alt="lyft"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-cyan"><img src="assets/file59.png.png" alt="bigbasket"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-whiteish"><img src="assets/file60.png.png" alt="essilor"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-yellow"><img src="assets/file61.png.png" alt="Mercedes-Benz"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
-                <div class="brand-box bg-pink"><img src="assets/file62.png.png" alt="SIEMENS"
-                        style="width: 85%; max-height: 85%; object-fit: contain;"></div>
+                <div class="brand-box bg-pink interact-crossfade">
+                    <img src="assets/file58.png.png" alt="lyft" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file158.png.jpg" alt="lyft 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-cyan interact-crossfade">
+                    <img src="assets/file59.png.png" alt="bigbasket" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file159.png.png" alt="bigbasket 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-whiteish interact-crossfade">
+                    <img src="assets/file60.png.png" alt="essilor" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file160.png.png" alt="essilor 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-yellow interact-crossfade">
+                    <img src="assets/file61.png.png" alt="Mercedes-Benz" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file161.png.png" alt="Mercedes-Benz 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-pink interact-crossfade">
+                    <img src="assets/file62.png.png" alt="SIEMENS" class="img-front" style="width: 85%; max-height: 85%; object-fit: contain;">
+                    <img src="assets/file162.png.jpg" alt="SIEMENS 2" class="img-back" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                
+                <!-- Row 3 (Placeholders) -->
+                <div class="brand-box bg-grey">
+                    <img src="assets/file163.png.png" alt="Client 13" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-mint">
+                    <img src="assets/file164.png.jpeg" alt="Client 14" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-pink">
+                    <img src="assets/file165.png.webp" alt="Client 15" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-cyan">
+                    <img src="assets/file166.png.png" alt="Client 16" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-bluegrey">
+                    <img src="assets/file167.png.jpg" alt="Client 17" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
+                <div class="brand-box bg-whiteish">
+                    <img src="assets/file168.png.png" alt="Client 18" style="width: 85%; max-height: 85%; object-fit: contain;">
+                </div>
             </div>
         </section>
 
