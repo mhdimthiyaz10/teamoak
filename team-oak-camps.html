@@ -496,8 +496,47 @@
             <li><a href="media.html">Media</a></li>
             <li><a href="career.html">Career</a></li>
         <li class="mobile-contact"><a href="contact.html">Contact Us</a></li>
+<li class="mobile-switcher-li">
+    <div class="premium-lang-switcher mobile-switcher">
+        <button class="pls-btn" aria-label="Select Language" aria-expanded="false">
+            <svg class="pls-globe" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span class="pls-current">EN</span>
+            <svg class="pls-arrow" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="pls-dropdown">
+            <button class="pls-option active" data-lang="en">
+                <span class="pls-code">EN</span>
+                <span class="pls-name">English</span>
+            </button>
+            <button class="pls-option" data-lang="ar">
+                <span class="pls-code">ع</span>
+                <span class="pls-name">العربية</span>
+            </button>
+        </div>
+    </div>
+</li>
         </ul>
-        <a href="contact.html" class="nav-btn">Contact Us</a>
+        
+<div class="nav-actions" style="display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
+<a href="contact.html" class="nav-btn">Contact Us</a>
+<div class="premium-lang-switcher desktop-switcher">
+    <button class="pls-btn" aria-label="Select Language" aria-expanded="false">
+        <svg class="pls-globe" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        <span class="pls-current">EN</span>
+        <svg class="pls-arrow" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </button>
+    <div class="pls-dropdown">
+        <button class="pls-option active" data-lang="en">
+            <span class="pls-code">EN</span>
+            <span class="pls-name">English</span>
+        </button>
+        <button class="pls-option" data-lang="ar">
+            <span class="pls-code">ع</span>
+            <span class="pls-name">العربية</span>
+        </button>
+    </div>
+</div>
+</div>
     </nav>
 
     <!-- HERO -->
@@ -969,5 +1008,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    
+<div id="google_translate_element" style="display:none;"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', autoDisplay: false}, 'google_translate_element');
+}
+
+function setLanguage(lang) {
+    var selectField = document.querySelector(".goog-te-combo");
+    if (selectField) {
+        selectField.value = lang;
+        selectField.dispatchEvent(new Event("change"));
+    }
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="lang-switcher.js"></script>
 </body>
 </html>

@@ -2248,3 +2248,240 @@ a {
         text-align: center;
     }
 }
+\n
+/* ═══════════════════════════
+   PREMIUM LANGUAGE SWITCHER
+═══════════════════════════ */
+.premium-lang-switcher {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    z-index: 1000;
+    font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+}
+
+html[dir="rtl"] .premium-lang-switcher {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.pls-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 6px 12px;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+/* .nav .pls-btn removed to keep it white */
+.hero-navbar .pls-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.pls-btn:hover {
+    background: rgba(197, 155, 39, 0.1);
+    border-color: #c59b27;
+    color: #c59b27;
+}
+
+.nav .pls-btn:hover {
+    background: rgba(197, 155, 39, 0.1);
+}
+
+.pls-globe {
+    opacity: 0.8;
+}
+
+.pls-arrow {
+    opacity: 0.6;
+    transition: transform 0.3s ease;
+}
+
+.pls-btn[aria-expanded="true"] .pls-arrow {
+    transform: rotate(180deg);
+}
+
+.pls-btn[aria-expanded="true"] {
+    background: rgba(197, 155, 39, 0.1);
+    border-color: #c59b27;
+    color: #c59b27;
+}
+
+.pls-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    min-width: 150px;
+    padding: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+html[dir="rtl"] .pls-dropdown {
+    right: auto;
+    left: 0;
+}
+
+.pls-btn[aria-expanded="true"] + .pls-dropdown,
+.premium-lang-switcher.active .pls-dropdown {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.pls-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 12px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    color: #444444;
+}
+
+html[dir="rtl"] .pls-option {
+    text-align: right;
+}
+
+.pls-code {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #888888;
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.pls-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.pls-option:hover {
+    background: #f9f9f9;
+}
+
+.pls-option.active {
+    background: rgba(197, 155, 39, 0.08);
+    color: #c59b27;
+}
+
+.pls-option.active .pls-code {
+    background: #c59b27;
+    color: #ffffff;
+}
+
+/* Base RTL Styles */
+html[dir="rtl"] {
+    text-align: right;
+    direction: rtl;
+}
+
+/* Automatically flip margin/padding for standard utility classes if needed, 
+   but for now we focus on mirroring the UI components. */
+html[dir="rtl"] .hero-nav-container,
+html[dir="rtl"] .nav,
+html[dir="rtl"] .footer-inner {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .nav-links {
+    padding-right: 0;
+}
+
+/* Mega menu dropdown fixes for RTL */
+html[dir="rtl"] .nav-links li.has-arrow .dropdown {
+    left: auto !important;
+    right: 50% !important;
+    transform: translateX(50%) translateY(-10px) !important;
+}
+html[dir="rtl"] .nav-links li.has-arrow.open .dropdown {
+    transform: translateX(50%) translateY(0) !important;
+}
+html[dir="rtl"] .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
+    left: auto !important;
+    right: calc(100% + 5px) !important;
+    transform: translateX(10px) !important;
+}
+html[dir="rtl"] .nav-links li.has-arrow .dropdown > li.has-flyout:hover .flyout {
+    transform: translateX(0) !important;
+}
+html[dir="rtl"] .mf-contact-item {
+    flex-direction: row;
+}
+html[dir="rtl"] .mf-text {
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+/* Mobile Nav Flip */
+html[dir="rtl"] .nav-links {
+    right: auto !important;
+    left: -100%;
+    border-left: none;
+    border-right: 1px solid rgba(255,255,255,0.05);
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+html[dir="rtl"] .nav-links.active {
+    left: 0;
+}
+
+/* Hide Google Translate Bar */
+body { top: 0px !important; }
+.goog-te-banner-frame.skiptranslate { display: none !important; }
+#google_translate_element { display: none !important; }
+
+/* Push Switcher to the Right Edge */
+.premium-lang-switcher { margin-right: 0 !important; margin-left: 20px !important; }
+html[dir="rtl"] .premium-lang-switcher { margin-right: 20px !important; margin-left: 0 !important; }
+
+/* Dual Switcher Handling for Desktop/Mobile */
+.desktop-switcher {
+    display: inline-flex;
+}
+.mobile-switcher-li {
+    display: none;
+    list-style: none;
+    margin-top: 15px;
+    padding-left: 0;
+}
+@media (max-width: 768px) {
+    .desktop-switcher { display: none !important; }
+    .mobile-switcher-li { display: block !important; margin-bottom: 2rem; }
+    .premium-lang-switcher.mobile-switcher { margin-left: 0 !important; margin-right: 0 !important; }
+    html[dir="rtl"] .premium-lang-switcher.mobile-switcher { margin-left: 0 !important; margin-right: 0 !important; }
+}
+
+.pls-dropdown {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+}
+.pls-option {
+    width: 100% !important;
+    justify-content: flex-start !important;
+}
