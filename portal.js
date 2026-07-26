@@ -19,7 +19,8 @@
   // Calculate the amount to scroll horizontally
   function getScrollAmount() {
     let trackWidth = track.scrollWidth;
-    return -(trackWidth - window.innerWidth + (window.innerWidth * 0.15)); // Calculate distance
+    let dist = trackWidth - window.innerWidth + (window.innerWidth * 0.15);
+    return document.documentElement.dir === 'rtl' ? dist : -dist; // Calculate distance based on document direction
   }
 
   // Create the horizontal scroll animation
@@ -42,6 +43,11 @@
 
   // Ensure scroll height calculations are correct after images load
   window.addEventListener('load', () => {
+    ScrollTrigger.refresh();
+  });
+
+  // Listen for language changes to refresh ScrollTrigger layout
+  window.addEventListener('languagechange', () => {
     ScrollTrigger.refresh();
   });
 

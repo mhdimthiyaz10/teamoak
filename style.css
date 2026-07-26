@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
 /* Reset & Base Styles */
 * {
     margin: 0;
@@ -2249,6 +2250,8 @@ a {
     }
 }
 \n
+
+
 /* ═══════════════════════════
    PREMIUM LANGUAGE SWITCHER
 ═══════════════════════════ */
@@ -2256,14 +2259,9 @@ a {
     position: relative;
     display: inline-flex;
     align-items: center;
-    margin-right: 20px;
+    margin-left: 15px;
     z-index: 1000;
     font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
-}
-
-html[dir="rtl"] .premium-lang-switcher {
-    margin-right: 0;
-    margin-left: 20px;
 }
 
 .pls-btn {
@@ -2282,21 +2280,10 @@ html[dir="rtl"] .premium-lang-switcher {
     backdrop-filter: blur(10px);
 }
 
-/* .nav .pls-btn removed to keep it white */
-.hero-navbar .pls-btn {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-}
-
 .pls-btn:hover {
     background: rgba(197, 155, 39, 0.1);
     border-color: #c59b27;
     color: #c59b27;
-}
-
-.nav .pls-btn:hover {
-    background: rgba(197, 155, 39, 0.1);
 }
 
 .pls-globe {
@@ -2324,7 +2311,7 @@ html[dir="rtl"] .premium-lang-switcher {
     right: 0;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
     min-width: 150px;
     padding: 8px;
     opacity: 0;
@@ -2332,11 +2319,9 @@ html[dir="rtl"] .premium-lang-switcher {
     transform: translateY(-10px);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(0,0,0,0.05);
-}
-
-html[dir="rtl"] .pls-dropdown {
-    right: auto;
-    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .pls-btn[aria-expanded="true"] + .pls-dropdown,
@@ -2359,10 +2344,7 @@ html[dir="rtl"] .pls-dropdown {
     text-align: left;
     transition: all 0.2s ease;
     color: #444444;
-}
-
-html[dir="rtl"] .pls-option {
-    text-align: right;
+    font-family: inherit;
 }
 
 .pls-code {
@@ -2394,22 +2376,106 @@ html[dir="rtl"] .pls-option {
     color: #ffffff;
 }
 
-/* Base RTL Styles */
+/* Mobile Switcher Specifics */
+.mobile-switcher-li {
+    list-style: none;
+    margin-top: 15px;
+    padding-left: 0;
+    width: 100%;
+}
+
+.mobile-switcher-li .premium-lang-switcher {
+    margin-left: 0;
+    width: 100%;
+}
+
+.mobile-switcher-li .pls-btn {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mobile-switcher-li .pls-dropdown {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-switcher-li .pls-option {
+    color: #ffffff;
+}
+
+.mobile-switcher-li .pls-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-switcher-li .pls-code {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* Hide Mobile Switcher on Desktop, Hide Desktop Switcher on Mobile */
+.desktop-switcher {
+    display: inline-flex;
+}
+
+@media (max-width: 768px) {
+    .desktop-switcher {
+        display: none !important;
+    }
+}
+
+/* ═══════════════════════════
+   RTL LAYOUT SUPPORT
+═══════════════════════════ */
 html[dir="rtl"] {
     text-align: right;
     direction: rtl;
 }
 
-/* Automatically flip margin/padding for standard utility classes if needed, 
-   but for now we focus on mirroring the UI components. */
+/* Fonts override for RTL */
+html[dir="rtl"], 
+html[dir="rtl"] body, 
+html[dir="rtl"] *, 
+html[dir="rtl"] button, 
+html[dir="rtl"] input, 
+html[dir="rtl"] textarea, 
+html[dir="rtl"] select {
+    font-family: 'Cairo', sans-serif !important;
+    --font-h: 'Cairo', sans-serif !important;
+    --font-b: 'Cairo', sans-serif !important;
+    --font-heading: 'Cairo', sans-serif !important;
+    --font-body: 'Cairo', sans-serif !important;
+}
+
+/* RTL navigation items flipping */
 html[dir="rtl"] .hero-nav-container,
 html[dir="rtl"] .nav,
-html[dir="rtl"] .footer-inner {
-    flex-direction: row;
+html[dir="rtl"] .footer-inner,
+html[dir="rtl"] .custom-footer-grid {
+    flex-direction: row-reverse !important;
 }
 
 html[dir="rtl"] .nav-links {
+    padding-left: 0;
     padding-right: 0;
+}
+
+/* Switcher positions in RTL */
+html[dir="rtl"] .premium-lang-switcher {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+html[dir="rtl"] .pls-dropdown {
+    right: auto;
+    left: 0;
+}
+
+html[dir="rtl"] .pls-option {
+    text-align: right;
 }
 
 /* Mega menu dropdown fixes for RTL */
@@ -2418,70 +2484,64 @@ html[dir="rtl"] .nav-links li.has-arrow .dropdown {
     right: 50% !important;
     transform: translateX(50%) translateY(-10px) !important;
 }
+
 html[dir="rtl"] .nav-links li.has-arrow.open .dropdown {
     transform: translateX(50%) translateY(0) !important;
 }
+
 html[dir="rtl"] .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
     left: auto !important;
     right: calc(100% + 5px) !important;
     transform: translateX(10px) !important;
 }
+
 html[dir="rtl"] .nav-links li.has-arrow .dropdown > li.has-flyout:hover .flyout {
     transform: translateX(0) !important;
 }
+
 html[dir="rtl"] .mf-contact-item {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
+
 html[dir="rtl"] .mf-text {
     padding-top: 5px;
     padding-right: 15px;
     padding-left: 0;
 }
 
-/* Mobile Nav Flip */
-html[dir="rtl"] .nav-links {
-    right: auto !important;
-    left: -100%;
-    border-left: none;
-    border-right: 1px solid rgba(255,255,255,0.05);
-    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-html[dir="rtl"] .nav-links.active {
-    left: 0;
-}
-
-/* Hide Google Translate Bar */
-body { top: 0px !important; }
-.goog-te-banner-frame.skiptranslate { display: none !important; }
-#google_translate_element { display: none !important; }
-
-/* Push Switcher to the Right Edge */
-.premium-lang-switcher { margin-right: 0 !important; margin-left: 20px !important; }
-html[dir="rtl"] .premium-lang-switcher { margin-right: 20px !important; margin-left: 0 !important; }
-
-/* Dual Switcher Handling for Desktop/Mobile */
-.desktop-switcher {
-    display: inline-flex;
-}
-.mobile-switcher-li {
-    display: none;
-    list-style: none;
-    margin-top: 15px;
-    padding-left: 0;
-}
+/* Mobile Nav Flip in RTL */
 @media (max-width: 768px) {
-    .desktop-switcher { display: none !important; }
-    .mobile-switcher-li { display: block !important; margin-bottom: 2rem; }
-    .premium-lang-switcher.mobile-switcher { margin-left: 0 !important; margin-right: 0 !important; }
-    html[dir="rtl"] .premium-lang-switcher.mobile-switcher { margin-left: 0 !important; margin-right: 0 !important; }
+    html[dir="rtl"] .nav-links, 
+    html[dir="rtl"] .hero-nav-links {
+        right: auto !important;
+        left: -100% !important;
+        border-left: none;
+        border-right: 1px solid rgba(255,255,255,0.05);
+        transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    html[dir="rtl"] .nav.mobile-active .nav-links,
+    html[dir="rtl"] .hero-navbar.mobile-active .hero-nav-links {
+        left: 0 !important;
+        right: auto !important;
+    }
 }
 
-.pls-dropdown {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 4px !important;
+/* Logical CSS fixes for layouts */
+html[dir="rtl"] .story-text h2,
+html[dir="rtl"] .story-text h3,
+html[dir="rtl"] .story-text ul,
+html[dir="rtl"] .highlight-quote {
+    text-align: right !important;
 }
-.pls-option {
-    width: 100% !important;
-    justify-content: flex-start !important;
+
+html[dir="rtl"] .highlight-quote {
+    border-left: none !important;
+    border-right: 3px solid var(--accent-gold);
+    padding-left: 0 !important;
+    padding-right: 2rem !important;
+}
+
+html[dir="rtl"] .scroll-reveal-text {
+    text-align: right !important;
 }

@@ -1,0 +1,3497 @@
+{
+    "About Us | Team Oak": [
+        "about.html:title"
+    ],
+    "About Team Oak — A dynamic global conglomerate excelling in trading, hospitality, and construction since 2000.": [
+        "about.html:meta_desc"
+    ],
+    "Home": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "About Us": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:span",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "What We Do": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:span",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Trading": [
+        "about.html:a",
+        "about.html:h3",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:h3",
+        "index.html:alt",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Tobacco Wholesale Trading": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:title",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Food Stuff Trading Company": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:p",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Kizhissery Jewellers": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak General Trading Company": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:p",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:title",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Makin Spare parts Trading Company": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:title",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:strong",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Services": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:h3",
+        "index.html:alt",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Best Vibes General Contracting LLC": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Hotels & Apartments": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:title",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:strong",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Resort Camps & Trails": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:title",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Mamichi Apartments": [
+        "about.html:a",
+        "about.html:strong",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Oak Architects & Interiors": [
+        "about.html:a",
+        "about.html:strong",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Bubbl": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:h1",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Transport & Heavy Equipment Rental LLC": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:meta_desc",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Safety & Fire Fighting Equipment LLC": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:meta_desc",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Cafein": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:h1",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Pharma Fleet": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:h1",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "WYMAX MEDIA": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Builders & Developers": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:strong",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Oak Academy of Design": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:strong",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Logistics Services": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:strong",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Industrial": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:h3",
+        "index.html:alt",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Sugar packing Unit": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Media": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Career": [
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Contact Us": [
+        "about.html:a",
+        "about.html:a",
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "career.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "contact.html:h3",
+        "contact.html:h3",
+        "contact.html:h3",
+        "contact.html:h3",
+        "contact.html:h3",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "index.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "media.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a",
+        "wymax-media.html:a"
+    ],
+    "Who We Are": [
+        "about.html:span"
+    ],
+    "Building Excellence": [
+        "about.html:h1"
+    ],
+    "Across": [
+        "about.html:h1"
+    ],
+    "Every Horizon": [
+        "about.html:em"
+    ],
+    "A dynamic and diversified conglomerate excelling in trading, hospitality, and construction — operating across GCC countries and India since 2000.": [
+        "about.html:p"
+    ],
+    "Our Story": [
+        "about.html:span"
+    ],
+    "A Legacy of": [
+        "about.html:h2"
+    ],
+    "Integrity & Innovation": [
+        "about.html:h2"
+    ],
+    "Since 2000, our group of companies has thrived as a dynamic and diversified conglomerate, excelling in trading, hospitality, and construction sectors. Operating across GCC countries and India, we've established a robust presence marked by excellence, innovation, and unwavering integrity.": [
+        "about.html:p"
+    ],
+    "In trading, we offer a diverse range of products including electronics, consumer goods, and industrial equipment, ensuring quality and reliability. Our hospitality sector boasts luxurious hotels and memorable dining experiences, reflecting our commitment to exceptional service.": [
+        "about.html:p"
+    ],
+    "Within construction, we pioneer sustainable and cutting-edge projects, reshaping skylines and communities. Embracing sustainability and architectural brilliance, we've become industry leaders, fostering global partnerships and a reputation for excellence.": [
+        "about.html:p"
+    ],
+    "Each venture embodies our dedication to innovation, integrity, and a vision for a brighter future.": [
+        "about.html:p"
+    ],
+    "Electronics, consumer goods, and industrial equipment — delivered with uncompromising quality and reliability across GCC and Indian markets.": [
+        "about.html:p"
+    ],
+    "Hospitality": [
+        "about.html:h3"
+    ],
+    "Luxurious hotels and memorable dining experiences that set the benchmark for service excellence and guest satisfaction.": [
+        "about.html:p"
+    ],
+    "Construction": [
+        "about.html:h3"
+    ],
+    "Sustainable, cutting-edge projects that reshape skylines and communities — built on architectural brilliance and long-term vision.": [
+        "about.html:p"
+    ],
+    "Global Partnerships": [
+        "about.html:h3",
+        "our-clients.html:span"
+    ],
+    "Fostering strategic alliances across borders, strengthening our global reach and reinforcing a reputation built on excellence.": [
+        "about.html:p"
+    ],
+    "Milestones": [
+        "about.html:span"
+    ],
+    "Our Success": [
+        "about.html:h2"
+    ],
+    "Journey": [
+        "about.html:h2"
+    ],
+    "From a single venture in 2000 to a diversified global conglomerate — every milestone reflects our commitment to growth, integrity, and bold ambition.": [
+        "about.html:p"
+    ],
+    "Foundation & Initial Ventures": [
+        "about.html:span"
+    ],
+    "Where It All Began": [
+        "about.html:h3"
+    ],
+    "— Established marking our entry into the jewelry industry with a focus on quality and craftsmanship.": [
+        "about.html:li"
+    ],
+    "Kizhisseri Jewellers": [
+        "about.html:strong",
+        "kizhisseri-jewellers.html:title"
+    ],
+    "India": [
+        "about.html:span",
+        "about.html:span",
+        "about.html:span",
+        "about.html:span"
+    ],
+    "— Launched, expanding into the wholesale distribution of tobacco products.": [
+        "about.html:li"
+    ],
+    "Tobacco Wholesales": [
+        "about.html:strong"
+    ],
+    "Saudi Arabia": [
+        "about.html:span",
+        "about.html:span",
+        "about.html:span",
+        "career.html:p",
+        "career.html:p"
+    ],
+    "Expanding Horizons": [
+        "about.html:span"
+    ],
+    "Diversifying Across Sectors": [
+        "about.html:h3"
+    ],
+    "— Founded, bringing innovative design and architectural solutions to the market.": [
+        "about.html:li"
+    ],
+    "— Introduced, offering high-quality residential apartment solutions.": [
+        "about.html:li"
+    ],
+    "— Created to offer unique adventure tourism experiences, blending nature and comfort.": [
+        "about.html:li"
+    ],
+    "Oak Camps & Trails": [
+        "about.html:strong"
+    ],
+    "Growth & Diversification": [
+        "about.html:span"
+    ],
+    "Strengthening the Portfolio": [
+        "about.html:h3"
+    ],
+    "— Started, diversifying our portfolio to include the trading of food products, catering to a growing market.": [
+        "about.html:li"
+    ],
+    "Food Stuff Trading": [
+        "about.html:strong"
+    ],
+    "Formation of Team Oak": [
+        "about.html:span"
+    ],
+    "Unifying Under One Banner": [
+        "about.html:h3"
+    ],
+    "— We consolidated our diverse ventures under the Team Oak banner, unifying our various business units.": [
+        "about.html:li"
+    ],
+    "Team Oak": [
+        "about.html:strong",
+        "food-stuff-trading.html:h1",
+        "general-trading.html:h1",
+        "makin-spare-parts-trading.html:strong",
+        "makin-spare-parts-trading.html:strong",
+        "media.html:h1",
+        "media.html:alt",
+        "media.html:alt",
+        "our-clients.html:h1",
+        "our-ventures.html:h1",
+        "team-oak-builders.html:h1",
+        "team-oak-builders.html:strong",
+        "team-oak-hotels.html:h1",
+        "team-oak-logistics.html:h1",
+        "team-oak-logistics.html:strong",
+        "tobacco-trading.html:h1"
+    ],
+    "— Entered the UAE market with a focus on general contracting, offering construction and contracting services.": [
+        "about.html:li"
+    ],
+    "Bestvibes General Contracting LLC": [
+        "about.html:strong"
+    ],
+    "UAE": [
+        "about.html:span"
+    ],
+    "Hospitality Expansion": [
+        "about.html:span"
+    ],
+    "Entering the Hotel Space": [
+        "about.html:h3"
+    ],
+    "— Launched to provide exceptional hospitality experiences and expand our footprint in the hospitality industry.": [
+        "about.html:li"
+    ],
+    "Team Oak Hotels": [
+        "about.html:strong"
+    ],
+    "New Horizons & Innovation": [
+        "about.html:span"
+    ],
+    "Pushing Into New Markets": [
+        "about.html:h3"
+    ],
+    "— Entered the UK market, introducing a refreshing new brand of bubble tea drinks.": [
+        "about.html:li"
+    ],
+    "Bubble Bubble Tea Drinks": [
+        "about.html:strong"
+    ],
+    "UK": [
+        "about.html:span"
+    ],
+    "— Initiated as a building material trading company, expanding our trading operations and product offerings.": [
+        "about.html:li"
+    ],
+    "Team Oak General Trading": [
+        "about.html:strong"
+    ],
+    "Our Vision": [
+        "about.html:h2",
+        "team-oak-logistics.html:h2"
+    ],
+    "To be the globally recognized benchmark for excellence and sustainable growth, seamlessly integrating diverse industries to build a legacy of innovation, trust, and enduring impact across every horizon.": [
+        "about.html:p"
+    ],
+    "Our Mission": [
+        "about.html:h2",
+        "team-oak-logistics.html:h2"
+    ],
+    "To relentlessly pursue perfection across trading, hospitality, and construction by delivering uncompromising quality, fostering enduring global partnerships, and empowering our people to create extraordinary value.": [
+        "about.html:p"
+    ],
+    "Core Values": [
+        "about.html:h2"
+    ],
+    "INTEGRITY": [
+        "about.html:h3"
+    ],
+    "SUSTAINABILITY": [
+        "about.html:h3"
+    ],
+    "EXCELLENCE": [
+        "about.html:h3"
+    ],
+    "Our Footprint": [
+        "about.html:span"
+    ],
+    "Global Presence,": [
+        "about.html:h2"
+    ],
+    "Local Commitment": [
+        "about.html:h2"
+    ],
+    "From the Gulf to South Asia and beyond — Team Oak operates with the precision of a local business and the reach of a global enterprise.": [
+        "about.html:p"
+    ],
+    "🇮🇳": [
+        "about.html:span"
+    ],
+    "🇦🇪": [
+        "about.html:span"
+    ],
+    "🇴🇲": [
+        "about.html:span"
+    ],
+    "🇸🇦": [
+        "about.html:span"
+    ],
+    "🇬🇧": [
+        "about.html:span"
+    ],
+    "Ready to Build Together?": [
+        "about.html:h2"
+    ],
+    "Whether you're a partner, investor, or client — connect with Team Oak and discover what we can create together.": [
+        "about.html:p"
+    ],
+    "Get in Touch": [
+        "about.html:a",
+        "contact.html:span"
+    ],
+    "Contact": [
+        "about.html:h4",
+        "best-vibes-contracting.html:h4",
+        "bubbl.html:h4",
+        "cafein.html:h4",
+        "career.html:h4",
+        "contact.html:h4",
+        "food-stuff-trading.html:h4",
+        "general-trading.html:h4",
+        "index.html:h4",
+        "kizhisseri-jewellers.html:h4",
+        "makin-spare-parts-trading.html:h4",
+        "mamichi-apartments.html:h4",
+        "media.html:h4",
+        "oak-academy-of-design.html:h4",
+        "oak-architects.html:h4",
+        "our-clients.html:h4",
+        "our-ventures.html:h4",
+        "pharma-fleet.html:h4",
+        "sugar-packing.html:h4",
+        "team-oak-builders.html:h4",
+        "team-oak-camps.html:h4",
+        "team-oak-hotels.html:h4",
+        "team-oak-logistics.html:h4",
+        "team-oak-safety.html:h4",
+        "team-oak-transport.html:h4",
+        "tobacco-trading.html:h4",
+        "wymax-media.html:h4"
+    ],
+    "Navigate": [
+        "about.html:h4",
+        "best-vibes-contracting.html:h4",
+        "bubbl.html:h4",
+        "cafein.html:h4",
+        "career.html:h4",
+        "contact.html:h4",
+        "food-stuff-trading.html:h4",
+        "general-trading.html:h4",
+        "index.html:h4",
+        "kizhisseri-jewellers.html:h4",
+        "makin-spare-parts-trading.html:h4",
+        "mamichi-apartments.html:h4",
+        "media.html:h4",
+        "oak-academy-of-design.html:h4",
+        "oak-architects.html:h4",
+        "our-clients.html:h4",
+        "our-ventures.html:h4",
+        "pharma-fleet.html:h4",
+        "sugar-packing.html:h4",
+        "team-oak-builders.html:h4",
+        "team-oak-camps.html:h4",
+        "team-oak-hotels.html:h4",
+        "team-oak-logistics.html:h4",
+        "team-oak-safety.html:h4",
+        "team-oak-transport.html:h4",
+        "tobacco-trading.html:h4",
+        "wymax-media.html:h4"
+    ],
+    "Our Ventures": [
+        "about.html:h4",
+        "best-vibes-contracting.html:h4",
+        "bubbl.html:h4",
+        "cafein.html:h4",
+        "career.html:h4",
+        "contact.html:h4",
+        "food-stuff-trading.html:h4",
+        "general-trading.html:h4",
+        "index.html:h4",
+        "kizhisseri-jewellers.html:h4",
+        "makin-spare-parts-trading.html:h4",
+        "mamichi-apartments.html:h4",
+        "media.html:h4",
+        "oak-academy-of-design.html:h4",
+        "oak-architects.html:h4",
+        "our-clients.html:h4",
+        "our-ventures.html:h4",
+        "pharma-fleet.html:h4",
+        "sugar-packing.html:h4",
+        "team-oak-builders.html:h4",
+        "team-oak-camps.html:h4",
+        "team-oak-hotels.html:h4",
+        "team-oak-logistics.html:h4",
+        "team-oak-safety.html:h4",
+        "team-oak-transport.html:h4",
+        "tobacco-trading.html:h4",
+        "wymax-media.html:h4"
+    ],
+    "Wymax Media": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:strong",
+        "wymax-media.html:a"
+    ],
+    "Makeen SpareParts Trading": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Follow Us": [
+        "about.html:h4",
+        "best-vibes-contracting.html:h4",
+        "bubbl.html:h4",
+        "cafein.html:h4",
+        "career.html:h4",
+        "contact.html:h4",
+        "food-stuff-trading.html:h4",
+        "general-trading.html:h4",
+        "index.html:h4",
+        "kizhisseri-jewellers.html:h4",
+        "makin-spare-parts-trading.html:h4",
+        "mamichi-apartments.html:h4",
+        "media.html:h4",
+        "oak-academy-of-design.html:h4",
+        "oak-architects.html:h4",
+        "our-clients.html:h4",
+        "our-ventures.html:h4",
+        "pharma-fleet.html:h4",
+        "sugar-packing.html:h4",
+        "team-oak-builders.html:h4",
+        "team-oak-camps.html:h4",
+        "team-oak-hotels.html:h4",
+        "team-oak-logistics.html:h4",
+        "team-oak-safety.html:h4",
+        "team-oak-transport.html:h4",
+        "tobacco-trading.html:h4",
+        "wymax-media.html:h4"
+    ],
+    "Facebook": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Instagram": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "LinkedIn": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "YouTube": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Privacy & Policy": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Terms & Condition": [
+        "about.html:a",
+        "best-vibes-contracting.html:a",
+        "bubbl.html:a",
+        "cafein.html:a",
+        "career.html:a",
+        "contact.html:a",
+        "food-stuff-trading.html:a",
+        "general-trading.html:a",
+        "index.html:a",
+        "kizhisseri-jewellers.html:a",
+        "makin-spare-parts-trading.html:a",
+        "mamichi-apartments.html:a",
+        "media.html:a",
+        "oak-academy-of-design.html:a",
+        "oak-architects.html:a",
+        "our-clients.html:a",
+        "our-ventures.html:a",
+        "pharma-fleet.html:a",
+        "sugar-packing.html:a",
+        "team-oak-builders.html:a",
+        "team-oak-camps.html:a",
+        "team-oak-hotels.html:a",
+        "team-oak-logistics.html:a",
+        "team-oak-safety.html:a",
+        "team-oak-transport.html:a",
+        "tobacco-trading.html:a",
+        "wymax-media.html:a"
+    ],
+    "Team Oak Logo": [
+        "about.html:alt",
+        "best-vibes-contracting.html:alt",
+        "bubbl.html:alt",
+        "cafein.html:alt",
+        "career.html:alt",
+        "contact.html:alt",
+        "food-stuff-trading.html:alt",
+        "general-trading.html:alt",
+        "index.html:alt",
+        "kizhisseri-jewellers.html:alt",
+        "makin-spare-parts-trading.html:alt",
+        "mamichi-apartments.html:alt",
+        "media.html:alt",
+        "oak-academy-of-design.html:alt",
+        "oak-architects.html:alt",
+        "our-clients.html:alt",
+        "our-ventures.html:alt",
+        "pharma-fleet.html:alt",
+        "sugar-packing.html:alt",
+        "team-oak-builders.html:alt",
+        "team-oak-camps.html:alt",
+        "team-oak-hotels.html:alt",
+        "team-oak-logistics.html:alt",
+        "team-oak-safety.html:alt",
+        "team-oak-transport.html:alt",
+        "tobacco-trading.html:alt",
+        "wymax-media.html:alt"
+    ],
+    "Best Vibes Contracting | Team Oak": [
+        "best-vibes-contracting.html:title"
+    ],
+    "Best Vibes General Contracting LLC — A leading construction company in the UAE, Oman, and India.": [
+        "best-vibes-contracting.html:meta_desc"
+    ],
+    "Construction Solutions": [
+        "best-vibes-contracting.html:span"
+    ],
+    "Best Vibes": [
+        "best-vibes-contracting.html:h1"
+    ],
+    "General Contracting LLC": [
+        "best-vibes-contracting.html:em"
+    ],
+    "Excellence in Construction": [
+        "best-vibes-contracting.html:h2"
+    ],
+    "Best Vibes General Contracting LLC is a leading construction company with a strong presence in the UAE, Oman, and India. Established in 2021, we bring expertise and innovation to every project we undertake.": [
+        "best-vibes-contracting.html:p"
+    ],
+    "Our dedicated team of professionals ensures the highest standards of quality and timely completion of projects across various sectors. From commercial developments to residential complexes, we are committed to delivering excellence in construction, fostering growth, and creating sustainable environments.": [
+        "best-vibes-contracting.html:p"
+    ],
+    "Bubbl | Team Oak": [
+        "bubbl.html:title"
+    ],
+    "Located in the vibrant heart of London, BUBBL is where the art of bubble tea reaches new heights.": [
+        "bubbl.html:meta_desc"
+    ],
+    "Art of Bubble Tea": [
+        "bubbl.html:span"
+    ],
+    "London": [
+        "bubbl.html:em"
+    ],
+    "A Flavor Adventure Like No Other": [
+        "bubbl.html:h2"
+    ],
+    "Located in the vibrant heart of London, BUBBL is where the art of bubble tea reaches new heights. Step into our chic, modern store and embark on a flavor adventure like no other. We're dedicated to serving up the freshest and most exciting bubble tea creations, crafted with the finest ingredients and a splash of creativity.": [
+        "bubbl.html:p"
+    ],
+    "At BUBBL, our menu offers a tantalizing array of options, from classic milk teas and refreshing fruit blends to inventive specialty drinks that push the boundaries of flavor. Choose from a variety of premium teas, perfectly cooked tapioca pearls, and an assortment of unique toppings to make your drink truly your own. Our inviting space is designed for relaxation and enjoyment, whether you're stopping by for a quick treat or spending time with friends.": [
+        "bubbl.html:p"
+    ],
+    "Cafein | Team Oak": [
+        "cafein.html:title"
+    ],
+    "Cafein by Team Oak": [
+        "cafein.html:meta_desc"
+    ],
+    "Health & Wellness": [
+        "cafein.html:span"
+    ],
+    "Fresh & Energizing": [
+        "cafein.html:em"
+    ],
+    "Matcha, Smoothies, & Acai": [
+        "cafein.html:h2"
+    ],
+    "We are a quick-service brand dedicated to providing fresh, healthy, and energizing options for people on the go. Our specialty lies in crafting authentic Matcha green tea, refreshing smoothies, and nourishing acai bowls, all prepared with premium ingredients to deliver both taste and wellness in every serving.": [
+        "cafein.html:p"
+    ],
+    "With a focus on quality, speed, and convenience, we aim to make healthy living more accessible by offering wholesome choices that fit seamlessly into busy lifestyles. Whether it's a quick boost of energy, a light meal, or a refreshing treat, we strive to serve our customers with flavors that are not only delicious but also nutrient-rich and revitalizing.": [
+        "cafein.html:p"
+    ],
+    "Careers | Team Oak": [
+        "career.html:title"
+    ],
+    "Careers at Team Oak": [
+        "career.html:meta_desc"
+    ],
+    "Join Team Oak": [
+        "career.html:span"
+    ],
+    "Shape the Future": [
+        "career.html:h1"
+    ],
+    "With Us.": [
+        "career.html:em"
+    ],
+    "Career with Us": [
+        "career.html:h2"
+    ],
+    "Interior Designer": [
+        "career.html:h3"
+    ],
+    "Oak Architects and Interiors": [
+        "career.html:p"
+    ],
+    "Responsibilities": [
+        "career.html:h4"
+    ],
+    "Designed marketing materials such as logos, brochures, flyers, and social media graphics.": [
+        "career.html:li"
+    ],
+    "Managed the company's website.": [
+        "career.html:li"
+    ],
+    "Collaborated with the team on marketing campaign development and implementation.": [
+        "career.html:li"
+    ],
+    "Marketing Executive": [
+        "career.html:h3"
+    ],
+    "Key Responsibilities & Achievements": [
+        "career.html:h4",
+        "career.html:h4"
+    ],
+    "Developed and executed marketing strategies to promote general trading products across the Saudi market.": [
+        "career.html:li"
+    ],
+    "Identified new business opportunities and built strong relationships with suppliers, distributors, and retail clients.": [
+        "career.html:li"
+    ],
+    "Conducted market research and competitor analysis to identify trends and optimize pricing strategies.": [
+        "career.html:li"
+    ],
+    "Coordinated promotional campaigns, trade marketing activities, and in-store branding initiatives to increase product visibility.": [
+        "career.html:li"
+    ],
+    "Managed digital marketing activities, including social media promotions and online advertising.": [
+        "career.html:li"
+    ],
+    "Monitored sales performance and prepared regular reports to support management decision-making.": [
+        "career.html:li"
+    ],
+    "Collaborated with the sales team to achieve revenue targets and expand market share.": [
+        "career.html:li"
+    ],
+    "CRM Executive": [
+        "career.html:h3"
+    ],
+    "Managed customer relationship management (CRM) system to maintain accurate records of clients, distributors, and retail accounts.": [
+        "career.html:li"
+    ],
+    "Monitored customer purchase patterns and coordinated with the sales team to improve retention and repeat business.": [
+        "career.html:li"
+    ],
+    "Handled customer inquiries, complaints, and feedback, ensuring timely resolution and high customer satisfaction.": [
+        "career.html:li"
+    ],
+    "Analyzed sales and customer data to identify trends, demand forecasts, and growth opportunities in food products.": [
+        "career.html:li"
+    ],
+    "Contact Us | Team Oak": [
+        "contact.html:title"
+    ],
+    "Contact Team Oak": [
+        "contact.html:meta_desc"
+    ],
+    "Let's Build the": [
+        "contact.html:h1"
+    ],
+    "Future Together.": [
+        "contact.html:em"
+    ],
+    "Send a Message": [
+        "contact.html:h3"
+    ],
+    "Whether you have a question about our services, divisions, or anything else, our team is ready to answer all your questions.": [
+        "contact.html:p"
+    ],
+    "Your Name": [
+        "contact.html:label"
+    ],
+    "Email Address": [
+        "contact.html:label"
+    ],
+    "Subject": [
+        "contact.html:label"
+    ],
+    "Your Message": [
+        "contact.html:label"
+    ],
+    "Send Inquiry": [
+        "contact.html:button"
+    ],
+    "KSA Office": [
+        "contact.html:h2"
+    ],
+    "Phone: +966565990100": [
+        "contact.html:p"
+    ],
+    "WhatsApp: +966565990100": [
+        "contact.html:p"
+    ],
+    "Email:": [
+        "contact.html:p",
+        "contact.html:p",
+        "contact.html:p",
+        "contact.html:p",
+        "contact.html:p"
+    ],
+    "info@teamoak.co": [
+        "contact.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "contact.html:a",
+        "contact.html:a"
+    ],
+    "Address: Team Oak Trading Company LLC": [
+        "contact.html:p"
+    ],
+    "Makkah, Jeddah.": [
+        "contact.html:p"
+    ],
+    "Working hours: 9:00AM - 6:00PM": [
+        "contact.html:p",
+        "contact.html:p",
+        "contact.html:p"
+    ],
+    "UAE Office": [
+        "contact.html:h2"
+    ],
+    "Phone: +971-554418701": [
+        "contact.html:p"
+    ],
+    "WhatsApp: +971-554418701": [
+        "contact.html:p"
+    ],
+    "Address: Best Vibes General Contracting LLC.Corniche": [
+        "contact.html:p"
+    ],
+    "street Abu Dhabi UAE.": [
+        "contact.html:p"
+    ],
+    "India Office": [
+        "contact.html:h2"
+    ],
+    "Phone: +91-9746025710": [
+        "contact.html:p"
+    ],
+    "WhatsApp: +91-9746025710": [
+        "contact.html:p"
+    ],
+    "Address: Team Oak Architects & Interiors.": [
+        "contact.html:p"
+    ],
+    "Perinthalmanna, Kerala, India.": [
+        "contact.html:p"
+    ],
+    "Canada Office": [
+        "contact.html:h2"
+    ],
+    "Phone: +1-6475127882": [
+        "contact.html:p"
+    ],
+    "WhatsApp: +1-6475127882": [
+        "contact.html:p"
+    ],
+    "Address: 1213-36 Abbey Rd": [
+        "contact.html:p"
+    ],
+    "Halifax, NS, Canada": [
+        "contact.html:p"
+    ],
+    "UK Office": [
+        "contact.html:h2"
+    ],
+    "Phone: +44-7401133883": [
+        "contact.html:p"
+    ],
+    "WhatsApp: +44-7401133883": [
+        "contact.html:p"
+    ],
+    "Address: 1 Leather Ln, London": [
+        "contact.html:p"
+    ],
+    "UK, EC1N2TD": [
+        "contact.html:p"
+    ],
+    "Team Oak Food Stuff Trading LLC": [
+        "food-stuff-trading.html:title"
+    ],
+    "Team Oak Food Stuff Trading LLC — A prominent foodstuff trading company in Saudi Arabia.": [
+        "food-stuff-trading.html:meta_desc"
+    ],
+    "Trading & Distribution": [
+        "food-stuff-trading.html:span",
+        "tobacco-trading.html:span"
+    ],
+    "Food Stuff Trading LLC": [
+        "food-stuff-trading.html:em"
+    ],
+    "Prominent Foodstuff Trading Company": [
+        "food-stuff-trading.html:h2"
+    ],
+    "Established in 2020, Team Oak Food Stuff Trading Company LLC is a prominent foodstuff trading company based in Makkah, Saudi Arabia. Despite our recent inception, we have rapidly emerged as a leading player in the industry.": [
+        "food-stuff-trading.html:p"
+    ],
+    "Our commitment to excellence, combined with a diverse range of premium food products sourced from reputable suppliers worldwide, has earned us the trust of our valued customers.": [
+        "food-stuff-trading.html:p"
+    ],
+    "Our Commitment to Excellence": [
+        "food-stuff-trading.html:h2",
+        "sugar-packing.html:h2",
+        "team-oak-hotels.html:h2",
+        "tobacco-trading.html:h2"
+    ],
+    "As we grow, our dedication to customer satisfaction and ethical business practices remains unwavering.": [
+        "food-stuff-trading.html:p"
+    ],
+    "Team Oak General Trading Company — Your trusted source for high-quality building materials and construction solutions in Saudi Arabia.": [
+        "general-trading.html:meta_desc"
+    ],
+    "Building Materials": [
+        "general-trading.html:span"
+    ],
+    "General Trading Company": [
+        "general-trading.html:em"
+    ],
+    "Comprehensive Construction Solutions": [
+        "general-trading.html:h2"
+    ],
+    "At Team Oak Building Materials, we are committed to being your trusted source for high-quality building materials and construction solutions. Based in Saudi Arabia, our firm specializes in providing a comprehensive range of products designed to meet the diverse needs of construction projects, from residential to commercial.": [
+        "general-trading.html:p"
+    ],
+    "Our extensive inventory includes everything from structural steel and concrete to finishing materials and innovative building solutions. We partner with top manufacturers and suppliers to ensure that every product meets the highest standards of durability and performance.": [
+        "general-trading.html:p"
+    ],
+    "Whether you are working on a large-scale development or a smaller renovation, Team Oak Building Materials is equipped to support you every step of the way.": [
+        "general-trading.html:p"
+    ],
+    "Team Oak | Building Excellence Across Industries": [
+        "index.html:title"
+    ],
+    "Team Oak is a collective of forward-thinking companies delivering innovation, quality, and trust.": [
+        "index.html:meta_desc"
+    ],
+    "Get up and make it.": [
+        "index.html:h1"
+    ],
+    "Get it with Team Oak..!": [
+        "index.html:p"
+    ],
+    "Connect with Us": [
+        "index.html:a"
+    ],
+    "Founded in 2000, our group of companies is a dynamic and diversified conglomerate with a strong presence in trading, hospitality, and construction sectors. With operations spanning across GCC countries and India, we have earned a reputation for excellence, innovation, and integrity in the industries we serve.": [
+        "index.html:p"
+    ],
+    "Connecting markets and enabling global commerce with precision and speed.": [
+        "index.html:p"
+    ],
+    "Delivering premium client-centric hospitality and service experiences globally.": [
+        "index.html:p"
+    ],
+    "Building the backbone of tomorrow through modern industrial frameworks.": [
+        "index.html:p"
+    ],
+    "OUR VENTURES": [
+        "index.html:h2"
+    ],
+    "BEYOND LIMITS": [
+        "index.html:h3"
+    ],
+    "Our Clients": [
+        "index.html:h2"
+    ],
+    "Trusted by industry leaders worldwide.": [
+        "index.html:p"
+    ],
+    "Our Global Presence": [
+        "index.html:h2"
+    ],
+    "Strategically positioned across key international markets": [
+        "index.html:p"
+    ],
+    "Excellence 1": [
+        "index.html:alt"
+    ],
+    "Excellence 2": [
+        "index.html:alt"
+    ],
+    "Excellence 3": [
+        "index.html:alt"
+    ],
+    "Excellence 4": [
+        "index.html:alt"
+    ],
+    "Excellence 5": [
+        "index.html:alt"
+    ],
+    "Excellence 6": [
+        "index.html:alt"
+    ],
+    "Excellence 7": [
+        "index.html:alt"
+    ],
+    "Excellence 8": [
+        "index.html:alt"
+    ],
+    "Excellence 9": [
+        "index.html:alt"
+    ],
+    "Excellence 10": [
+        "index.html:alt"
+    ],
+    "Excellence 11": [
+        "index.html:alt"
+    ],
+    "Excellence 12": [
+        "index.html:alt"
+    ],
+    "Excellence 13": [
+        "index.html:alt"
+    ],
+    "HYUNDAI": [
+        "index.html:alt"
+    ],
+    "HYUNDAI 2": [
+        "index.html:alt"
+    ],
+    "IKEA": [
+        "index.html:alt"
+    ],
+    "IKEA 2": [
+        "index.html:alt"
+    ],
+    "USHA": [
+        "index.html:alt"
+    ],
+    "USHA 2": [
+        "index.html:alt"
+    ],
+    "FedEx": [
+        "index.html:alt"
+    ],
+    "FedEx 2": [
+        "index.html:alt"
+    ],
+    "PHILIPS": [
+        "index.html:alt"
+    ],
+    "PHILIPS 2": [
+        "index.html:alt"
+    ],
+    "amazon": [
+        "index.html:alt"
+    ],
+    "amazon 2": [
+        "index.html:alt"
+    ],
+    "SUZUKI": [
+        "index.html:alt"
+    ],
+    "SUZUKI 2": [
+        "index.html:alt"
+    ],
+    "lyft": [
+        "index.html:alt"
+    ],
+    "lyft 2": [
+        "index.html:alt"
+    ],
+    "bigbasket": [
+        "index.html:alt"
+    ],
+    "bigbasket 2": [
+        "index.html:alt"
+    ],
+    "essilor": [
+        "index.html:alt"
+    ],
+    "essilor 2": [
+        "index.html:alt"
+    ],
+    "Mercedes-Benz": [
+        "index.html:alt"
+    ],
+    "Mercedes-Benz 2": [
+        "index.html:alt"
+    ],
+    "SIEMENS": [
+        "index.html:alt"
+    ],
+    "SIEMENS 2": [
+        "index.html:alt"
+    ],
+    "Client 13": [
+        "index.html:alt"
+    ],
+    "Client 14": [
+        "index.html:alt"
+    ],
+    "Client 15": [
+        "index.html:alt"
+    ],
+    "Client 16": [
+        "index.html:alt"
+    ],
+    "Client 17": [
+        "index.html:alt"
+    ],
+    "Client 18": [
+        "index.html:alt"
+    ],
+    "World Map": [
+        "index.html:alt"
+    ],
+    "Canada Flag": [
+        "index.html:alt"
+    ],
+    "UK Flag": [
+        "index.html:alt"
+    ],
+    "Saudi Arabia Flag": [
+        "index.html:alt"
+    ],
+    "UAE Flag": [
+        "index.html:alt"
+    ],
+    "Oman Flag": [
+        "index.html:alt"
+    ],
+    "India Flag": [
+        "index.html:alt"
+    ],
+    "Kizhisseri Jewellers — A trusted name in the world of exquisite jewellery, based in Kerala, India.": [
+        "kizhisseri-jewellers.html:meta_desc"
+    ],
+    "Luxury Jewellery": [
+        "kizhisseri-jewellers.html:span"
+    ],
+    "Kizhisseri": [
+        "kizhisseri-jewellers.html:h1"
+    ],
+    "Jewellers": [
+        "kizhisseri-jewellers.html:em"
+    ],
+    "Exquisite Craftsmanship & Elegance": [
+        "kizhisseri-jewellers.html:h2"
+    ],
+    "Kizhisseri Jewellers, established in 2000 in Perinthalmanna, Kerala, India, is a trusted name in the world of exquisite jewellery. With a legacy of craftsmanship spanning over two decades, we specialize in creating stunning and timeless pieces that reflect elegance and artistry.": [
+        "kizhisseri-jewellers.html:p"
+    ],
+    "From intricately designed gold and diamond jewellery to unique custom creations, our skilled artisans and meticulous attention to detail ensure unparalleled quality.": [
+        "kizhisseri-jewellers.html:p"
+    ],
+    "Makin Spare parts Trading Company — A specialized automotive spare parts powerhouse dedicated to serving the holy city of Makkah.": [
+        "makin-spare-parts-trading.html:meta_desc"
+    ],
+    "Spare Parts Trading": [
+        "makin-spare-parts-trading.html:span"
+    ],
+    "Makin Spare parts": [
+        "makin-spare-parts-trading.html:h1"
+    ],
+    "Trading Company": [
+        "makin-spare-parts-trading.html:em"
+    ],
+    "Driving Excellence in Makkah": [
+        "makin-spare-parts-trading.html:h2"
+    ],
+    ", a premier entity under the esteemed": [
+        "makin-spare-parts-trading.html:p"
+    ],
+    "umbrella, is a specialized automotive spare parts powerhouse dedicated to serving the holy city of": [
+        "makin-spare-parts-trading.html:p"
+    ],
+    ". With a robust infrastructure featuring": [
+        "makin-spare-parts-trading.html:p"
+    ],
+    ", we have established ourselves as a cornerstone of the local automotive supply chain, catering to individual car owners, professional workshops, and large-scale commercial fleets.": [
+        "makin-spare-parts-trading.html:p"
+    ],
+    "Makkah": [
+        "makin-spare-parts-trading.html:strong"
+    ],
+    "three strategic branches": [
+        "makin-spare-parts-trading.html:strong"
+    ],
+    "At Makin, we bridge the critical gap between global automotive manufacturers and the local market by providing a comprehensive catalog of genuine and premium aftermarket components. Our mission is to enhance vehicle longevity and passenger safety through rigorous quality control and expert part identification.": [
+        "makin-spare-parts-trading.html:p"
+    ],
+    "Backed by the professional heritage and operational strength of": [
+        "makin-spare-parts-trading.html:p"
+    ],
+    ", Makin Trading Company combines traditional values of trust with modern logistics, ensuring that essential parts are always available across our Makkah network to keep the city’s transport moving without interruption.": [
+        "makin-spare-parts-trading.html:p"
+    ],
+    "Mamichi Apartments | Team Oak": [
+        "mamichi-apartments.html:title"
+    ],
+    "Mamichi Apartments — Premium residential living by Team Oak, offering high-quality apartment solutions in India.": [
+        "mamichi-apartments.html:meta_desc"
+    ],
+    "Residential Living": [
+        "mamichi-apartments.html:span"
+    ],
+    "Mamichi": [
+        "mamichi-apartments.html:h1"
+    ],
+    "Apartments": [
+        "mamichi-apartments.html:strong"
+    ],
+    "About Mamichi Apartments": [
+        "mamichi-apartments.html:span"
+    ],
+    "Premium Living,": [
+        "mamichi-apartments.html:h2"
+    ],
+    "Thoughtfully Designed": [
+        "mamichi-apartments.html:em"
+    ],
+    "Mamichi Apartments, established in 2015 in Perinthalmanna, Kerala, India, offers modern and comfortable rental apartments for individuals and families. We provide a hassle-free living experience with our well-designed all essential amenities. With a focus on creating a warm and welcoming atmosphere, Mamichi Apartments aims to be your home away from home.": [
+        "mamichi-apartments.html:p"
+    ],
+    "Our commitment to exceptional service and attention to detail ensures that our residents enjoy a convenient and enjoyable living experience. Experience the convenience and comfort of Mamichi Apartments, where we strive to exceed your expectations every day.": [
+        "mamichi-apartments.html:p"
+    ],
+    "Premium residential apartment solutions": [
+        "mamichi-apartments.html:li"
+    ],
+    "High-quality construction and finishing standards": [
+        "mamichi-apartments.html:li"
+    ],
+    "Strategically located in India": [
+        "mamichi-apartments.html:li"
+    ],
+    "Committed to comfort, design, and community": [
+        "mamichi-apartments.html:li"
+    ],
+    "Media | Team Oak": [
+        "media.html:title"
+    ],
+    "Media and Press - Team Oak": [
+        "media.html:meta_desc"
+    ],
+    "Press & Communications": [
+        "media.html:span"
+    ],
+    "Media Center": [
+        "media.html:em"
+    ],
+    "Our Media": [
+        "media.html:h2"
+    ],
+    "Explore our latest updates, projects, and global activities.": [
+        "media.html:p"
+    ],
+    "teamoak.transport": [
+        "media.html:span"
+    ],
+    "Abu Dhabi, United Arab Emirates": [
+        "media.html:span",
+        "media.html:span"
+    ],
+    "View Profile": [
+        "media.html:a",
+        "media.html:a",
+        "media.html:a"
+    ],
+    "View more on Instagram": [
+        "media.html:a",
+        "media.html:a",
+        "media.html:a"
+    ],
+    "teamoak.safety": [
+        "media.html:span"
+    ],
+    "oak_interiors": [
+        "media.html:span"
+    ],
+    "_oak_architects": [
+        "media.html:span"
+    ],
+    "and": [
+        "media.html:span"
+    ],
+    "Original audio": [
+        "media.html:span"
+    ],
+    "Team Oak Post 1": [
+        "media.html:alt"
+    ],
+    "Team Oak Post 2": [
+        "media.html:alt"
+    ],
+    "Oak": [
+        "media.html:alt",
+        "media.html:alt"
+    ],
+    "Team Oak Post 3": [
+        "media.html:alt"
+    ],
+    "Oak Academy of Design | Team Oak": [
+        "oak-academy-of-design.html:title"
+    ],
+    "Oak Academy of Design is a premier institution dedicated to nurturing the next generation of creative minds in architecture and design.": [
+        "oak-academy-of-design.html:meta_desc"
+    ],
+    "Education & Creativity": [
+        "oak-academy-of-design.html:span"
+    ],
+    "Oak Academy": [
+        "oak-academy-of-design.html:h1"
+    ],
+    "of Design": [
+        "oak-academy-of-design.html:em"
+    ],
+    "Industry-Led Design Training": [
+        "oak-academy-of-design.html:h2"
+    ],
+    "is a premier architectural and interior design training institute based in Kerala, India, that bridges the gap between academic theory and real-world practice through a curriculum centered on design psychology and technical precision.": [
+        "oak-academy-of-design.html:p"
+    ],
+    "What sets the academy apart is its direct industry connection, as all students are mentored by": [
+        "oak-academy-of-design.html:p"
+    ],
+    ", a high-end design firm with a portfolio of over 500 successful projects. This practitioner-led approach ensures that aspiring designers master site-tested techniques, space planning, and the \"timeless\" design philosophy required to create functional, human-centric environments.": [
+        "oak-academy-of-design.html:p"
+    ],
+    "senior trainers from Oak Architects": [
+        "oak-academy-of-design.html:strong"
+    ],
+    "Key Educational Programs": [
+        "oak-academy-of-design.html:h3"
+    ],
+    "A signature program covering space planning, conceptual layouts, and material science.": [
+        "oak-academy-of-design.html:li"
+    ],
+    "Mastering Architecture & Interior Designing:": [
+        "oak-academy-of-design.html:strong"
+    ],
+    "Practical modules on budgeting, estimation, and site supervision.": [
+        "oak-academy-of-design.html:li"
+    ],
+    "Professional Skills Training:": [
+        "oak-academy-of-design.html:strong"
+    ],
+    "Integration of traditional design principles with modern architecture.": [
+        "oak-academy-of-design.html:li"
+    ],
+    "Vastu Shastra:": [
+        "oak-academy-of-design.html:strong"
+    ],
+    "Direct interaction with industry professionals via the OAK Academy App.": [
+        "oak-academy-of-design.html:li"
+    ],
+    "Live Design Classes:": [
+        "oak-academy-of-design.html:strong"
+    ],
+    "Oak Architects & Interiors | Team Oak": [
+        "oak-architects.html:title"
+    ],
+    "Oak Architects and Interiors is acclaimed as a creative enthusiast in the domain of Architecture and Interior Design in Kerala.": [
+        "oak-architects.html:meta_desc"
+    ],
+    "Architecture & Interiors": [
+        "oak-architects.html:span"
+    ],
+    "Oak Architects": [
+        "oak-architects.html:h1"
+    ],
+    "& Interiors": [
+        "oak-architects.html:em"
+    ],
+    "Sustainable Design & Architecture": [
+        "oak-architects.html:h2"
+    ],
+    "Established in 2015, Oak Architects and Interiors is acclaimed as a creative enthusiast in the domain of Architecture and Interior Designer in Kerala. Our approach is based on the fundamentals of Sustainable Design, a method that values local resources, cultural influences, meticulous attention to detail, and offers honest strategy.": [
+        "oak-architects.html:p"
+    ],
+    "We use a progressive and iterative innovation methodology and focus our expertise on heritage and contextual factors. We aspire to create standard solutions that deal with society's changing living and working habits.": [
+        "oak-architects.html:p"
+    ],
+    "Our Clients | Team Oak": [
+        "our-clients.html:title"
+    ],
+    "Discover the prestigious clients and partners who trust Team Oak.": [
+        "our-clients.html:meta_desc"
+    ],
+    "Clients": [
+        "our-clients.html:em"
+    ],
+    "Welcome to Our Clients": [
+        "our-clients.html:h2"
+    ],
+    "This section is currently under development. Please check back later for updates regarding our Clients.": [
+        "our-clients.html:p"
+    ],
+    "Our Ventures | Team Oak": [
+        "our-ventures.html:title"
+    ],
+    "Explore the diverse portfolio of ventures under the Team Oak umbrella.": [
+        "our-ventures.html:meta_desc"
+    ],
+    "Explore Our Portfolio": [
+        "our-ventures.html:span"
+    ],
+    "Ventures": [
+        "our-ventures.html:em"
+    ],
+    "Welcome to Our Ventures": [
+        "our-ventures.html:h2"
+    ],
+    "This section is currently under development. Please check back later for updates regarding our Ventures.": [
+        "our-ventures.html:p"
+    ],
+    "Pharma Fleet | Team Oak": [
+        "pharma-fleet.html:title"
+    ],
+    "Pharma Fleet by Team Oak": [
+        "pharma-fleet.html:meta_desc"
+    ],
+    "Healthcare Logistics": [
+        "pharma-fleet.html:span"
+    ],
+    "Delivery Solutions": [
+        "pharma-fleet.html:em"
+    ],
+    "A Vital Link in Healthcare": [
+        "pharma-fleet.html:h2"
+    ],
+    "At Pharma Fleet, we are more than a delivery service — we are a vital link in the healthcare chain, proudly serving the Halifax Regional Municipality with secure, efficient, and compassionate prescription deliveries. We partner closely with pharmacies to ensure that medications are delivered promptly and safely to patients, caregivers, and healthcare facilities.": [
+        "pharma-fleet.html:p"
+    ],
+    "Our specialized team understands the critical nature of healthcare logistics, treating every delivery with the utmost care, discretion, and professionalism. From the moment we collect a prescription to the time it reaches its destination, our focus remains on reliability, security, and patient well-being. We recognize that behind every package is a person — someone depending on their medication to manage their health and improve their quality of life.": [
+        "pharma-fleet.html:p"
+    ],
+    "Sugar Packing Unit | Team Oak": [
+        "sugar-packing.html:title"
+    ],
+    "Sugar Packing Unit by Team Oak": [
+        "sugar-packing.html:meta_desc"
+    ],
+    "Industrial Facilities": [
+        "sugar-packing.html:span"
+    ],
+    "Sugar Packing Unit": [
+        "sugar-packing.html:h1"
+    ],
+    "& Distribution": [
+        "sugar-packing.html:em"
+    ],
+    "Precision in Every Package": [
+        "sugar-packing.html:h2"
+    ],
+    "At Team Oak, we transform bulk sugar into market-ready products with uncompromising precision, consistency, and quality. Our state-of-the-art sugar packing facility receives premium-grade sugar from trusted mills and suppliers, where it undergoes rigorous quality inspection, accurate weighing, hygienic packaging, and secure preparation for local distribution and international export.": [
+        "sugar-packing.html:p"
+    ],
+    "As a vital part of the food supply chain, we ensure every package meets the highest industry standards, enabling businesses to receive products they can trust.": [
+        "sugar-packing.html:p"
+    ],
+    "Supporting the Food Industry Across Saudi Arabia": [
+        "sugar-packing.html:h2"
+    ],
+    "Saudi Arabia's growing food and beverage sector depends on efficient and reliable sugar packaging solutions. As large volumes of sugar are imported into the Kingdom, professional repacking facilities play a critical role in converting bulk shipments into consumer-ready and industrial packaging.": [
+        "sugar-packing.html:p"
+    ],
+    "Our advanced packaging operations serve a diverse range of industries, including:": [
+        "sugar-packing.html:p"
+    ],
+    "Supermarkets & Retail Chains": [
+        "sugar-packing.html:li"
+    ],
+    "Restaurants & Cafés": [
+        "sugar-packing.html:li"
+    ],
+    "Hotels & Hospitality": [
+        "sugar-packing.html:li"
+    ],
+    "Food Manufacturing Industries": [
+        "sugar-packing.html:li"
+    ],
+    "Wholesale & Distribution Networks": [
+        "sugar-packing.html:li"
+    ],
+    "Export Markets": [
+        "sugar-packing.html:li"
+    ],
+    "From small retail packs to large industrial bags, every package is processed with strict quality control and exceptional attention to detail.": [
+        "sugar-packing.html:p"
+    ],
+    "We combine advanced packaging technology with internationally recognized quality standards to deliver products that exceed customer expectations. Every stage of our operation is designed to ensure:": [
+        "sugar-packing.html:p"
+    ],
+    "High-precision weighing and filling": [
+        "sugar-packing.html:li"
+    ],
+    "Hygienic and food-safe packaging processes": [
+        "sugar-packing.html:li"
+    ],
+    "Consistent product quality": [
+        "sugar-packing.html:li"
+    ],
+    "Efficient production and timely delivery": [
+        "sugar-packing.html:li"
+    ],
+    "Compliance with international food safety standards": [
+        "sugar-packing.html:li"
+    ],
+    "Reliable packaging for domestic and global markets": [
+        "sugar-packing.html:li"
+    ],
+    "Our commitment to operational excellence allows our partners to focus on growing their business while we ensure every package reflects superior quality.": [
+        "sugar-packing.html:p"
+    ],
+    "Why Choose Us": [
+        "sugar-packing.html:h2"
+    ],
+    "With years of industry expertise, cutting-edge equipment, and a customer-focused approach, we have become a trusted packaging partner for businesses across Saudi Arabia and beyond.": [
+        "sugar-packing.html:p"
+    ],
+    "We don't simply package sugar—we deliver reliability, precision, and confidence in every shipment.": [
+        "sugar-packing.html:p"
+    ],
+    "Team Oak Builders & Developers | Team Oak": [
+        "team-oak-builders.html:title"
+    ],
+    "Team Oak Builders & Developers is a premier construction and real estate development company dedicated to shaping the future with innovative and sustainable projects.": [
+        "team-oak-builders.html:meta_desc"
+    ],
+    "Construction & Development": [
+        "team-oak-builders.html:span"
+    ],
+    "Builders & Developers": [
+        "team-oak-builders.html:em"
+    ],
+    "Redefining Urban Living in Kerala": [
+        "team-oak-builders.html:h2"
+    ],
+    "is the premier construction and real estate wing of": [
+        "team-oak-builders.html:p"
+    ],
+    ", established with a vision to redefine urban living in Kerala through architectural excellence and structural integrity.": [
+        "team-oak-builders.html:p"
+    ],
+    "Specializing in high-rise residential projects, our mission is to deliver luxury apartments that blend modern lifestyle amenities with the timeless design principles Team Oak is known for. We focus on creating sustainable, high-quality living spaces that offer both aesthetic beauty and long-term value for homeowners and investors alike.": [
+        "team-oak-builders.html:p"
+    ],
+    "Perinthalmanna, Kerala": [
+        "team-oak-builders.html:strong"
+    ],
+    "This project combines technical precision with the expertise of our seasoned engineering and design teams. At Team Oak Builders & Developers, we don't just build apartments; we craft landmark communities that set new benchmarks for comfort, safety, and sophistication in the Kerala real estate market.": [
+        "team-oak-builders.html:p"
+    ],
+    "Oak Camps and Trails is a premier outdoor adventure company based in Kodaikanal, Tamil Nadu.": [
+        "team-oak-camps.html:meta_desc"
+    ],
+    "Adventure & Exploration": [
+        "team-oak-camps.html:span"
+    ],
+    "Oak Camps": [
+        "team-oak-camps.html:h1"
+    ],
+    "& Trails": [
+        "team-oak-camps.html:em"
+    ],
+    "Immerse Yourself in the Beauty of Nature": [
+        "team-oak-camps.html:h2"
+    ],
+    "Oak Camps and Trails is a premier outdoor adventure company based in Kodaikanal, Tamil Nadu. Since 2015, we have been dedicated to providing thrilling and memorable camping and trail experiences amidst the scenic beauty of nature.": [
+        "team-oak-camps.html:p"
+    ],
+    "Our expert team, with a passion for the outdoors, curates exceptional camping trips and trails, allowing participants to immerse themselves in the breathtaking landscapes and engage in exciting activities.": [
+        "team-oak-camps.html:p"
+    ],
+    "Team Oak Hotels & Apartments — Delivering premium client-centric hospitality and service experiences globally.": [
+        "team-oak-hotels.html:meta_desc"
+    ],
+    "Hospitality & Services": [
+        "team-oak-hotels.html:span"
+    ],
+    "Hotels & Apartments": [
+        "team-oak-hotels.html:em"
+    ],
+    "Redefining Luxury & Comfort": [
+        "team-oak-hotels.html:h2"
+    ],
+    "At": [
+        "team-oak-hotels.html:p"
+    ],
+    ", we believe in crafting experiences that transcend the ordinary. Every detail of our hospitality offerings is meticulously designed to provide our guests with unparalleled comfort, world-class service, and a memorable stay that feels just like home, yet elevated.": [
+        "team-oak-hotels.html:p"
+    ],
+    "Whether you are traveling for business, leisure, or seeking a long-term luxurious residence, our globally positioned properties offer the perfect blend of modern aesthetics, premium amenities, and strategic locations. We bring the Team Oak standard of excellence to the hospitality sector, ensuring that every guest interaction is marked by warmth and professionalism.": [
+        "team-oak-hotels.html:p"
+    ],
+    "Our state-of-the-art facilities include fine dining restaurants, modern fitness centers, elegant meeting spaces, and serene spas designed to rejuvenate your senses. Sustainability and innovation are at the heart of our operations, ensuring we leave a positive impact on both our guests and the environment.": [
+        "team-oak-hotels.html:p"
+    ],
+    "Experience the zenith of hospitality with Team Oak Hotels & Apartments, where every stay is a masterpiece of comfort and luxury.": [
+        "team-oak-hotels.html:p"
+    ],
+    "Signature Amenities": [
+        "team-oak-hotels.html:h2"
+    ],
+    "Premium Suites": [
+        "team-oak-hotels.html:strong"
+    ],
+    "Spacious, modern rooms with breathtaking views": [
+        "team-oak-hotels.html:span"
+    ],
+    "Fine Dining": [
+        "team-oak-hotels.html:strong"
+    ],
+    "World-class culinary experiences in house": [
+        "team-oak-hotels.html:span"
+    ],
+    "Wellness Center": [
+        "team-oak-hotels.html:strong"
+    ],
+    "State-of-the-art gym and relaxing spa facilities": [
+        "team-oak-hotels.html:span"
+    ],
+    "Concierge Service": [
+        "team-oak-hotels.html:strong"
+    ],
+    "24/7 dedicated assistance for all your needs": [
+        "team-oak-hotels.html:span"
+    ],
+    "Team Oak Logistics Services | Team Oak": [
+        "team-oak-logistics.html:title"
+    ],
+    "Team Oak Logistics Services provides seamless and efficient supply chain solutions.": [
+        "team-oak-logistics.html:meta_desc"
+    ],
+    "Global Supply Chain & Freight": [
+        "team-oak-logistics.html:span"
+    ],
+    "Logistics Services": [
+        "team-oak-logistics.html:em"
+    ],
+    "Connecting Customers with Trusted Logistics": [
+        "team-oak-logistics.html:h2"
+    ],
+    "is the logistics and transportation division of": [
+        "team-oak-logistics.html:p"
+    ],
+    ", specializing in": [
+        "team-oak-logistics.html:p"
+    ],
+    "across the Kingdom of Saudi Arabia.": [
+        "team-oak-logistics.html:p"
+    ],
+    "freight brokerage and transport coordination services": [
+        "team-oak-logistics.html:strong"
+    ],
+    "We provide efficient and reliable logistics solutions by connecting customers with a trusted network of transport partners. Our role is to manage the movement of goods through effective coordination, ensuring smooth operations, timely execution, and cost-effective delivery solutions.": [
+        "team-oak-logistics.html:p"
+    ],
+    "We focus on simplifying logistics for businesses by handling end-to-end freight coordination, including booking, scheduling, communication, and delivery support.": [
+        "team-oak-logistics.html:p"
+    ],
+    "Our Services": [
+        "team-oak-logistics.html:h2",
+        "wymax-media.html:h3"
+    ],
+    "Freight Brokerage Services": [
+        "team-oak-logistics.html:h3"
+    ],
+    "Truck sourcing and booking (FTL & LTL)": [
+        "team-oak-logistics.html:li"
+    ],
+    "Transport coordination across Saudi Arabia": [
+        "team-oak-logistics.html:li"
+    ],
+    "Carrier management and negotiation": [
+        "team-oak-logistics.html:li"
+    ],
+    "Load matching and dispatch services": [
+        "team-oak-logistics.html:li"
+    ],
+    "Logistics Coordination": [
+        "team-oak-logistics.html:h3"
+    ],
+    "End-to-end shipment management": [
+        "team-oak-logistics.html:li"
+    ],
+    "Route planning and scheduling support": [
+        "team-oak-logistics.html:li"
+    ],
+    "Communication with drivers and transport providers": [
+        "team-oak-logistics.html:li"
+    ],
+    "Delivery coordination and status updates": [
+        "team-oak-logistics.html:li"
+    ],
+    "Industry Solutions": [
+        "team-oak-logistics.html:h3"
+    ],
+    "FMCG logistics coordination": [
+        "team-oak-logistics.html:li"
+    ],
+    "Construction material transport solutions": [
+        "team-oak-logistics.html:li"
+    ],
+    "Industrial and heavy cargo movement": [
+        "team-oak-logistics.html:li"
+    ],
+    "Retail and commercial distribution support": [
+        "team-oak-logistics.html:li"
+    ],
+    "To become a leading freight brokerage company in Saudi Arabia, delivering reliable, efficient, and customer-focused logistics coordination services.": [
+        "team-oak-logistics.html:p"
+    ],
+    "Provide dependable freight brokerage and transport coordination services": [
+        "team-oak-logistics.html:li"
+    ],
+    "Ensure timely and cost-effective movement of goods": [
+        "team-oak-logistics.html:li"
+    ],
+    "Build strong relationships with trusted transport partners": [
+        "team-oak-logistics.html:li"
+    ],
+    "Deliver transparent communication and professional service": [
+        "team-oak-logistics.html:li"
+    ],
+    "Support the logistics growth of Saudi Arabia under Vision 2030": [
+        "team-oak-logistics.html:li"
+    ],
+    "Our Core Values": [
+        "team-oak-logistics.html:h2"
+    ],
+    "Integrity": [
+        "team-oak-logistics.html:strong"
+    ],
+    "Honest and transparent business practices": [
+        "team-oak-logistics.html:span"
+    ],
+    "Reliability": [
+        "team-oak-logistics.html:strong"
+    ],
+    "Consistent and dependable service delivery": [
+        "team-oak-logistics.html:span"
+    ],
+    "Customer Focus": [
+        "team-oak-logistics.html:strong"
+    ],
+    "Tailored solutions for every client": [
+        "team-oak-logistics.html:span"
+    ],
+    "Efficiency": [
+        "team-oak-logistics.html:strong"
+    ],
+    "Smart coordination and optimized transport solutions": [
+        "team-oak-logistics.html:span"
+    ],
+    "Accountability": [
+        "team-oak-logistics.html:strong"
+    ],
+    "Responsibility in every shipment": [
+        "team-oak-logistics.html:span"
+    ],
+    "Excellence": [
+        "team-oak-logistics.html:strong"
+    ],
+    "Continuous improvement in service quality": [
+        "team-oak-logistics.html:span"
+    ],
+    "Why Choose Team Oak Logistics Services?": [
+        "team-oak-logistics.html:h2"
+    ],
+    "Team Oak Safety | Team Oak": [
+        "team-oak-safety.html:title"
+    ],
+    "Protection & Safety": [
+        "team-oak-safety.html:span"
+    ],
+    "Team Oak Safety": [
+        "team-oak-safety.html:h1"
+    ],
+    "& Fire Fighting Equipment": [
+        "team-oak-safety.html:em"
+    ],
+    "Comprehensive Fire & Safety Services": [
+        "team-oak-safety.html:h2"
+    ],
+    "As a vital extension of Team Oak International, Team Oak Fire & Safety UAE was established to meet the growing demand for professional, reliable, and standards compliant fire and safety services across the Emirates.": [
+        "team-oak-safety.html:p"
+    ],
+    "With a deep understanding of UAE's regulatory environment and safety compliance requirements, Team Oak Fire & Safety offers specialized services including fit outs, Fire Protection Systems - Supply and Installation, Annual Maintenance Contracts (AMC), Fire Alarm and Suppression Solutions, Hassantuk Provisions, Evacuation Plan, Istifa Certification scope of works and assistance, Emergency and Safety Signage and Full Civil Defense Coordination and Approvals.": [
+        "team-oak-safety.html:p"
+    ],
+    "Our team comprises industry certified engineers, safety specialists, and technical staff equipped to handle projects of all scales whether it's residential, commercial, industrial, or government facilities.": [
+        "team-oak-safety.html:p"
+    ],
+    "OUR FIRE PROTECTION": [
+        "team-oak-safety.html:h2"
+    ],
+    "SERVICES": [
+        "team-oak-safety.html:span"
+    ],
+    "FIRE ALERT SOLUTIONS": [
+        "team-oak-safety.html:h2"
+    ],
+    "AND FIRE PROTECTION SYSTEMS": [
+        "team-oak-safety.html:span"
+    ],
+    "Supply, Installation, Maintenance And T & C": [
+        "team-oak-safety.html:p"
+    ],
+    "Fire Alarm Systems": [
+        "team-oak-safety.html:h3"
+    ],
+    "Conventional Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Addressable Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Voice Evacuation Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Public Address Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Networked Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Fire Fighting Systems": [
+        "team-oak-safety.html:h3"
+    ],
+    "Water-based Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Gas-based Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Foam Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Chemical Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Fire Extinguishers": [
+        "team-oak-safety.html:li"
+    ],
+    "Emergency Light Systems": [
+        "team-oak-safety.html:h3",
+        "team-oak-safety.html:li"
+    ],
+    "Exit Light Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "CBS Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Monitoring Systems": [
+        "team-oak-safety.html:li"
+    ],
+    "Team Oak Transport | Team Oak": [
+        "team-oak-transport.html:title"
+    ],
+    "Logistics & Heavy Equipment": [
+        "team-oak-transport.html:span"
+    ],
+    "Team Oak Transport": [
+        "team-oak-transport.html:h1"
+    ],
+    "& Heavy Equipment Rental": [
+        "team-oak-transport.html:em"
+    ],
+    "Reliable Transport Solutions": [
+        "team-oak-transport.html:h2"
+    ],
+    "Team Oak Transport & Heavy Equipment Rentals is a UAE-based company providing comprehensive transport services and reliable heavy equipment rental solutions. Serving clients across the Emirates, we cater to industries such as construction, oil & gas, infrastructure, and industrial projects, delivering equipment and transport support that meet international standards.": [
+        "team-oak-transport.html:p"
+    ],
+    "Our fleet consists of modern, well-maintained vehicles and machinery, ensuring efficiency, safety, and reliability at every stage of the project. With a dedicated team and strong local expertise, we are committed to supporting the UAE's growth by offering cost-effective, flexible, and timely solutions tailored to client needs.": [
+        "team-oak-transport.html:p"
+    ],
+    "Team Oak Tobacco Wholesale Trading — A leading tobacco wholesale distributor in Saudi Arabia.": [
+        "tobacco-trading.html:meta_desc"
+    ],
+    "Tobacco Wholesale Trading": [
+        "tobacco-trading.html:em"
+    ],
+    "Leading Tobacco Wholesale Distributor": [
+        "tobacco-trading.html:h2"
+    ],
+    "Established in 2000, Team Oak Trading Company LLC is a leading tobacco wholesale distributor based in Makkah and Jeddah, Kingdom of Saudi Arabia. With over two decades of industry experience, the company has built a strong reputation for reliability, product quality, and professional service, becoming a trusted partner for retailers and distributors across the region.": [
+        "tobacco-trading.html:p"
+    ],
+    "We specialize in the wholesale distribution of premium tobacco products sourced from internationally recognized manufacturers and authorized suppliers, ensuring authenticity, consistent quality, and compliance with Saudi market regulations. Our efficient supply chain and organized distribution network enable timely deliveries and dependable product availability to meet customer demands.": [
+        "tobacco-trading.html:p"
+    ],
+    "Customer satisfaction remains central to our operations. Through transparent business practices, personalized service, and a knowledgeable team with deep industry expertise, we maintain long-term relationships with our clients while adapting to evolving market needs.": [
+        "tobacco-trading.html:p"
+    ],
+    "Wymax Media | Team Oak": [
+        "wymax-media.html:title"
+    ],
+    "Wymax Media is a creative and performance-driven digital marketing agency committed to helping businesses build a powerful digital presence.": [
+        "wymax-media.html:meta_desc"
+    ],
+    "Media & Digital Solutions": [
+        "wymax-media.html:span"
+    ],
+    "WYMAX": [
+        "wymax-media.html:h1"
+    ],
+    "MEDIA": [
+        "wymax-media.html:em"
+    ],
+    "A Performance-Driven Digital Agency": [
+        "wymax-media.html:h2"
+    ],
+    "is a creative and performance-driven digital marketing agency based in": [
+        "wymax-media.html:p"
+    ],
+    ", committed to helping businesses, brands, entrepreneurs, and public figures build a powerful digital presence.": [
+        "wymax-media.html:p"
+    ],
+    "Perinthalmanna": [
+        "wymax-media.html:strong"
+    ],
+    "Founded with a vision to deliver modern marketing solutions, Wymax Media combines creativity, strategy, and technology to help brands reach the right audience and achieve measurable growth. We believe that successful marketing is not just about gaining visibility—it's about building trust, creating meaningful connections, and driving real business results.": [
+        "wymax-media.html:p"
+    ],
+    "Whether you're a startup, local business, corporate brand, influencer, or public personality, we provide customized solutions designed to elevate your presence both online and offline.": [
+        "wymax-media.html:p"
+    ],
+    "Social Media Marketing & Management": [
+        "wymax-media.html:strong"
+    ],
+    "Performance Marketing (Meta & Google Ads)": [
+        "wymax-media.html:strong"
+    ],
+    "Search Engine Optimization (SEO)": [
+        "wymax-media.html:strong"
+    ],
+    "Content Creation & Copywriting": [
+        "wymax-media.html:strong"
+    ],
+    "Video Production": [
+        "wymax-media.html:strong"
+    ],
+    "Motion Graphics & Creative Design": [
+        "wymax-media.html:strong"
+    ],
+    "Branding": [
+        "wymax-media.html:strong"
+    ],
+    "Website Design & Development": [
+        "wymax-media.html:strong"
+    ],
+    "Personal Branding & Personal PR": [
+        "wymax-media.html:strong"
+    ],
+    "Influencer Marketing & Collaborations": [
+        "wymax-media.html:strong"
+    ],
+    "Event Promotions & Awareness Campaigns": [
+        "wymax-media.html:strong"
+    ],
+    "Content Planning & Brand Positioning": [
+        "wymax-media.html:strong"
+    ]
+}

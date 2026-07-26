@@ -93,15 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelectorAll('.scroll-reveal-container').forEach(container => {
             const textElements = container.querySelectorAll('.scroll-reveal-text');
-
-            textElements.forEach(el => {
-                const words = el.innerText.split(/(\s+)/).map(word =>
-                    word.match(/^\s+$/) ? word : `<span class="word">${word}</span>`
-                );
-                el.innerHTML = words.join('');
-            });
-
-            const wordElements = container.querySelectorAll('.word');
+            
+            // Removed word-level splitting to prevent severe lag and translation issues with Google Translate
+            const wordElements = textElements;
 
             // Subtle container tilt
             gsap.fromTo(container,
