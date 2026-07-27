@@ -305,3 +305,55 @@ html[dir="rtl"] #global-presence .global-header {
 html[dir="rtl"] #global-presence .pin-label {
     direction: rtl !important;
 }
+
+/* ═══════════════════════════
+   MEDIA & CAREER PAGES RTL FIXES
+═══════════════════════════ */
+/* Media Page Specific Fixes */
+html[dir="rtl"] .ig-user-info,
+html[dir="rtl"] .ig-footer,
+html[dir="rtl"] .ig-likes,
+html[dir="rtl"] .ig-caption,
+html[dir="rtl"] .ig-view-link,
+html[dir="rtl"] .event-content,
+html[dir="rtl"] .event-title,
+html[dir="rtl"] .event-date,
+html[dir="rtl"] .event-desc {
+    text-align: right !important;
+}
+html[dir="rtl"] .ig-profile-wrap {
+    text-align: right;
+}
+html[dir="rtl"] .ig-username {
+    justify-content: flex-end;
+}
+html[dir="rtl"] .event-card {
+    text-align: right;
+}
+
+/* Career Page Specific Fixes */
+html[dir="rtl"] .career-card,
+html[dir="rtl"] .career-card h3,
+html[dir="rtl"] .career-card h4,
+html[dir="rtl"] .career-card .company-name,
+html[dir="rtl"] .value-card {
+    text-align: right !important;
+}
+html[dir="rtl"] .career-card ul {
+    text-align: right;
+    padding-right: 0;
+}
+html[dir="rtl"] .career-card li {
+    padding-right: 2rem !important;
+    padding-left: 0 !important;
+    text-align: right !important;
+}
+html[dir="rtl"] .career-card li::before {
+    right: 0 !important;
+    left: auto !important;
+}
+html[dir="rtl"] .section-header h2,
+html[dir="rtl"] .section-header p {
+    text-align: center !important; /* Keep section headers centered or align right if needed, but center looks good */
+}
+
