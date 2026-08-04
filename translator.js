@@ -20,13 +20,15 @@
             // Translate page
             translatePage(lang);
             
-            // Bind switchers
+            // Bind switchers and navigation dropdowns
             setupSwitchers();
+            setupNavDropdowns();
         } catch (e) {
             console.error('Failed to load translations:', e);
         } finally {
-            // Always show document
+            // Always show document and ensure navigation is initialized
             document.documentElement.style.visibility = '';
+            setupNavDropdowns();
         }
     }
 
@@ -137,6 +139,107 @@
                 }
             });
         });
+    }
+
+    function setupNavDropdowns() {
+        // Main dropdown toggle on click for "What We Do" (.has-arrow)
+        document.querySelectorAll('.has-arrow').forEach(li => {
+            const trigger = li.querySelector(':scope > a');
+            if (!trigger || trigger.dataset.navBound === 'true') return;
+            trigger.dataset.navBound = 'true';
+
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const isOpen = li.classList.contains('open');
+
+                // Close all other open top-level dropdowns
+                document.querySelectorAll('.has-arrow.open').forEach(otherLi => {
+                    if (otherLi !== li) {
+                        otherLi.classList.remove('open');
+                        otherLi.querySelectorAll('.has-flyout.open, .has-flyout.active').forEach(f => {
+                            f.classList.remove('open', 'active');
+                        });
+                    }
+                });
+
+                if (isOpen) {
+                    li.classList.remove('open');
+                    li.querySelectorAll('.has-flyout.open, .has-flyout.active').forEach(f => {
+                        f.classList.remove('open', 'active');
+                    });
+                } else {
+                    li.classList.add('open');
+                    // On desktop, activate first flyout item by default
+                    if (window.innerWidth > 768) {
+                        const firstFlyout = li.querySelector('.dropdown > li.has-flyout');
+                        if (firstFlyout) {
+                            firstFlyout.classList.add('active');
+                        }
+                    }
+                }
+            });
+        });
+
+        // Flyout categories (Trading, Services, Industrial)
+        document.querySelectorAll('.dropdown > li.has-flyout').forEach(flyoutLi => {
+            const flyoutTrigger = flyoutLi.querySelector(':scope > a');
+
+            // Mouse enter switches active flyout on desktop only
+            flyoutLi.addEventListener('mouseenter', () => {
+                if (window.innerWidth > 768) {
+                    const siblings = flyoutLi.parentElement.querySelectorAll(':scope > li.has-flyout');
+                    siblings.forEach(s => s.classList.remove('active', 'open'));
+                    flyoutLi.classList.add('active');
+                }
+            });
+
+            if (flyoutTrigger && flyoutTrigger.dataset.flyoutBound !== 'true') {
+                flyoutTrigger.dataset.flyoutBound = 'true';
+                flyoutTrigger.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const isFlyoutOpen = flyoutLi.classList.contains('open');
+                    const siblings = flyoutLi.parentElement.querySelectorAll(':scope > li.has-flyout');
+                    siblings.forEach(s => {
+                        if (s !== flyoutLi) s.classList.remove('open', 'active');
+                    });
+
+                    if (isFlyoutOpen) {
+                        flyoutLi.classList.remove('open', 'active');
+                    } else {
+                        flyoutLi.classList.add('open', 'active');
+                    }
+                });
+            }
+        });
+
+        // Close dropdowns on outside click
+        if (!window._oakNavGlobalBound) {
+            window._oakNavGlobalBound = true;
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.has-arrow') && !e.target.closest('.has-flyout')) {
+                    document.querySelectorAll('.has-arrow.open').forEach(el => {
+                        el.classList.remove('open');
+                        el.querySelectorAll('.has-flyout.open, .has-flyout.active').forEach(f => {
+                            f.classList.remove('open', 'active');
+                        });
+                    });
+                }
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.has-arrow.open').forEach(el => {
+                        el.classList.remove('open');
+                        el.querySelectorAll('.has-flyout.open, .has-flyout.active').forEach(f => {
+                            f.classList.remove('open', 'active');
+                        });
+                    });
+                }
+            });
+        }
     }
 
     // Run when DOM is ready

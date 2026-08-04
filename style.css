@@ -382,7 +382,7 @@ a {
     border: 1px solid rgba(0,0,0,0.04);
 }
 
-.hero-nav-links li.has-arrow:hover .dropdown,
+
 .hero-nav-links li.has-arrow.open .dropdown {
     opacity: 1;
     pointer-events: all;

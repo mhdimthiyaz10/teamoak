@@ -25,7 +25,7 @@
     "about_wymax_media": "<a href=\"wymax-media.html\">وسائط WYMAX</a>",
     "about_team_oak_builders_amp_developers": "<a href=\"team-oak-builders.html\">فريق Oak Builders &amp; المطورين</a>",
     "about_oak_academy_of_design": "<a href=\"oak-academy-of-design.html\">أكاديمية أوك للتصميم</a>",
-    "about_team_oak_logistics_services": "<a href=\"team-oak-logicics.html\">فريق أوك للخدمات اللوجستية</a>",
+    "about_team_oak_logistics_services": "<a href=\"team-oak-logistics.html\">فريق أوك للخدمات اللوجستية</a>",
     "global_industrial": "الصناعة",
     "about_sugar_packing_unit": "وحدة تعبئة السكر",
     "global_media": "الإعلام",
@@ -508,5 +508,11 @@
     "wymax_media_personal_branding_amp_personal_pr": "<strong style=\"color: #ffffff;\">العلامات التجارية الشخصية والعلامات التجارية الشخصية العلاقات العامة الشخصية</strong>",
     "wymax_media_influencer_marketing_amp_collaborations": "<strong style=\"color: #ffffff;\">التسويق المؤثر &amp; التعاون</strong>",
     "wymax_media_event_promotions_amp_awareness_campaigns": "<strong style=\"color: #ffffff;\">العروض الترويجية والفعاليات حملات التوعية</strong>",
-    "wymax_media_content_planning_amp_brand_positioning": "<strong style=\"color: #ffffff;\">تخطيط المحتوى وamp; تحديد موضع العلامة التجارية</strong>"
+    "wymax_media_content_planning_amp_brand_positioning": "<strong style=\"color: #ffffff;\">تخطيط المحتوى وamp; تحديد موضع العلامة التجارية</strong>",
+    "about_strategic_expansion_2026": "توسع استراتيجي",
+    "about_broadening_our_portfolio": "توسيع محفظتنا",
+    "about_makin_spare_parts_milestone": "<strong>شركة مكين لتجارة قطع الغيار</strong><span class=\"loc\">الإمارات</span> — تأسست لتوفير قطع غيار سيارات وآلات عالية الجودة.",
+    "about_cafein_milestone": "<strong>كافين</strong><span class=\"loc\">الإمارات</span> — إطلاق علامة تجارية للخدمة السريعة تركز على الخيارات الصحية والطازجة والمنشطة.",
+    "about_logistics_milestone": "<strong>خدمات تيم أوك اللوجستية</strong><span class=\"loc\">الإمارات</span> — بدأت لتقديم حلول سلسلة التوريد الشاملة والسلسة.",
+    "about_sugar_packing_milestone": "<strong>وحدة تعبئة السكر</strong><span class=\"loc\">الإمارات</span> — بدأنا تشغيل منشأة تعبئة السكر الصناعية المتطورة لدينا."
 }

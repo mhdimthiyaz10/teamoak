@@ -227,23 +227,31 @@ html[dir="rtl"] .pls-option {
 }
 
 /* Mega menu dropdown fixes for RTL */
-html[dir="rtl"] .nav-links li.has-arrow .dropdown {
+html[dir="rtl"] .nav-links li.has-arrow .dropdown,
+html[dir="rtl"] .hero-nav-links li.has-arrow .dropdown {
     left: auto !important;
     right: 50% !important;
     transform: translateX(50%) translateY(-10px) !important;
 }
 
-html[dir="rtl"] .nav-links li.has-arrow.open .dropdown {
+html[dir="rtl"] .nav-links li.has-arrow.open .dropdown,
+html[dir="rtl"] .hero-nav-links li.has-arrow.open .dropdown {
     transform: translateX(50%) translateY(0) !important;
 }
 
-html[dir="rtl"] .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
+html[dir="rtl"] .nav-links li.has-arrow .dropdown li.has-flyout .flyout,
+html[dir="rtl"] .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout {
     left: auto !important;
     right: calc(100% + 5px) !important;
     transform: translateX(10px) !important;
 }
 
-html[dir="rtl"] .nav-links li.has-arrow .dropdown > li.has-flyout:hover .flyout {
+html[dir="rtl"] .nav-links li.has-arrow .dropdown > li.has-flyout:hover .flyout,
+html[dir="rtl"] .hero-nav-links li.has-arrow .dropdown > li.has-flyout:hover .flyout,
+html[dir="rtl"] .nav-links li.has-arrow .dropdown > li.has-flyout.active .flyout,
+html[dir="rtl"] .hero-nav-links li.has-arrow .dropdown > li.has-flyout.active .flyout,
+html[dir="rtl"] .nav-links li.has-arrow .dropdown > li.has-flyout.open .flyout,
+html[dir="rtl"] .hero-nav-links li.has-arrow .dropdown > li.has-flyout.open .flyout {
     transform: translateX(0) !important;
 }
 

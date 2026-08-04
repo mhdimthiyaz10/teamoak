@@ -15,7 +15,10 @@
         /* ═══════════════════════════
            MEGA MENU OVERRIDE V5
         ═══════════════════════════ */
-        .nav-links li.has-arrow .dropdown {
+        .nav-links li.has-arrow .dropdown::before { display: none !important; }
+        /*
+        ═══════════════════════════ */
+        .nav-links li.has-arrow .dropdown, .hero-nav-links li.has-arrow .dropdown {
             position: absolute !important;
             top: calc(100% + 10px) !important;
             left: 50% !important;
@@ -33,13 +36,13 @@
         }
 
          
-        .nav-links li.has-arrow.open .dropdown {
+        .nav-links li.has-arrow.open .dropdown, .hero-nav-links li.has-arrow.open .dropdown {
             opacity: 1 !important;
             pointer-events: all !important;
             transform: translateX(-50%) translateY(0) !important;
         }
 
-        .nav-links li.has-arrow .dropdown > li > a {
+        .nav-links li.has-arrow .dropdown > li > a, .hero-nav-links li.has-arrow .dropdown > li > a {
             display: flex !important;
             align-items: center !important;
             justify-content: space-between !important;
@@ -57,20 +60,20 @@
         }
 
         /* Arrow for the left menu items (Hidden as requested) */
-        .nav-links li.has-arrow .dropdown > li > a::after {
+        .nav-links li.has-arrow .dropdown > li > a::after, .hero-nav-links li.has-arrow .dropdown > li > a::after {
             display: none !important;
             content: "" !important;
         }
 
-        .nav-links li.has-arrow .dropdown > li > a:hover,
-        .nav-links li.has-arrow .dropdown > li.active > a,
-        .nav-links li.has-arrow .dropdown > li:hover > a {
+        .nav-links li.has-arrow .dropdown > li > a:hover, .hero-nav-links li.has-arrow .dropdown > li > a:hover,
+        .nav-links li.has-arrow .dropdown > li.active > a, .hero-nav-links li.has-arrow .dropdown > li.active > a,
+        .nav-links li.has-arrow .dropdown > li:hover > a, .hero-nav-links li.has-arrow .dropdown > li:hover > a {
             background: transparent !important;
             color: #111111 !important;
         }
 
         /* Right Panel (Flyout) */
-        .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout {
             position: absolute !important;
             top: 0 !important;
             left: calc(100% + 5px) !important;
@@ -106,18 +109,18 @@
         }
 
         /* CSS trick to show first tab by default */
-        .nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout {
+        .nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout, .hero-nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout {
             opacity: 1 !important;
             pointer-events: all !important;
             transform: translateX(0) !important;
         }
-        .nav-links li.has-arrow .dropdown:hover > li.has-flyout:first-child:not(:hover) .flyout {
+        .nav-links li.has-arrow .dropdown:hover > li.has-flyout:first-child:not(:hover) .flyout, .hero-nav-links li.has-arrow .dropdown:hover > li.has-flyout:first-child:not(:hover) .flyout {
             opacity: 0 !important;
             pointer-events: none !important;
             transform: translateX(-10px) !important;
         }
-        .nav-links li.has-arrow .dropdown > li.has-flyout:hover .flyout,
-        .nav-links li.has-arrow .dropdown > li.has-flyout.active .flyout {
+        .nav-links li.has-arrow .dropdown > li.has-flyout:hover .flyout, .hero-nav-links li.has-arrow .dropdown > li.has-flyout:hover .flyout,
+        .nav-links li.has-arrow .dropdown > li.has-flyout.active .flyout, .hero-nav-links li.has-arrow .dropdown > li.has-flyout.active .flyout {
             opacity: 1 !important;
             pointer-events: all !important;
             transform: translateX(0) !important;
@@ -125,7 +128,7 @@
         }
 
         /* Flyout Links */
-        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
             padding: 1rem 1.2rem !important;
             font-family: 'Plus Jakarta Sans', sans-serif !important;
             font-size: 0.95rem !important;
@@ -147,21 +150,17 @@
         }
 
         /* Hover state matching the image: Gold text, light grey background */
-        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover {
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover {
             color: #c59b27 !important;
             background: #f7f7f7 !important;
         }
         
-        /* Fix for mobile screens */
-        @media (max-width: 1024px) {
-            .nav-links li.has-arrow .dropdown {
-                display: none !important;
-            }
-        }
+        
     </style>
 <style>
         /* Hide main nav arrow */
-        .nav-links li.has-arrow > a::after {
+        .nav-links li.has-arrow > a::after,
+        .hero-nav-links li.has-arrow > a::after {
             display: none !important;
             content: none !important;
         }
@@ -238,20 +237,37 @@
 }
 </style>
 <style>
-/* Automatic Crossfade for Client Logos */
+/* ═══════════════════════════════════════════════════
+   PREMIUM SMOOTH LOGO CROSSFADE & STAGGERED TIMING
+   ═══════════════════════════════════════════════════ */
 @keyframes autoCrossfadeFront {
-    0% { opacity: 1; }
-    40% { opacity: 1; }
-    50% { opacity: 0; }
-    90% { opacity: 0; }
-    100% { opacity: 1; }
+    0%, 35% {
+        opacity: 1;
+        transform: scale(1) translate3d(0, 0, 0);
+    }
+    48%, 85% {
+        opacity: 0;
+        transform: scale(0.95) translate3d(0, 0, 0);
+    }
+    98%, 100% {
+        opacity: 1;
+        transform: scale(1) translate3d(0, 0, 0);
+    }
 }
+
 @keyframes autoCrossfadeBack {
-    0% { opacity: 0; }
-    40% { opacity: 0; }
-    50% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0%, 35% {
+        opacity: 0;
+        transform: scale(0.95) translate3d(0, 0, 0);
+    }
+    48%, 85% {
+        opacity: 1;
+        transform: scale(1) translate3d(0, 0, 0);
+    }
+    98%, 100% {
+        opacity: 0;
+        transform: scale(0.95) translate3d(0, 0, 0);
+    }
 }
 
 .interact-crossfade {
@@ -259,20 +275,85 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    border-radius: 8px;
 }
+
+.interact-crossfade:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+
 .interact-crossfade img {
     position: absolute;
+    will-change: opacity, transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: filter 0.3s ease;
 }
+
 .interact-crossfade .img-front {
     z-index: 2;
-    animation: autoCrossfadeFront 6s ease-in-out infinite;
+    animation: autoCrossfadeFront 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
+
 .interact-crossfade .img-back {
     z-index: 1;
-    animation: autoCrossfadeBack 6s ease-in-out infinite;
+    animation: autoCrossfadeBack 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.interact-crossfade:hover .img-front,
+.interact-crossfade:hover .img-back {
+    animation-play-state: paused;
+}
+
+/* Staggered Delay for Organic, Dynamic Logo Transitions Across the Grid */
+.clients-masonry-grid .interact-crossfade:nth-of-type(1) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(1) .img-back { animation-delay: 0s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(2) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(2) .img-back { animation-delay: 1.3s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(3) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(3) .img-back { animation-delay: 2.6s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(4) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(4) .img-back { animation-delay: 3.9s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(5) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(5) .img-back { animation-delay: 5.2s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(6) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(6) .img-back { animation-delay: 6.5s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(7) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(7) .img-back { animation-delay: 0.7s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(8) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(8) .img-back { animation-delay: 2.0s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(9) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(9) .img-back { animation-delay: 3.3s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(10) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(10) .img-back { animation-delay: 4.6s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(11) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(11) .img-back { animation-delay: 5.9s; }
+
+.clients-masonry-grid .interact-crossfade:nth-of-type(12) .img-front,
+.clients-masonry-grid .interact-crossfade:nth-of-type(12) .img-back { animation-delay: 7.2s; }
+</style>
+<link href="i18n.css?v=6" rel="stylesheet"/>
+<style>
+/* Hide main nav arrow (v) for both nav-links and hero-nav-links globally */
+.nav-links li.has-arrow > a::after,
+.hero-nav-links li.has-arrow > a::after {
+    display: none !important;
+    content: none !important;
 }
 </style>
-<link href="i18n.css?v=6" rel="stylesheet"/></head>
+</head>
 <body>
 <!-- Hero Section -->
 <header class="hero" id="home">
@@ -301,17 +382,17 @@
 <li class="has-flyout"><a data-i18n="global_services" href="javascript:void(0);">Services</a>
 <ul class="flyout">
 <li data-i18n="about_best_vibes_general_contracting_llc"><a href="best-vibes-contracting.html">Best Vibes General Contracting LLC</a></li>
-<li data-i18n="about_mamichi_apartments"><a href="mamichi-apartments.html">Mamichi Apartments</a></li>
-<li data-i18n="about_oak_architects_amp_interiors"><a href="oak-architects.html">Oak Architects &amp; Interiors</a></li>
 <li data-i18n="about_bubbl"><a href="bubbl.html">Bubbl</a></li>
-<li data-i18n="about_team_oak_transport_amp_heavy"><a href="team-oak-transport.html">Team Oak Transport &amp; Heavy Equipment Rental LLC</a></li>
-<li data-i18n="about_team_oak_safety_amp_fire"><a href="team-oak-safety.html">Team Oak Safety &amp; Fire Fighting Equipment LLC</a></li>
 <li data-i18n="about_cafein"><a href="cafein.html">Cafein</a></li>
-<li data-i18n="about_pharma_fleet"><a href="pharma-fleet.html">Pharma Fleet</a></li>
-<li data-i18n="about_wymax_media"><a href="wymax-media.html">WYMAX MEDIA</a></li>
-<li data-i18n="about_team_oak_builders_amp_developers"><a href="team-oak-builders.html">Team Oak Builders &amp; Developers</a></li>
+<li data-i18n="about_mamichi_apartments"><a href="mamichi-apartments.html">Mamichi Apartments</a></li>
 <li data-i18n="about_oak_academy_of_design"><a href="oak-academy-of-design.html">Oak Academy of Design</a></li>
+<li data-i18n="about_oak_architects_amp_interiors"><a href="oak-architects.html">Oak Architects &amp; Interiors</a></li>
+<li data-i18n="about_pharma_fleet"><a href="pharma-fleet.html">Pharma Fleet</a></li>
+<li data-i18n="about_team_oak_builders_amp_developers"><a href="team-oak-builders.html">Team Oak Builders &amp; Developers</a></li>
 <li data-i18n="about_team_oak_logistics_services"><a href="team-oak-logistics.html">Team Oak Logistics Services</a></li>
+<li data-i18n="about_team_oak_safety_amp_fire"><a href="team-oak-safety.html">Team Oak Safety &amp; Fire Fighting Equipment LLC</a></li>
+<li data-i18n="about_team_oak_transport_amp_heavy"><a href="team-oak-transport.html">Team Oak Transport &amp; Heavy Equipment Rental LLC</a></li>
+<li data-i18n="about_wymax_media"><a href="wymax-media.html">WYMAX MEDIA</a></li>
 </ul>
 </li>
 <li class="has-flyout"><a data-i18n="global_industrial" href="javascript:void(0);">Industrial</a>
@@ -689,24 +770,24 @@
 <li data-i18n="about_team_oak_food_stuff_trading"><a href="food-stuff-trading.html">Team Oak Food Stuff Trading Company</a></li>
 <li data-i18n="about_kizhissery_jewellers"><a href="kizhisseri-jewellers.html">Kizhissery Jewellers</a></li>
 <li data-i18n="about_team_oak_general_trading_company"><a href="general-trading.html">Team Oak General Trading Company</a></li>
+<li data-i18n="about_makin_spare_parts_trading_company"><a href="makin-spare-parts-trading.html">Makin Spare parts Trading Company</a></li>
+<li data-i18n="about_sugar_packing_unit"><a href="sugar-packing.html">Sugar packing Unit</a></li>
+</ul>
+<ul>
 <li data-i18n="about_best_vibes_general_contracting_llc"><a href="best-vibes-contracting.html">Best Vibes General Contracting LLC</a></li>
-</ul>
-<ul>
-<li data-i18n="about_oak_academy_of_design"><a href="oak-academy-of-design.html">Oak Academy of Design</a></li>
-<li data-i18n="about_team_oak_logistics_services"><a href="team-oak-logistics.html">Team Oak Logistics Services</a></li>
-<li data-i18n="about_team_oak_builders_amp_developers"><a href="team-oak-builders.html">Team Oak Builders &amp; Developers</a></li>
-<li data-i18n="about_mamichi_apartments"><a href="mamichi-apartments.html">Mamichi Apartments</a></li>
-<li data-i18n="about_oak_architects_amp_interiors"><a href="oak-architects.html">Oak Architects &amp; Interiors</a></li>
 <li data-i18n="about_bubbl"><a href="bubbl.html">Bubbl</a></li>
+<li data-i18n="about_cafein"><a href="cafein.html">Cafein</a></li>
+<li data-i18n="about_mamichi_apartments"><a href="mamichi-apartments.html">Mamichi Apartments</a></li>
+<li data-i18n="about_oak_academy_of_design"><a href="oak-academy-of-design.html">Oak Academy of Design</a></li>
+<li data-i18n="about_oak_architects_amp_interiors"><a href="oak-architects.html">Oak Architects &amp; Interiors</a></li>
 </ul>
 <ul>
-<li data-i18n="about_team_oak_transport_amp_heavy"><a href="team-oak-transport.html">Team Oak Transport &amp; Heavy Equipment Rental LLC</a></li>
-<li data-i18n="about_team_oak_safety_amp_fire"><a href="team-oak-safety.html">Team Oak Safety &amp; Fire Fighting Equipment LLC</a></li>
-<li data-i18n="about_cafein"><a href="cafein.html">Cafein</a></li>
 <li data-i18n="about_pharma_fleet"><a href="pharma-fleet.html">Pharma Fleet</a></li>
-<li data-i18n="about_wymax_media_2"><a href="wymax-media.html">Wymax Media</a></li>
-<li data-i18n="about_makeen_spareparts_trading"><a href="makin-spare-parts-trading.html">Makeen SpareParts Trading</a></li>
-<li ><a data-i18n="about_sugar_packing_unit" href="sugar-packing.html">Sugar packing Unit</a></li>
+<li data-i18n="about_team_oak_builders_amp_developers"><a href="team-oak-builders.html">Team Oak Builders &amp; Developers</a></li>
+<li data-i18n="about_team_oak_logistics_services"><a href="team-oak-logistics.html">Team Oak Logistics Services</a></li>
+<li data-i18n="about_team_oak_safety_amp_fire"><a href="team-oak-safety.html">Team Oak Safety &amp; Fire Fighting Equipment LLC</a></li>
+<li data-i18n="about_team_oak_transport_amp_heavy"><a href="team-oak-transport.html">Team Oak Transport &amp; Heavy Equipment Rental LLC</a></li>
+<li data-i18n="about_wymax_media"><a href="wymax-media.html">WYMAX MEDIA</a></li>
 </ul>
 </div>
 </div>
@@ -735,55 +816,8 @@
 <script src="magic-rings.js"></script>
 <script src="script.js"></script>
 <script src="portal.js"></script>
-<script>
-            // Stick open on hover, close on outside click
-        // Sticky Navigation Toggle
-        document.querySelectorAll('.has-arrow, .has-flyout').forEach(function(li) {
-            var trigger = li.querySelector(':scope > a');
-            if (trigger) {
-                trigger.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    var isOpen = li.classList.contains('open');
-                    
-                    // Close other menus at the same level
-                    var siblings = li.parentElement.querySelectorAll(':scope > .open');
-                    siblings.forEach(function(s) { if (s !== li) s.classList.remove('open'); });
-                    
-                    li.classList.toggle('open', !isOpen);
-                });
-            }
-            
-            // Still allow hover for a premium feel, but click "locks" it
-            li.addEventListener('mouseenter', function() {
-                if (!li.classList.contains('open')) {
-                    var siblings = li.parentElement.querySelectorAll(':scope > .open');
-                    siblings.forEach(function(s) { s.classList.remove('open'); });
-                    li.classList.add('open');
-                }
-            });
-        });
 
-        // Close all when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!e.target.closest('.has-arrow') && !e.target.closest('.has-flyout')) {
-                document.querySelectorAll('.has-arrow.open, .has-flyout.open').forEach(function(el) {
-                    el.classList.remove('open');
-                });
-            }
-        });
-        </script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var arrows = document.querySelectorAll('.has-arrow > a, .has-flyout > a');
-    arrows.forEach(function(btn) {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            this.parentElement.classList.toggle('open');
-        });
-    });
-});
-</script>
+
 <!-- MOBILE NAV FIX -->
 <style>
 /* Global Mobile Navigation Fix */

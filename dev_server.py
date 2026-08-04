@@ -22,6 +22,6 @@ class CustomHandler(http.server.SimpleHTTPRequestHandler):
 # Ensure we can reuse the port immediately
 socketserver.TCPServer.allow_reuse_address = True
 
-with socketserver.TCPServer(("", PORT), CustomHandler) as httpd:
+with http.server.ThreadingHTTPServer(("", PORT), CustomHandler) as httpd:
     print(f"Serving at port {PORT} with .html auto-resolution")
     httpd.serve_forever()
