@@ -327,19 +327,28 @@
         }
 
         /* Custom Scrollbar for Flyout */
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
+            scrollbar-width: auto !important;
+            scrollbar-color: #000000 #f4f4f4 !important;
+        }
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout::-webkit-scrollbar {
-            width: 5px !important;
+            width: 14px !important;
         }
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout::-webkit-scrollbar-track {
-            background: transparent !important;
-            margin: 10px 0 !important;
+            background: #f4f4f4 !important;
+            border-radius: 8px !important;
+            margin: 5px 0 !important;
         }
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout::-webkit-scrollbar-thumb {
-            background: #e0e0e0 !important;
-            border-radius: 10px !important;
+            background: #000000 !important;
+            border-radius: 8px !important;
+            border: 2px solid #f4f4f4 !important;
         }
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout::-webkit-scrollbar-thumb:hover {
-            background: #c59b27 !important;
+            background: #333333 !important;
+        }
+        .nav-links li.has-arrow .dropdown li.has-flyout .flyout::-webkit-scrollbar-thumb:hover {
+            background: #ffe066 !important;
         }
 
         /* CSS trick to show first tab by default */
@@ -556,7 +565,7 @@
 <span style="color: #c59b27; font-size: 1.2rem;">•</span> Truck sourcing and booking (FTL &amp; LTL)
                                 </li>
 <li data-i18n="team_oak_logistics_transport_coordination_across_saudi_arabia" style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
-<span style="color: #c59b27; font-size: 1.2rem;">•</span> Transport coordination across Saudi Arabia
+<span style="color: #c59b27; font-size: 1.2rem;">•</span> Transport coordination across GCC
                                 </li>
 <li data-i18n="team_oak_logistics_carrier_management_and_negotiation" style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 10px;">
 <span style="color: #c59b27; font-size: 1.2rem;">•</span> Carrier management and negotiation
@@ -739,11 +748,11 @@
 <ul>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-phone"></use></svg></div>
-<div class="mf-text">+971554418701</div>
+<div class="mf-text">+966 56 085 6610</div>
 </li>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-location"></use></svg></div>
-<div class="mf-text">Corniche Building, Corniche Street,<br/>Abudhabi</div>
+<div class="mf-text">Al khomrah,<br/>Saudi Arabia</div>
 </li>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-email"></use></svg></div>
