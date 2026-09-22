@@ -1,0 +1,66 @@
+# ====================================================================
+# Team Oak - Apache Production Configuration (.htaccess)
+# ====================================================================
+
+# Disable directory browsing & enable symbolic links
+Options -Indexes +FollowSymLinks
+
+# Set default character encoding & MIME types
+AddDefaultCharset UTF-8
+AddType application/json .json
+AddType image/svg+xml .svg .svgz
+AddType font/woff2 .woff2
+AddType font/woff .woff
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 1. Enforce HTTPS (optional, safe for SSL enabled domains)
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteCond %{HTTP_HOST} !^127\.0\.0\.1 [NC]
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # 2. Prevent rewrite loops on existing files or directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # 3. Clean URLs for subpages inside /pages/
+    # E.g. /pages/about -> /pages/about.html
+    RewriteCond %{DOCUMENT_ROOT}/pages/$1.html -f
+    RewriteRule ^pages/([^/]+)/?$ pages/$1.html [L]
+
+    # 4. Root Clean URLs & legacy/direct URL mappings to /pages/
+    # E.g. /about or /about.html -> pages/about.html
+    # E.g. /contact or /contact.html -> pages/contact.html
+    RewriteCond %{DOCUMENT_ROOT}/pages/$1.html -f
+    RewriteRule ^([^/]+?)(?:\.html)?$ pages/$1.html [L]
+
+    # 5. Handle /index
+    RewriteRule ^index(?:\.html)?$ index.html [L]
+</IfModule>
+
+# Caching for improved performance
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/json "access plus 1 day"
+    ExpiresByType font/woff2 "access plus 1 month"
+</IfModule>
+
+# Gzip / Brotli Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Custom Error Documents (redirect to home on 404 instead of raw Apache error)
+ErrorDocument 404 /index.html

@@ -11,9 +11,11 @@
     async function init() {
         try {
             // Fetch translations
+            const isSubpage = window.location.pathname.includes('/pages/') || (window.location.pathname.endsWith('.html') && !window.location.pathname.endsWith('index.html'));
+            const localePath = window.location.protocol === 'file:' ? (isSubpage ? '../locales/' : 'locales/') : '/locales/';
             const [enRes, arRes] = await Promise.all([
-                fetch('en.json').then(res => res.json()),
-                fetch('ar.json').then(res => res.json())
+                fetch(localePath + 'en.json').then(res => res.json()),
+                fetch(localePath + 'ar.json').then(res => res.json())
             ]);
             translations = { en: enRes, ar: arRes };
             

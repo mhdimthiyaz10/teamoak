@@ -4,26 +4,26 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Makin Spare parts Trading Company — A specialized automotive spare parts powerhouse dedicated to serving the holy city of Makkah." data-i18n="makin_spare_parts_trading_makin_spare_parts_trading_company_2" name="description"/>
-<title data-i18n="makin_spare_parts_trading_makin_spare_parts_trading_company">Makin Spare parts Trading Company</title>
+<meta content="Team Oak Transport &amp; Heavy Equipment Rental LLC" data-i18n="team_oak_transport_team_oak_transport_heavy_equipment" name="description"/>
+<title data-i18n="team_oak_transport_team_oak_transport_team_oak">Team Oak Transport | Team Oak</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=10" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="../css/style.css?v=11" rel="stylesheet"/>
 <style>
-        /* Minimalist specific overrides for this page */
+        
         .page-hero {
             position: relative;
-            min-height: 85vh;
+            min-height: 80vh;
             display: flex;
             align-items: flex-end;
-            padding: 0 5% 2rem;
+            padding: 8rem 5% 2rem;
             overflow: hidden;
             background-color: var(--bg-dark);
         }
         .page-hero-bg {
             position: absolute; inset: 0;
-            background: url('assets/makin_spare_parts_bg.png') center/cover no-repeat;
+            background: url('../assets/team-oak-transport-bg.png') center/cover no-repeat;
             z-index: 0;
         }
         .page-hero-bg::after {
@@ -43,7 +43,7 @@
         }
         .page-hero h1 {
             font-family: var(--font-heading);
-            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
             font-weight: 800; line-height: 1.1;
             color: var(--text-light); letter-spacing: -1px;
             margin-bottom: 1.5rem;
@@ -94,8 +94,8 @@
             border-left: 3px solid var(--accent-gold);
             padding-left: 2rem;
             margin: 4rem 0;
-            font-family: var(--font-heading);
-            font-size: 1.6rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
             font-weight: 400;
             color: var(--text-light);
             line-height: 1.5;
@@ -137,7 +137,7 @@
             background: rgba(20,20,20,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); padding: 1rem 0.6rem;
             min-width: 240px; max-height: 400px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
          .nav-links li.has-arrow.open .dropdown, .hero-nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
         .nav-links li.has-arrow .dropdown li a {
@@ -159,10 +159,50 @@
         .fu.in { opacity: 1; transform: none; }
         .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
         
+        /* Footer matching index/about */
+        .footer {
+            background: #f9f9fb; padding: 5rem 5% 2.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top {
+            display: grid; grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem; padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .f-logo {
+            font-family: var(--font-heading); font-size: 1.2rem;
+            font-weight: 800; letter-spacing: 3px; color: #111111;
+        }
+        .f-logo span { color: var(--accent-gold); }
+        .f-tagline {
+            margin-top: 1rem; font-size: 0.85rem;
+            color: #555555; line-height: 1.8;
+            max-width: 300px;
+        }
+        .f-col h4 {
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 3px;
+            text-transform: uppercase; color: #888888;
+            margin-bottom: 1.5rem;
+        }
+        .f-col ul { list-style: none; }
+        .f-col li { margin-bottom: 0.7rem; }
+        .f-col a {
+            font-size: 0.85rem; color: #555555;
+            text-decoration: none; transition: color 0.25s;
+        }
+        .f-col a:hover { color: #111111; }
+        .f-col p { font-size: 0.85rem; color: #555555; margin-bottom: 0.7rem; }
+        .footer-bottom {
+            text-align: center; padding-top: 2rem;
+            font-size: 0.75rem; color: #888888;
+        }
+        
         @media (max-width: 768px) {
             .nav-links, .nav-btn { display: none; }
             .page-hero { min-height: 50vh; padding-bottom: 4rem; }
             .page-hero h1 { font-size: 2.8rem; }
+            .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
             .story-text h2 { font-size: 2rem; }
             .highlight-quote { font-size: 1.4rem; padding-left: 1.5rem; }
         }
@@ -183,7 +223,7 @@
         .mf-columns { display: grid; grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 1.5fr; gap: 3rem; padding-bottom: 4rem; }
         .mf-col h4 { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 2rem; letter-spacing: -0.2px; }
         .mf-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem; }
-        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: #999999; text-decoration: none; transition: color 0.3s; line-height: 1.5; }
+        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: var(--text-muted); text-decoration: none; transition: color 0.3s; line-height: 1.5; }
         .mf-col ul li a:hover { color: #ffffff; }
         .mf-contact ul { gap: 1.5rem; }
         .mf-contact-item { display: flex; align-items: flex-start; gap: 1rem; }
@@ -204,7 +244,14 @@
             .mf-bottom { flex-direction: column; gap: 1.5rem; text-align: center; }
         }
 
-        /* MEGA MENU OVERRIDE */
+    </style>
+<style>
+        /* ═══════════════════════════
+           MEGA MENU OVERRIDE V5
+        ═══════════════════════════ */
+        .nav-links li.has-arrow .dropdown::before { display: none !important; }
+        /*
+        ═══════════════════════════ */
         .nav-links li.has-arrow .dropdown, .hero-nav-links li.has-arrow .dropdown {
             position: absolute !important;
             top: calc(100% + 10px) !important;
@@ -246,6 +293,7 @@
             border: none !important;
         }
 
+        /* Arrow for the left menu items (Hidden as requested) */
         .nav-links li.has-arrow .dropdown > li > a::after, .hero-nav-links li.has-arrow .dropdown > li > a::after {
             display: none !important;
             content: "" !important;
@@ -258,6 +306,7 @@
             color: #111111 !important;
         }
 
+        /* Right Panel (Flyout) */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout {
             position: absolute !important;
             top: 0 !important;
@@ -277,6 +326,7 @@
             max-height: 450px !important;
         }
 
+        /* Custom Scrollbar for Flyout */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
             scrollbar-width: auto !important;
             scrollbar-color: #000000 #f4f4f4 !important;
@@ -301,6 +351,7 @@
             background: #ffe066 !important;
         }
 
+        /* CSS trick to show first tab by default */
         .nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout, .hero-nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout {
             opacity: 1 !important;
             pointer-events: all !important;
@@ -319,6 +370,7 @@
             z-index: 10;
         }
 
+        /* Flyout Links */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
             padding: 1rem 1.2rem !important;
             font-family: 'Plus Jakarta Sans', sans-serif !important;
@@ -340,6 +392,7 @@
             content: none !important;
         }
 
+        /* Hover state matching the image: Gold text, light grey background */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover {
             color: #c59b27 !important;
             background: #f7f7f7 !important;
@@ -381,7 +434,7 @@
     .mobile-contact { display: block !important; }
 }
 </style>
-<link href="i18n.css?v=6" rel="stylesheet"/>
+<link href="../css/i18n.css?v=6" rel="stylesheet"/>
 <style>
 /* Hide main nav arrow (v) for both nav-links and hero-nav-links globally */
 .nav-links li.has-arrow > a::after,
@@ -394,11 +447,11 @@
 <body>
 <!-- NAV -->
 <nav class="nav">
-<a class="nav-logo" href="index.html">
-<img alt="Team Oak Logo" data-i18n-alt="about_team_oak_logo" src="assets/logo.png.png" style="filter: brightness(0) invert(1) !important;"/>
+<a class="nav-logo" href="../index.html">
+<img alt="Team Oak Logo" data-i18n-alt="about_team_oak_logo" src="../assets/logo.png.png" style="filter: brightness(0) invert(1) !important;"/>
 </a>
 <ul class="nav-links">
-<li ><a data-i18n="global_home" href="index.html">Home</a></li>
+<li ><a data-i18n="global_home" href="../index.html">Home</a></li>
 <li ><a data-i18n="global_about_us_2" href="about.html">About Us</a></li>
 <li class="has-arrow"><a data-i18n="global_what_we_do" href="javascript:void(0);">What We Do</a>
 <ul class="dropdown">
@@ -436,6 +489,7 @@
 </li>
 <li ><a data-i18n="global_media" href="media.html">Media</a></li>
 <li ><a data-i18n="global_career" href="career.html">Career</a></li>
+<li class="mobile-contact" style="color: var(--text-muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; padding-top: 1rem;">Location: Abu Dhabi &amp; KSA</li>
 <li class="mobile-contact" ><a data-i18n="global_contact_us" href="contact.html">Contact Us</a></li>
 <li class="mobile-switcher-li">
 <div class="premium-lang-switcher mobile-switcher">
@@ -458,6 +512,7 @@
 </li>
 </ul>
 <div class="nav-actions" style="display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
+<span class="nav-btn" style="border: none; pointer-events: none; padding-right: 0; color: var(--accent-gold);">Location: Abu Dhabi &amp; KSA</span>
 <a class="nav-btn" data-i18n="global_contact_us_2" href="contact.html">Contact Us</a>
 <div class="premium-lang-switcher desktop-switcher">
 <button aria-expanded="false" aria-label="Select Language" class="pls-btn">
@@ -482,34 +537,30 @@
 <section class="page-hero">
 <div class="page-hero-bg"></div>
 <div class="page-hero-content">
-<span class="page-eyebrow fu" data-i18n="makin_spare_parts_trading_spare_parts_trading">Spare Parts Trading</span>
-<h1 class="fu d1" data-i18n="makin_spare_parts_trading_makin_spare_partstrading_company">Makin Spare parts<br/><em>Trading Company</em></h1>
+<span class="page-eyebrow fu" data-i18n="team_oak_transport_logistics_heavy_equipment">Logistics &amp; Heavy Equipment</span>
+<h1 class="fu d1" data-i18n="team_oak_transport_team_oak_transportamp_heavy_equipment">Team Oak Transport<br/><em>&amp; Heavy Equipment Rental</em></h1>
 <div class="page-rule fu d2"></div>
 </div>
 </section>
 <!-- CONTENT -->
 <section class="content-sec">
 <div class="content-wrap">
-<div class="story-block" style="max-width: 800px; margin: 0 auto;">
+<div class="story-block">
 <div class="story-text">
-<h2 class="fu" data-i18n="makin_spare_parts_trading_driving_excellence_in_makkah" style="font-family: 'Outfit', sans-serif; text-align: left; font-size: 2.2rem; color: #ffffff;">Driving Excellence in Makkah</h2>
-<p class="fu d1" data-i18n="makin_spare_parts_trading_makin_spare_parts_trading_company_3" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; line-height: 2; color: #cccccc; text-align: justify;">
-<strong>Makin Spare parts Trading Company</strong>, a premier entity under the esteemed <strong>Team Oak</strong> umbrella, is a specialized automotive spare parts powerhouse dedicated to serving the holy city of <strong>Makkah</strong>. With a robust infrastructure featuring <strong>three strategic branches</strong>, we have established ourselves as a cornerstone of the local automotive supply chain, catering to individual car owners, professional workshops, and large-scale commercial fleets. 
-                    </p>
-<div class="highlight-quote fu" style="font-family: 'Outfit', sans-serif; font-weight: 300; border-color: #c59b27; color: #e0e0e0; font-size: 1.45rem; text-align: left;">
-                        "Our operation is built on the pillars of technical precision and inventory excellence, ensuring that the specific demands of Makkah’s high-traffic environment are met with speed and reliability."
+<h2 class="fu" data-i18n="team_oak_transport_reliable_transport_solutions">Reliable Transport Solutions</h2>
+<p class="fu d1" data-i18n="team_oak_transport_team_oak_transport_heavy_equipment_2">Team Oak Transport &amp; Heavy Equipment Rentals is a UAE and KSA-based company providing comprehensive transport services and reliable heavy equipment rental solutions. Serving clients across the Emirates and Saudi Arabia, we cater to industries such as construction, oil &amp; gas, infrastructure, and industrial projects, delivering equipment and transport support that meet international standards.</p>
+<p class="fu d2" data-i18n="team_oak_transport_our_fleet_consists_of_modern">Our fleet consists of modern, well-maintained vehicles and machinery, ensuring efficiency, safety, and reliability at every stage of the project. With a dedicated team and strong local expertise, we are committed to supporting the UAE's growth by offering cost-effective, flexible, and timely solutions tailored to client needs.</p>
+<div class="highlight-quote fu">
+                        At Team Oak, we take pride in being a trusted partner in the UAE and KSA, combining professional service with a customer-first approach to help businesses achieve their project goals seamlessly.
                     </div>
-<p class="fu d2" data-i18n="makin_spare_parts_trading_at_makin_we_bridge_the" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; line-height: 2; color: #cccccc; text-align: justify;">
-                        At Makin, we bridge the critical gap between global automotive manufacturers and the local market by providing a comprehensive catalog of genuine and premium aftermarket components. Our mission is to enhance vehicle longevity and passenger safety through rigorous quality control and expert part identification. 
-                    </p>
-<p class="fu d1" data-i18n="makin_spare_parts_trading_backed_by_the_professional_heritage" style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.15rem; line-height: 2; color: #cccccc; text-align: justify;">
-                        Backed by the professional heritage and operational strength of <strong>Team Oak</strong>, Makin Trading Company combines traditional values of trust with modern logistics, ensuring that essential parts are always available across our Makkah network to keep the city’s transport moving without interruption.
-                    </p>
 </div>
 </div>
 </div>
 </section>
 <!-- FOOTER -->
+<!-- STANDARDIZED FOOTER -->
+<!-- STANDARDIZED FOOTER -->
+<!-- MINIMAL STANDARD FOOTER -->
 <!-- MINIMAL STANDARD FOOTER -->
 <svg style="display:none;">
 <symbol id="icon-phone" viewbox="0 0 24 24">
@@ -551,11 +602,11 @@
 <ul>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-phone"></use></svg></div>
-<div class="mf-text">+971554418701</div>
+<div class="mf-text">+971543310543<br/>+971-554418701</div>
 </li>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-location"></use></svg></div>
-<div class="mf-text">Corniche Building, Corniche Street,<br/>Abudhabi</div>
+<div class="mf-text">M 43 Musaffah, Abu Dhabi</div>
 </li>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-email"></use></svg></div>
@@ -566,7 +617,7 @@
 <div class="mf-col">
 <h4 data-i18n="global_navigate">Navigate</h4>
 <ul>
-<li ><a data-i18n="global_home" href="index.html">Home</a></li>
+<li ><a data-i18n="global_home" href="../index.html">Home</a></li>
 <li ><a data-i18n="global_about_us_2" href="about.html">About Us</a></li>
 <li ><a data-i18n="global_media" href="media.html">Media</a></li>
 <li ><a data-i18n="global_career" href="career.html">Career</a></li>
@@ -622,13 +673,11 @@
 </div>
 </footer>
 <script>
-        // Simple Intersection Observer for fade-ups
         const io = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fu').forEach(el => io.observe(el));
         
-        // Sticky Navigation logic
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -974,5 +1023,5 @@ function setLanguage(lang) {
 }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-<script defer="True" src="translator.js"></script></body>
+<script defer="True" src="../js/translator.js"></script></body>
 </html>

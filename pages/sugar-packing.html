@@ -4,12 +4,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Team Oak Transport &amp; Heavy Equipment Rental LLC" data-i18n="team_oak_transport_team_oak_transport_heavy_equipment" name="description"/>
-<title data-i18n="team_oak_transport_team_oak_transport_team_oak">Team Oak Transport | Team Oak</title>
+<meta content="Sugar Packing Unit by Team Oak" data-i18n="sugar_packing_sugar_packing_unit_by_team" name="description"/>
+<title data-i18n="sugar_packing_sugar_packing_unit_team_oak">Sugar Packing Unit | Team Oak</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=11" rel="stylesheet"/>
+<link href="../css/style.css?v=11" rel="stylesheet"/>
 <style>
         
         .page-hero {
@@ -23,7 +23,7 @@
         }
         .page-hero-bg {
             position: absolute; inset: 0;
-            background: url('assets/team-oak-transport-bg.png') center/cover no-repeat;
+            background: url('../assets/sugar-packing-bg.png') center/cover no-repeat;
             z-index: 0;
         }
         .page-hero-bg::after {
@@ -111,7 +111,7 @@
             border-bottom: 1px solid rgba(255,255,255,0.05);
             display: flex; justify-content: space-between; align-items: center;
         }
-        .nav-logo img { height: 70px; width: auto;  filter: brightness(0) invert(1) !important; }
+        .nav-logo img { height: 70px; width: auto; filter: brightness(0) invert(1) !important; }
         .nav-links { list-style: none; display: flex; gap: 2.8rem; margin: 0;}
         .nav-links a {
             font-size: 0.72rem; font-weight: 600; letter-spacing: 2px;
@@ -208,7 +208,7 @@
         }
     
         /* ═══════════════════════════
-           MINIMAL STANDARD FOOTER (WHITE THEME)
+           MINIMAL STANDARD FOOTER (BLACK THEME)
         ═══════════════════════════ */
         .minimal-footer {
             background-color: #0d0d0d;
@@ -223,7 +223,7 @@
         .mf-columns { display: grid; grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 1.5fr; gap: 3rem; padding-bottom: 4rem; }
         .mf-col h4 { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 2rem; letter-spacing: -0.2px; }
         .mf-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem; }
-        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: var(--text-muted); text-decoration: none; transition: color 0.3s; line-height: 1.5; }
+        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: #999999; text-decoration: none; transition: color 0.3s; line-height: 1.5; }
         .mf-col ul li a:hover { color: #ffffff; }
         .mf-contact ul { gap: 1.5rem; }
         .mf-contact-item { display: flex; align-items: flex-start; gap: 1rem; }
@@ -247,25 +247,23 @@
     </style>
 <style>
         /* ═══════════════════════════
-           MEGA MENU OVERRIDE V5
-        ═══════════════════════════ */
-        .nav-links li.has-arrow .dropdown::before { display: none !important; }
-        /*
+           MEGA MENU OVERRIDE (BLACK THEME)
         ═══════════════════════════ */
         .nav-links li.has-arrow .dropdown, .hero-nav-links li.has-arrow .dropdown {
             position: absolute !important;
             top: calc(100% + 10px) !important;
             left: 50% !important;
             transform: translateX(-50%) translateY(-10px) !important;
-            background: #ffffff !important;
+            background: rgba(15,15,15,0.98) !important;
+            backdrop-filter: blur(20px) !important;
             border-radius: 12px !important;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08) !important;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5) !important;
             padding: 1.5rem !important;
             min-width: 220px !important;
             opacity: 0;
             pointer-events: none;
             transition: all 0.3s ease !important;
-            border: none !important;
+            border: 1px solid rgba(255,255,255,0.05) !important;
             overflow: visible !important;
         }
 
@@ -284,7 +282,7 @@
             font-family: 'Plus Jakarta Sans', sans-serif !important;
             font-size: 0.95rem !important;
             font-weight: 700 !important;
-            color: #111111 !important;
+            color: #dddddd !important;
             text-transform: uppercase !important;
             letter-spacing: 1px !important;
             border-radius: 8px !important;
@@ -302,8 +300,8 @@
         .nav-links li.has-arrow .dropdown > li > a:hover, .hero-nav-links li.has-arrow .dropdown > li > a:hover,
         .nav-links li.has-arrow .dropdown > li.active > a, .hero-nav-links li.has-arrow .dropdown > li.active > a,
         .nav-links li.has-arrow .dropdown > li:hover > a, .hero-nav-links li.has-arrow .dropdown > li:hover > a {
-            background: transparent !important;
-            color: #111111 !important;
+            background: rgba(255,255,255,0.05) !important;
+            color: var(--accent-gold) !important;
         }
 
         /* Right Panel (Flyout) */
@@ -311,16 +309,17 @@
             position: absolute !important;
             top: 0 !important;
             left: calc(100% + 5px) !important;
-            background: #ffffff !important;
+            background: rgba(15,15,15,0.98) !important;
+            backdrop-filter: blur(20px) !important;
             border-radius: 12px !important;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08) !important;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5) !important;
             padding: 1.5rem 1rem !important;
             min-width: 380px !important;
             opacity: 0;
             pointer-events: none;
             transform: translateX(-10px) !important;
             transition: all 0.3s ease !important;
-            border: none !important;
+            border: 1px solid rgba(255,255,255,0.05) !important;
             display: block !important;
             overflow-y: auto !important;
             max-height: 450px !important;
@@ -376,7 +375,7 @@
             font-family: 'Plus Jakarta Sans', sans-serif !important;
             font-size: 0.95rem !important;
             font-weight: 600 !important;
-            color: #444444 !important;
+            color: #aaaaaa !important;
             text-transform: none !important;
             border-radius: 8px !important;
             margin: 0.2rem 0 !important;
@@ -394,8 +393,8 @@
 
         /* Hover state matching the image: Gold text, light grey background */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover {
-            color: #c59b27 !important;
-            background: #f7f7f7 !important;
+            color: var(--accent-gold) !important;
+            background: rgba(255,255,255,0.05) !important;
         }
         
         
@@ -434,7 +433,7 @@
     .mobile-contact { display: block !important; }
 }
 </style>
-<link href="i18n.css?v=6" rel="stylesheet"/>
+<link href="../css/i18n.css?v=6" rel="stylesheet"/>
 <style>
 /* Hide main nav arrow (v) for both nav-links and hero-nav-links globally */
 .nav-links li.has-arrow > a::after,
@@ -447,11 +446,11 @@
 <body>
 <!-- NAV -->
 <nav class="nav">
-<a class="nav-logo" href="index.html">
-<img alt="Team Oak Logo" data-i18n-alt="about_team_oak_logo" src="assets/logo.png.png" style="filter: brightness(0) invert(1) !important;"/>
+<a class="nav-logo" href="../index.html">
+<img alt="Team Oak Logo" data-i18n-alt="about_team_oak_logo" src="../assets/logo.png.png" style="filter: brightness(0) invert(1) !important;"/>
 </a>
 <ul class="nav-links">
-<li ><a data-i18n="global_home" href="index.html">Home</a></li>
+<li ><a data-i18n="global_home" href="../index.html">Home</a></li>
 <li ><a data-i18n="global_about_us_2" href="about.html">About Us</a></li>
 <li class="has-arrow"><a data-i18n="global_what_we_do" href="javascript:void(0);">What We Do</a>
 <ul class="dropdown">
@@ -489,7 +488,6 @@
 </li>
 <li ><a data-i18n="global_media" href="media.html">Media</a></li>
 <li ><a data-i18n="global_career" href="career.html">Career</a></li>
-<li class="mobile-contact" style="color: var(--text-muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; padding-top: 1rem;">Location: Abu Dhabi &amp; KSA</li>
 <li class="mobile-contact" ><a data-i18n="global_contact_us" href="contact.html">Contact Us</a></li>
 <li class="mobile-switcher-li">
 <div class="premium-lang-switcher mobile-switcher">
@@ -512,7 +510,6 @@
 </li>
 </ul>
 <div class="nav-actions" style="display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-<span class="nav-btn" style="border: none; pointer-events: none; padding-right: 0; color: var(--accent-gold);">Location: Abu Dhabi &amp; KSA</span>
 <a class="nav-btn" data-i18n="global_contact_us_2" href="contact.html">Contact Us</a>
 <div class="premium-lang-switcher desktop-switcher">
 <button aria-expanded="false" aria-label="Select Language" class="pls-btn">
@@ -537,8 +534,8 @@
 <section class="page-hero">
 <div class="page-hero-bg"></div>
 <div class="page-hero-content">
-<span class="page-eyebrow fu" data-i18n="team_oak_transport_logistics_heavy_equipment">Logistics &amp; Heavy Equipment</span>
-<h1 class="fu d1" data-i18n="team_oak_transport_team_oak_transportamp_heavy_equipment">Team Oak Transport<br/><em>&amp; Heavy Equipment Rental</em></h1>
+<span class="page-eyebrow fu" data-i18n="sugar_packing_industrial_facilities">Industrial Facilities</span>
+<h1 class="fu d1" data-i18n="sugar_packing_sugar_packing_unitamp_distribution">Sugar Packing Unit<br/><em>&amp; Distribution</em></h1>
 <div class="page-rule fu d2"></div>
 </div>
 </section>
@@ -547,11 +544,37 @@
 <div class="content-wrap">
 <div class="story-block">
 <div class="story-text">
-<h2 class="fu" data-i18n="team_oak_transport_reliable_transport_solutions">Reliable Transport Solutions</h2>
-<p class="fu d1" data-i18n="team_oak_transport_team_oak_transport_heavy_equipment_2">Team Oak Transport &amp; Heavy Equipment Rentals is a UAE and KSA-based company providing comprehensive transport services and reliable heavy equipment rental solutions. Serving clients across the Emirates and Saudi Arabia, we cater to industries such as construction, oil &amp; gas, infrastructure, and industrial projects, delivering equipment and transport support that meet international standards.</p>
-<p class="fu d2" data-i18n="team_oak_transport_our_fleet_consists_of_modern">Our fleet consists of modern, well-maintained vehicles and machinery, ensuring efficiency, safety, and reliability at every stage of the project. With a dedicated team and strong local expertise, we are committed to supporting the UAE's growth by offering cost-effective, flexible, and timely solutions tailored to client needs.</p>
+<h2 class="fu" data-i18n="sugar_packing_precision_in_every_package">Precision in Every Package</h2>
+<p class="fu d1" data-i18n="sugar_packing_at_team_oak_we_transform">At Team Oak, we transform bulk sugar into market-ready products with uncompromising precision, consistency, and quality. Our state-of-the-art sugar packing facility receives premium-grade sugar from trusted mills and suppliers, where it undergoes rigorous quality inspection, accurate weighing, hygienic packaging, and secure preparation for local distribution and international export.</p>
+<p class="fu d2" data-i18n="sugar_packing_as_a_vital_part_of">As a vital part of the food supply chain, we ensure every package meets the highest industry standards, enabling businesses to receive products they can trust.</p>
+<h2 class="fu" data-i18n="sugar_packing_supporting_the_food_industry_across">Supporting the Food Industry Across Saudi Arabia</h2>
+<p class="fu" data-i18n="sugar_packing_saudi_arabias_growing_food_and">Saudi Arabia's growing food and beverage sector depends on efficient and reliable sugar packaging solutions. As large volumes of sugar are imported into the Kingdom, professional repacking facilities play a critical role in converting bulk shipments into consumer-ready and industrial packaging.</p>
+<p class="fu" data-i18n="sugar_packing_our_advanced_packaging_operations_serve">Our advanced packaging operations serve a diverse range of industries, including:</p>
+<ul class="fu" style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 3rem 0;">
+<li data-i18n="sugar_packing_supermarkets_retail_chains" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Supermarkets &amp; Retail Chains</li>
+<li data-i18n="sugar_packing_restaurants_cafés" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Restaurants &amp; Cafés</li>
+<li data-i18n="sugar_packing_hotels_hospitality" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Hotels &amp; Hospitality</li>
+<li data-i18n="sugar_packing_food_manufacturing_industries" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Food Manufacturing Industries</li>
+<li data-i18n="sugar_packing_wholesale_distribution_networks" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Wholesale &amp; Distribution Networks</li>
+<li data-i18n="sugar_packing_export_markets" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Export Markets</li>
+</ul>
+<p class="fu" data-i18n="sugar_packing_from_small_retail_packs_to">From small retail packs to large industrial bags, every package is processed with strict quality control and exceptional attention to detail.</p>
+<h2 class="fu" data-i18n="food_stuff_trading_our_commitment_to_excellence">Our Commitment to Excellence</h2>
+<p class="fu" data-i18n="sugar_packing_we_combine_advanced_packaging_technology">We combine advanced packaging technology with internationally recognized quality standards to deliver products that exceed customer expectations. Every stage of our operation is designed to ensure:</p>
+<ul class="fu" style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 3rem 0;">
+<li data-i18n="sugar_packing_highprecision_weighing_and_filling" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> High-precision weighing and filling</li>
+<li data-i18n="sugar_packing_hygienic_and_foodsafe_packaging_processes" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Hygienic and food-safe packaging processes</li>
+<li data-i18n="sugar_packing_consistent_product_quality" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Consistent product quality</li>
+<li data-i18n="sugar_packing_efficient_production_and_timely_delivery" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Efficient production and timely delivery</li>
+<li data-i18n="sugar_packing_compliance_with_international_food_safety" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Compliance with international food safety standards</li>
+<li data-i18n="sugar_packing_reliable_packaging_for_domestic_and" style="display: flex; align-items: flex-start; gap: 1rem; font-size: 1.15rem; color: var(--text-light);"><span style="color: var(--accent-gold); font-size: 1.2rem;">✦</span> Reliable packaging for domestic and global markets</li>
+</ul>
+<p class="fu" data-i18n="sugar_packing_our_commitment_to_operational_excellence">Our commitment to operational excellence allows our partners to focus on growing their business while we ensure every package reflects superior quality.</p>
+<h2 class="fu" data-i18n="sugar_packing_why_choose_us">Why Choose Us</h2>
+<p class="fu" data-i18n="sugar_packing_with_years_of_industry_expertise">With years of industry expertise, cutting-edge equipment, and a customer-focused approach, we have become a trusted packaging partner for businesses across Saudi Arabia and beyond.</p>
+<p class="fu" data-i18n="sugar_packing_we_dont_simply_package_sugarwe">We don't simply package sugar—we deliver reliability, precision, and confidence in every shipment.</p>
 <div class="highlight-quote fu">
-                        At Team Oak, we take pride in being a trusted partner in the UAE and KSA, combining professional service with a customer-first approach to help businesses achieve their project goals seamlessly.
+                        "Every grain reflects our commitment to precision. Every package represents our promise of quality. We bridge global supply with local excellence, delivering trusted sugar packaging solutions that power supermarkets, restaurants, manufacturers, and industries across Saudi Arabia and international markets."
                     </div>
 </div>
 </div>
@@ -602,11 +625,11 @@
 <ul>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-phone"></use></svg></div>
-<div class="mf-text">+971543310543<br/>+971-554418701</div>
+<div class="mf-text">+966565990100</div>
 </li>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-location"></use></svg></div>
-<div class="mf-text">M 43 Musaffah, Abu Dhabi</div>
+<div class="mf-text">Osfan, Jeddah</div>
 </li>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-email"></use></svg></div>
@@ -617,7 +640,7 @@
 <div class="mf-col">
 <h4 data-i18n="global_navigate">Navigate</h4>
 <ul>
-<li ><a data-i18n="global_home" href="index.html">Home</a></li>
+<li ><a data-i18n="global_home" href="../index.html">Home</a></li>
 <li ><a data-i18n="global_about_us_2" href="about.html">About Us</a></li>
 <li ><a data-i18n="global_media" href="media.html">Media</a></li>
 <li ><a data-i18n="global_career" href="career.html">Career</a></li>
@@ -1023,5 +1046,5 @@ function setLanguage(lang) {
 }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-<script defer="True" src="translator.js"></script></body>
+<script defer="True" src="../js/translator.js"></script></body>
 </html>

@@ -4,32 +4,46 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Team Oak Food Stuff Trading LLC — A prominent foodstuff trading company in Saudi Arabia." data-i18n="food_stuff_trading_team_oak_food_stuff_trading_2" name="description"/>
-<title data-i18n="food_stuff_trading_team_oak_food_stuff_trading">Team Oak Food Stuff Trading LLC</title>
+<meta content="Contact Team Oak" data-i18n="contact_contact_team_oak" name="description"/>
+<title data-i18n="contact_contact_us_team_oak">Contact Us | Team Oak</title>
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="style.css?v=10" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="../css/style.css?v=11" rel="stylesheet"/>
 <style>
-        /* Minimalist specific overrides for this page */
+        /* White Theme Custom Overrides for Contact Page */
+        body {
+            --bg-dark: #0d0d0d;
+            --bg-charcoal: #151515;
+            --bg-card: #111111;
+            --text-light: #ffffff;
+            --text-muted: #999999;
+            --accent-gold: #c59b27;
+            --border-color: rgba(255, 255, 255, 0.08);
+            
+            background-color: var(--bg-dark) !important;
+            color: var(--text-light) !important;
+        }
+
         .page-hero {
             position: relative;
-            min-height: 85vh;
+            min-height: 70vh;
             display: flex;
             align-items: flex-end;
-            padding: 0 5% 2rem;
+            padding: 8rem 5% 2rem;
             overflow: hidden;
             background-color: var(--bg-dark);
         }
         .page-hero-bg {
             position: absolute; inset: 0;
-            background: url('assets/food_stuff_trading_bg.png') center/cover no-repeat;
+            background: url('../assets/contact-bg.png') center/cover no-repeat;
             z-index: 0;
         }
         .page-hero-bg::after {
             content: '';
             position: absolute; inset: 0;
-            background: linear-gradient(to top, var(--bg-dark) 0%, rgba(10, 10, 10, 0.5) 60%, rgba(10, 10, 10, 0.2) 100%);
+            background: linear-gradient(to top, var(--bg-dark) 0%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0.2) 100%);
         }
         .page-hero-content {
             position: relative; z-index: 1;
@@ -43,7 +57,7 @@
         }
         .page-hero h1 {
             font-family: var(--font-heading);
-            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
             font-weight: 800; line-height: 1.1;
             color: var(--text-light); letter-spacing: -1px;
             margin-bottom: 1.5rem;
@@ -53,56 +67,138 @@
             width: 60px; height: 3px; background: var(--accent-gold);
             margin: 2.5rem 0;
         }
-        
+
         /* Content Section */
-        .content-sec {
+        .contact-sec {
             padding: 8rem 5%;
             background: var(--bg-dark);
             color: var(--text-light);
         }
-        .content-wrap {
-            max-width: 1000px;
+        .contact-wrap {
+            max-width: 700px;
             margin: 0 auto;
         }
-        
-        .story-block {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 3rem;
-        }
-        
-        .story-text p {
-            font-family: var(--font-body);
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            line-height: 2.1;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-        
-        .story-text h2 {
-            font-family: var(--font-heading);
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            margin-top: 3rem;
-            letter-spacing: -0.5px;
-        }
 
-        .highlight-quote {
-            border-left: 3px solid var(--accent-gold);
-            padding-left: 2rem;
-            margin: 4rem 0;
+        /* Contact Info */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem;
+        }
+        .info-block h3 {
             font-family: var(--font-heading);
             font-size: 1.8rem;
-            font-weight: 400;
+            font-weight: 800;
             color: var(--text-light);
-            line-height: 1.5;
-            font-style: italic;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
         }
-        
-        /* NAV & FOOTER overrides to match index.css global styles where possible */
+        .info-block p {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 0.8rem;
+        }
+        .info-block a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .info-block a:hover {
+            color: var(--accent-gold);
+        }
+        .contact-divider {
+            width: 100%;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        /* Contact Form */
+        .contact-form-container {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 4rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+        }
+        .contact-form-container h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+        .contact-form-container p.form-desc {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding: 1rem 0;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--text-light);
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-bottom-color: var(--accent-gold);
+        }
+        .form-group label {
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+        .form-group input:focus ~ label,
+        .form-group input:not(:placeholder-shown) ~ label,
+        .form-group textarea:focus ~ label,
+        .form-group textarea:not(:placeholder-shown) ~ label {
+            top: -1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+        .submit-btn {
+            display: inline-block;
+            background: var(--text-light);
+            color: var(--bg-dark);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 1rem;
+        }
+        .submit-btn:hover {
+            background: var(--accent-gold);
+        }
+
+        /* Nav & Footer styling overrides */
         .nav {
             position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
             padding: 1.3rem 5%;
@@ -111,7 +207,7 @@
             border-bottom: 1px solid rgba(255,255,255,0.05);
             display: flex; justify-content: space-between; align-items: center;
         }
-        .nav-logo img { height: 70px; width: auto;  filter: brightness(0) invert(1) !important; }
+        .nav-logo img { height: 70px; width: auto; }
         .nav-links { list-style: none; display: flex; gap: 2.8rem; margin: 0;}
         .nav-links a {
             font-size: 0.72rem; font-weight: 600; letter-spacing: 2px;
@@ -122,7 +218,7 @@
         .nav-links a:hover, .nav-links a.active { color: var(--text-light); }
         .nav-links a.active { border-bottom: 2px solid var(--accent-gold); padding-bottom: 4px; color: var(--text-light); }
         
-        /* Nav dropdown styles from about */
+        /* Dropdown logic for nav */
         .nav-links li.has-arrow { position: relative; }
         .nav-links li.has-arrow > a { display: inline-flex; align-items: center; gap: 5px; }
         .nav-links li.has-arrow > a::after {
@@ -130,81 +226,157 @@
             border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
             transform: rotate(45deg) translateY(-2px); transition: transform 0.25s; flex-shrink: 0;
         }
-         .nav-links li.has-arrow.open > a::after { transform: rotate(225deg) translateY(2px); }
-        
+        .nav-links li.has-arrow.open > a::after { transform: rotate(225deg) translateY(2px); }
         .nav-links li.has-arrow .dropdown, .hero-nav-links li.has-arrow .dropdown {
             position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%) translateY(-6px);
             background: rgba(20,20,20,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); padding: 1rem 0.6rem;
-            min-width: 240px; max-height: 400px; overflow-y: auto; list-style: none; opacity: 0; pointer-events: none;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(255,255,255,0.05);
+            min-width: 240px; list-style: none; opacity: 0; pointer-events: none;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); z-index: 200; border: 1px solid rgba(0,0,0,0.05);
         }
-         .nav-links li.has-arrow.open .dropdown, .hero-nav-links li.has-arrow.open .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        /* /* hover removed */ removed to enforce click only */
         .nav-links li.has-arrow .dropdown li a {
             display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 1.4rem;
             font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.8px;
             color: #ddd; text-decoration: none; transition: all 0.25s ease; border-radius: 8px; margin: 0.2rem 0.4rem; text-transform: uppercase;
         }
         .nav-links li.has-arrow .dropdown li a:hover { color: var(--accent-gold); background: rgba(255,255,255,0.05); padding-left: 1.6rem; }
-        
+
         .nav-btn {
             font-family: var(--font-body); font-size: 0.7rem; font-weight: 700; letter-spacing: 2px;
             text-transform: uppercase; color: var(--text-light); border: 1.5px solid var(--border-color);
             padding: 0.65rem 1.8rem; border-radius: 2px; text-decoration: none; transition: all 0.25s;
         }
         .nav-btn:hover { background: var(--text-light); color: var(--bg-dark); }
-        
+
         /* Animations */
         .fu { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
         .fu.in { opacity: 1; transform: none; }
         .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; }
-        
+
+        /* Footer */
+        .footer {
+            background: #f9f9fb; padding: 5rem 5% 2.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top {
+            display: grid; grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem; padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        .f-logo {
+            font-family: var(--font-heading); font-size: 1.2rem;
+            font-weight: 800; letter-spacing: 3px; color: #111111;
+        }
+        .f-logo span { color: var(--accent-gold); }
+        .f-tagline {
+            margin-top: 1rem; font-size: 0.85rem;
+            color: #555555; line-height: 1.8;
+            max-width: 300px;
+        }
+        .f-col h4 {
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 3px;
+            text-transform: uppercase; color: #888888;
+            margin-bottom: 1.5rem;
+        }
+        .f-col ul { list-style: none; }
+        .f-col li { margin-bottom: 0.7rem; }
+        .f-col a {
+            font-size: 0.85rem; color: #555555;
+            text-decoration: none; transition: color 0.25s;
+        }
+        .f-col a:hover { color: #111111; }
+        .f-col p { font-size: 0.85rem; color: #555555; margin-bottom: 0.7rem; }
+        .footer-bottom {
+            text-align: center; padding-top: 2rem;
+            font-size: 0.75rem; color: #888888;
+        }
+
+        /* Office Section */
+        .office-sec {
+            padding: 8rem 5%;
+            background-color: var(--bg-charcoal);
+            color: #fff;
+        }
+        .office-wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .office-title {
+            text-align: center;
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #eee;
+            margin-bottom: 4rem;
+            letter-spacing: -1px;
+        }
+        .office-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 2rem;
+            align-items: stretch;
+        }
+        .office-card {
+            background: #111111;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .office-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+        .office-card p {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            color: #ddd;
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+        .office-card a.red-text {
+            color: #d93838;
+            text-decoration: none;
+        }
+        .office-map {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            min-height: 350px;
+        }
+        .office-map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (max-width: 900px) {
+            .contact-wrap { grid-template-columns: 1fr; gap: 4rem; }
+            .office-grid { grid-template-columns: 1fr; }
+        }
+
         @media (max-width: 768px) {
             .nav-links, .nav-btn { display: none; }
             .page-hero { min-height: 50vh; padding-bottom: 4rem; }
             .page-hero h1 { font-size: 2.8rem; }
-            .story-text h2 { font-size: 2rem; }
-            .highlight-quote { font-size: 1.4rem; padding-left: 1.5rem; }
+            .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
+            .contact-form-container { padding: 2.5rem; }
         }
-    
+    </style>
+<style>
         /* ═══════════════════════════
-           MINIMAL STANDARD FOOTER (WHITE THEME)
+           MEGA MENU OVERRIDE V5
         ═══════════════════════════ */
-        .minimal-footer {
-            background-color: #0d0d0d;
-            color: #ffffff;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            padding: 5rem 5% 2rem;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            position: relative;
-            z-index: 10;
-        }
-        .mf-container { max-width: 1300px; margin: 0 auto; }
-        .mf-columns { display: grid; grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 1.5fr; gap: 3rem; padding-bottom: 4rem; }
-        .mf-col h4 { font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #ffffff; margin-bottom: 2rem; letter-spacing: -0.2px; }
-        .mf-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 1.2rem; }
-        .mf-col ul li a, .mf-text { font-size: 0.95rem; color: #999999; text-decoration: none; transition: color 0.3s; line-height: 1.5; }
-        .mf-col ul li a:hover { color: #ffffff; }
-        .mf-contact ul { gap: 1.5rem; }
-        .mf-contact-item { display: flex; align-items: flex-start; gap: 1rem; }
-        .mf-icon { width: 32px; height: 32px; border-radius: 50%; background-color: transparent; color: #c59b27; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 0 0 1px rgba(255,255,255,0.08); transition: all 0.3s ease; }
-        .mf-icon svg { width: 16px; height: 16px; fill: currentColor; }
-        .mf-text { padding-top: 5px; }
-        .mf-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.9rem; color: #777777; }
-        .mf-legal { display: flex; gap: 2rem; }
-        .mf-legal a { color: #777777; text-decoration: none; transition: color 0.3s; }
-        .mf-legal a:hover { color: #ffffff; }
-
-        @media (max-width: 1024px) {
-            .mf-columns { grid-template-columns: 1fr 1fr 1fr; gap: 3rem 2rem; }
-            .mf-contact { grid-column: 1 / -1; }
-        }
-        @media (max-width: 640px) {
-            .mf-columns { grid-template-columns: 1fr; }
-            .mf-bottom { flex-direction: column; gap: 1.5rem; text-align: center; }
-        }
-
-        /* MEGA MENU OVERRIDE */
+        .nav-links li.has-arrow .dropdown::before { display: none !important; }
+        /*
+        ═══════════════════════════ */
         .nav-links li.has-arrow .dropdown, .hero-nav-links li.has-arrow .dropdown {
             position: absolute !important;
             top: calc(100% + 10px) !important;
@@ -246,6 +418,7 @@
             border: none !important;
         }
 
+        /* Arrow for the left menu items (Hidden as requested) */
         .nav-links li.has-arrow .dropdown > li > a::after, .hero-nav-links li.has-arrow .dropdown > li > a::after {
             display: none !important;
             content: "" !important;
@@ -258,6 +431,7 @@
             color: #111111 !important;
         }
 
+        /* Right Panel (Flyout) */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout {
             position: absolute !important;
             top: 0 !important;
@@ -277,6 +451,7 @@
             max-height: 450px !important;
         }
 
+        /* Custom Scrollbar for Flyout */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout {
             scrollbar-width: auto !important;
             scrollbar-color: #000000 #f4f4f4 !important;
@@ -301,6 +476,7 @@
             background: #ffe066 !important;
         }
 
+        /* CSS trick to show first tab by default */
         .nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout, .hero-nav-links li.has-arrow .dropdown > li.has-flyout:first-child .flyout {
             opacity: 1 !important;
             pointer-events: all !important;
@@ -319,6 +495,7 @@
             z-index: 10;
         }
 
+        /* Flyout Links */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout li a {
             padding: 1rem 1.2rem !important;
             font-family: 'Plus Jakarta Sans', sans-serif !important;
@@ -340,6 +517,7 @@
             content: none !important;
         }
 
+        /* Hover state matching the image: Gold text, light grey background */
         .nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover, .hero-nav-links li.has-arrow .dropdown li.has-flyout .flyout li a:hover {
             color: #c59b27 !important;
             background: #f7f7f7 !important;
@@ -381,7 +559,7 @@
     .mobile-contact { display: block !important; }
 }
 </style>
-<link href="i18n.css?v=6" rel="stylesheet"/>
+<link href="../css/i18n.css?v=6" rel="stylesheet"/>
 <style>
 /* Hide main nav arrow (v) for both nav-links and hero-nav-links globally */
 .nav-links li.has-arrow > a::after,
@@ -394,11 +572,11 @@
 <body>
 <!-- NAV -->
 <nav class="nav">
-<a class="nav-logo" href="index.html">
-<img alt="Team Oak Logo" data-i18n-alt="about_team_oak_logo" src="assets/logo.png.png" style="filter: brightness(0) invert(1) !important;"/>
+<a class="nav-logo" href="../index.html">
+<img alt="Team Oak Logo" data-i18n-alt="about_team_oak_logo" src="../assets/logo.png.png" style="filter: brightness(0) invert(1) !important;"/>
 </a>
 <ul class="nav-links">
-<li ><a data-i18n="global_home" href="index.html">Home</a></li>
+<li ><a data-i18n="global_home" href="../index.html">Home</a></li>
 <li ><a data-i18n="global_about_us_2" href="about.html">About Us</a></li>
 <li class="has-arrow"><a data-i18n="global_what_we_do" href="javascript:void(0);">What We Do</a>
 <ul class="dropdown">
@@ -458,7 +636,7 @@
 </li>
 </ul>
 <div class="nav-actions" style="display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-<a class="nav-btn" data-i18n="global_contact_us_2" href="contact.html">Contact Us</a>
+<a class="nav-btn" data-i18n="global_contact_us_2" href="contact.html" style="background: #111; color: #fff;">Contact Us</a>
 <div class="premium-lang-switcher desktop-switcher">
 <button aria-expanded="false" aria-label="Select Language" class="pls-btn">
 <svg class="pls-globe" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
@@ -482,29 +660,128 @@
 <section class="page-hero">
 <div class="page-hero-bg"></div>
 <div class="page-hero-content">
-<span class="page-eyebrow fu" data-i18n="food_stuff_trading_trading_distribution">Trading &amp; Distribution</span>
-<h1 class="fu d1" data-i18n="food_stuff_trading_team_oakfood_stuff_trading_llc">Team Oak<br/><em>Food Stuff Trading LLC</em></h1>
+<span class="page-eyebrow fu" data-i18n="about_get_in_touch">Get in Touch</span>
+<h1 class="fu d1" data-i18n="contact_lets_build_thefuture_together">Let's Build the<br/><em>Future Together.</em></h1>
 <div class="page-rule fu d2"></div>
 </div>
 </section>
-<!-- CONTENT -->
-<section class="content-sec">
-<div class="content-wrap">
-<div class="story-block">
-<div class="story-text">
-<h2 class="fu" data-i18n="food_stuff_trading_prominent_foodstuff_trading_company">Prominent Foodstuff Trading Company</h2>
-<p class="fu d1" data-i18n="food_stuff_trading_established_in_2020_team_oak">Established in 2020, Team Oak Food Stuff Trading Company LLC is a prominent foodstuff trading company based in Makkah, Saudi Arabia. Despite our recent inception, we have rapidly emerged as a leading player in the industry.</p>
-<p class="fu d2" data-i18n="food_stuff_trading_our_commitment_to_excellence_combined">Our commitment to excellence, combined with a diverse range of premium food products sourced from reputable suppliers worldwide, has earned us the trust of our valued customers.</p>
-<div class="highlight-quote fu">
-                        "With a focus on quality, reliability, and timely delivery, we aim to be the preferred choice for foodstuff trading in the region."
-                    </div>
-<h2 class="fu" data-i18n="food_stuff_trading_our_commitment_to_excellence">Our Commitment to Excellence</h2>
-<p class="fu d1" data-i18n="food_stuff_trading_as_we_grow_our_dedication">As we grow, our dedication to customer satisfaction and ethical business practices remains unwavering.</p>
+<!-- CONTACT SECTION -->
+<section class="contact-sec">
+<div class="contact-wrap">
+<!-- Contact Form -->
+<div class="contact-form-container fu d1">
+<h3 data-i18n="contact_send_a_message">Send a Message</h3>
+<p class="form-desc" data-i18n="contact_whether_you_have_a_question">Whether you have a question about our services, divisions, or anything else, our team is ready to answer all your questions.</p>
+<form action="#" method="POST">
+<div class="form-group">
+<input id="name" name="name" placeholder=" " required="" type="text"/>
+<label data-i18n="contact_your_name" for="name">Your Name</label>
+</div>
+<div class="form-group">
+<input id="email" name="email" placeholder=" " required="" type="email"/>
+<label data-i18n="contact_email_address" for="email">Email Address</label>
+</div>
+<div class="form-group">
+<input id="subject" name="subject" placeholder=" " required="" type="text"/>
+<label data-i18n="contact_subject" for="subject">Subject</label>
+</div>
+<div class="form-group">
+<textarea id="message" name="message" placeholder=" " required="" rows="4"></textarea>
+<label data-i18n="contact_your_message" for="message">Your Message</label>
+</div>
+<button class="submit-btn" data-i18n="contact_send_inquiry" type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+</section>
+<!-- KSA OFFICE SECTION -->
+<section class="office-sec">
+<div class="office-wrap">
+<h2 class="office-title fu" data-i18n="contact_ksa_office">KSA Office</h2>
+<div class="office-grid fu d1">
+<div class="office-card">
+<h3 data-i18n="global_contact_us_2">Contact Us</h3>
+<p data-i18n="contact_phone_966565990100">Phone: +966565990100</p>
+<p data-i18n="contact_whatsapp_966565990100">WhatsApp: +966565990100</p>
+<p data-i18n="contact_email_infoteamoakco">Email: <a class="red-text" href="mailto:info@teamoak.co">info@teamoak.co</a></p>
+<p data-i18n="contact_address_team_oak_trading_company" style="margin-top: 1rem;">Address: Team Oak Trading Company LLC<br/>Makkah, Jeddah.</p>
+<p data-i18n="contact_working_hours_900am_600pm" style="margin-top: 1rem;">Working hours: 9:00AM - 6:00PM</p>
+</div>
+<div class="office-map" style="position: relative;">
+<a aria-label="View KSA Office on Google Maps" href="https://maps.app.goo.gl/hnenSrCet49HB6df6" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;" target="_blank"></a>
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118944.57796934371!2d39.12423321524316!3d21.542289656828237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b118ab!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sae!4v1714201389814!5m2!1sen!2sae"></iframe>
+</div>
+</div>
+</div>
+<div class="office-wrap" style="margin-top: 8rem;">
+<h2 class="office-title fu" data-i18n="contact_uae_office">UAE Office</h2>
+<div class="office-grid fu d1">
+<div class="office-card">
+<h3 data-i18n="global_contact_us_2">Contact Us</h3>
+<p data-i18n="contact_phone_971554418701">Phone: +971-554418701</p>
+<p data-i18n="contact_whatsapp_971554418701">WhatsApp: +971-554418701</p>
+<p data-i18n="contact_email_infoteamoakco">Email: <a class="red-text" href="mailto:info@teamoak.co">info@teamoak.co</a></p>
+<p data-i18n="contact_address_best_vibes_general_contracting" style="margin-top: 1rem;">Address: Best Vibes General Contracting LLC.Corniche<br/>street Abu Dhabi UAE.</p>
+<p data-i18n="contact_working_hours_900am_600pm" style="margin-top: 1rem;">Working hours: 9:00AM - 6:00PM</p>
+</div>
+<div class="office-map">
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.1001758980233!2d54.347154475139206!3d24.481985678178315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e676331e4e2e1%3A0x6fca92d4cbe20fe7!2sBest%20Vibes%20General%20Contracting%20LLC!5e0!3m2!1sen!2sin!4v1779173821698!5m2!1sen!2sin"></iframe>
+</div>
+</div>
+</div>
+<div class="office-wrap" style="margin-top: 8rem;">
+<h2 class="office-title fu" data-i18n="contact_india_office">India Office</h2>
+<div class="office-grid fu d1">
+<div class="office-card">
+<h3 data-i18n="global_contact_us_2">Contact Us</h3>
+<p data-i18n="contact_phone_919746025710">Phone: +91-9746025710</p>
+<p data-i18n="contact_whatsapp_919746025710">WhatsApp: +91-9746025710</p>
+<p data-i18n="contact_email_infoteamoakco">Email: <a class="red-text" href="mailto:info@teamoak.co">info@teamoak.co</a></p>
+<p data-i18n="contact_address_team_oak_architects_interiorsperinthalmanna" style="margin-top: 1rem;">Address: Team Oak Architects &amp; Interiors.<br/>Perinthalmanna, Kerala, India.</p>
+<p data-i18n="contact_working_hours_900am_600pm" style="margin-top: 1rem;">Working hours: 9:00AM - 6:00PM</p>
+</div>
+<div class="office-map">
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Oak%20Architects%20Leading%20Architects%20in%20Perinthalmanna%20Kerala&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+</div>
+</div>
+</div>
+<div class="office-wrap" style="margin-top: 8rem;">
+<h2 class="office-title fu" data-i18n="contact_canada_office">Canada Office</h2>
+<div class="office-grid fu d1">
+<div class="office-card">
+<h3 data-i18n="global_contact_us_2">Contact Us</h3>
+<p data-i18n="contact_phone_16475127882">Phone: +1-6475127882</p>
+<p data-i18n="contact_whatsapp_16475127882">WhatsApp: +1-6475127882</p>
+<p data-i18n="contact_email_infoteamoakco">Email: <a class="red-text" href="mailto:info@teamoak.co">info@teamoak.co</a></p>
+<p data-i18n="contact_address_121336_abbey_rdhalifax_ns" style="margin-top: 1rem;">Address: 1213-36 Abbey Rd<br/>Halifax, NS, Canada</p>
+</div>
+<div class="office-map" style="position: relative;">
+<a aria-label="View Canada Office on Google Maps" href="https://maps.app.goo.gl/SKA9cjh4ZrfjWLMV7" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;" target="_blank"></a>
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1213-36%20Abbey%20Rd%2C%20Halifax%2C%20NS%2C%20Canada&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
+</div>
+</div>
+</div>
+<div class="office-wrap" style="margin-top: 8rem;">
+<h2 class="office-title fu" data-i18n="contact_uk_office">UK Office</h2>
+<div class="office-grid fu d1">
+<div class="office-card">
+<h3 data-i18n="global_contact_us_2">Contact Us</h3>
+<p data-i18n="contact_phone_447401133883">Phone: +44-7401133883</p>
+<p data-i18n="contact_whatsapp_447401133883">WhatsApp: +44-7401133883</p>
+<p data-i18n="contact_email_infoteamoakco">Email: <a class="red-text" href="mailto:info@teamoak.co">info@teamoak.co</a></p>
+<p data-i18n="contact_address_1_leather_ln_londonuk" style="margin-top: 1rem;">Address: 1 Leather Ln, London<br/>UK, EC1N2TD</p>
+</div>
+<div class="office-map" style="position: relative;">
+<a aria-label="View UK Office on Google Maps" href="https://maps.app.goo.gl/PdPfDJWRx1sSsUZq8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10;" target="_blank"></a>
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1%20Leather%20Ln%2C%20London%2C%20UK&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
 </div>
 </div>
 </div>
 </section>
 <!-- FOOTER -->
+<!-- STANDARDIZED FOOTER -->
+<!-- STANDARDIZED FOOTER -->
+<!-- MINIMAL STANDARD FOOTER -->
 <!-- MINIMAL STANDARD FOOTER -->
 <svg style="display:none;">
 <symbol id="icon-phone" viewbox="0 0 24 24">
@@ -546,11 +823,11 @@
 <ul>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-phone"></use></svg></div>
-<div class="mf-text">+966565990100</div>
+<div class="mf-text">+971554418701</div>
 </li>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-location"></use></svg></div>
-<div class="mf-text">Buhayrath, Mecca,<br/>Saudi Arabia</div>
+<div class="mf-text">Corniche Building, Corniche Street,<br/>Abudhabi</div>
 </li>
 <li class="mf-contact-item">
 <div class="mf-icon"><svg><use href="#icon-email"></use></svg></div>
@@ -561,7 +838,7 @@
 <div class="mf-col">
 <h4 data-i18n="global_navigate">Navigate</h4>
 <ul>
-<li ><a data-i18n="global_home" href="index.html">Home</a></li>
+<li ><a data-i18n="global_home" href="../index.html">Home</a></li>
 <li ><a data-i18n="global_about_us_2" href="about.html">About Us</a></li>
 <li ><a data-i18n="global_media" href="media.html">Media</a></li>
 <li ><a data-i18n="global_career" href="career.html">Career</a></li>
@@ -617,13 +894,13 @@
 </div>
 </footer>
 <script>
-        // Simple Intersection Observer for fade-ups
+        // Scroll Animations
         const io = new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fu').forEach(el => io.observe(el));
         
-        // Sticky Navigation logic
+        // Nav Scroll Effect
         const nav = document.querySelector('.nav');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -969,5 +1246,5 @@ function setLanguage(lang) {
 }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
-<script defer="True" src="translator.js"></script></body>
+<script defer="True" src="../js/translator.js"></script></body>
 </html>

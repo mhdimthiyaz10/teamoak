@@ -6,10 +6,14 @@ PORT = 8000
 
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
-        # If the requested path has no extension and is not a directory, try adding .html
+        # If the requested path has no extension and is not a directory, try adding .html or checking in pages/
         if self.path != '/' and not os.path.exists(self.translate_path(self.path)):
             if os.path.exists(self.translate_path(self.path) + '.html'):
                 self.path += '.html'
+            elif os.path.exists(self.translate_path('/pages' + self.path + '.html')):
+                self.path = '/pages' + self.path + '.html'
+            elif os.path.exists(self.translate_path('/pages' + self.path)):
+                self.path = '/pages' + self.path
             elif self.path.endswith('/index'):
                 self.path = self.path.replace('/index', '/index.html')
         
