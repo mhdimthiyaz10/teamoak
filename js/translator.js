@@ -8,11 +8,55 @@
     
     let translations = {};
 
+    function checkIsSubpage() {
+        const path = window.location.pathname;
+        return path.includes('/pages/') || (path.endsWith('.html') && !path.endsWith('index.html'));
+    }
+
+    function resolveRelativeHref(href, isSubpage) {
+        if (!href || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('javascript:') || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+            return href;
+        }
+
+        let clean = href.trim();
+        if (!isSubpage) {
+            // We are on index.html (root directory)
+            if (clean === 'index.html' || clean === './index.html' || clean === '/') {
+                return 'index.html';
+            }
+            if (!clean.startsWith('pages/') && !clean.startsWith('./pages/')) {
+                clean = clean.replace(/^\.\//, '');
+                return 'pages/' + clean;
+            }
+            return clean;
+        } else {
+            // We are inside pages/ directory
+            if (clean === 'index.html' || clean === './index.html' || clean === '/') {
+                return '../index.html';
+            }
+            if (clean.startsWith('pages/') || clean.startsWith('./pages/')) {
+                return clean.replace(/^(\.\/)?pages\//, '');
+            }
+            return clean;
+        }
+    }
+
+    function fixContainerLinks(container, isSubpage) {
+        if (!container) return;
+        container.querySelectorAll('a[href]').forEach(a => {
+            const rawHref = a.getAttribute('href');
+            const newHref = resolveRelativeHref(rawHref, isSubpage);
+            if (newHref && newHref !== rawHref) {
+                a.setAttribute('href', newHref);
+            }
+        });
+    }
+
     async function init() {
         try {
             // Fetch translations
-            const isSubpage = window.location.pathname.includes('/pages/') || (window.location.pathname.endsWith('.html') && !window.location.pathname.endsWith('index.html'));
-            const localePath = window.location.protocol === 'file:' ? (isSubpage ? '../locales/' : 'locales/') : '/locales/';
+            const isSubpage = checkIsSubpage();
+            const localePath = isSubpage ? '../locales/' : 'locales/';
             const [enRes, arRes] = await Promise.all([
                 fetch(localePath + 'en.json').then(res => res.json()),
                 fetch(localePath + 'ar.json').then(res => res.json())
@@ -35,6 +79,7 @@
     }
 
     function translatePage(currentLang) {
+        const isSubpage = checkIsSubpage();
         document.documentElement.lang = currentLang;
         document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
         
@@ -43,8 +88,12 @@
             const key = el.getAttribute('data-i18n');
             if (translations[currentLang] && translations[currentLang][key]) {
                 el.innerHTML = translations[currentLang][key];
+                fixContainerLinks(el, isSubpage);
             }
         });
+
+        // Ensure all page links are correctly prefixed for root vs subpage
+        fixContainerLinks(document.body, isSubpage);
 
         // Translate placeholders
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
